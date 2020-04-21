@@ -33,6 +33,7 @@
         </div>
         <!-- Team -->
         <div class="row">
+
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/james.jpg" alt="Card image cap">
                 <div class="card-text">
@@ -44,6 +45,7 @@
                     <div class="text">About Me!</div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/debayan.jpg" alt="Card image cap">
                 <div class="card-text">
@@ -55,6 +57,18 @@
                     <div class="text">About Me!</div>
                 </div>
             </div>
+
+	    <div class="col-lg-4 col-sm-6 text-center">
+		<img class="rounded img-fluid" src="images/james_sud.jpg" alt="Card image cap">
+		<div class="card-text">
+		    <h5>James Sud</h5>
+		    <p>Project Lead</p>
+		    <span>Physics</span>
+		</div>
+		<div class="middle">
+		    <div class="text">About Me!</div>
+		</div>
+	    </div>
             <!-- <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/dhruv.jpg" alt="Card image cap">
                 <div class="card-text">
@@ -159,17 +173,6 @@
                 </div>
             </div>
 
-	    <div class="col-lg-4 col-sm-6 text-center">
-		<img class="rounded img-fluid" src="images/james_sud.jpg" alt="Card image cap">
-		<div class="card-text">
-		    <h5>James Sud</h5>
-		    <p>Project Lead</p>
-		    <span>Physics</span>
-		</div>
-		<div class="middle">
-		    <div class="text">About Me!</div>
-		</div>
-	    </div>
 
             <!-- <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
