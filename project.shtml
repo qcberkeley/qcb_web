@@ -34,7 +34,7 @@
                 <!--#include file="navbar.shtml" -->
             </div>
             <div class="container marketing">
-                <div class="row featurette">
+            <!-- <div class="row featurette"> -->
                     <div class="row featurette" style="padding-bottom: 20px">
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">COVID-19 and QAOA</h2>
@@ -50,18 +50,20 @@
                             <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Partial Quantum Search: Spring '19</h2>
-                        <p class="lead">We implemented a variation of Grover’s canonical search algorithm, known as partial quantum search, in pyquil (a Python quantum computing library by Rigetti).
-                        <br>
-                        <a href = "pdf/PQSPosterFinal.pdf" target="_blank"> The final poster</a>.<br>
-                        <a href = "https://arxiv.org/abs/quant-ph/0407122" target="_blank"> Link to the original paper</a>.<br>
-                        </p>
-                        </div>
-                        <div class="col-md-5" style="background-color: #fff">
-                            <img class="featurette-image img-fluid mx-auto" src="images/project2.png" alt="Generic placeholder image" style="padding-top: 139px;padding-bottom: 139px; border:1px solid #021a40;">
-                        </div>
-                    </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                          <h2 class="featurette-heading">Partial Quantum Search: Spring '19</h2>
+                          <p class="lead">We implemented a variation of Grover’s canonical search algorithm, known as partial quantum search, in pyquil (a Python quantum computing library by Rigetti).
+                          <br>
+                          <a href = "pdf/PQSPosterFinal.pdf" target="_blank"> The final poster</a>.<br>
+                          <a href = "https://arxiv.org/abs/quant-ph/0407122" target="_blank"> Link to the original paper</a>.<br>
+                          </p>
+                          </div>
+                          <div class="col-md-5" style="background-color: #fff">
+                              <img class="featurette-image img-fluid mx-auto" src="images/project2.png" alt="Generic placeholder image" style="padding-top: 139px;padding-bottom: 139px; border:1px solid #021a40;">
+                          </div>
+                      </div>
                     <hr class="featurette-divider">
                     <div class="row featurette" style="padding-bottom: 20px">
                         <div class="col-md-7 order-md-2">
