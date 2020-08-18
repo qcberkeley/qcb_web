@@ -50,7 +50,8 @@
                     <div class="col-md-12">
                         <a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>
                         <a class="btn btn-secondary" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>
-                        <p class="lead" style="opacity: 1.0;">
+                        <h3> Due to the online nature of Fall 2020, we will unfortunately not be offering the Decal. We recommend enrolling in <a href="https://classes.berkeley.edu/content/2020-fall-physics-c191-001-lec-001">CS/Physics C191</a> instead.</h3>
+                        <p class="lead" style="opacity: 0.3;">
                             <b> Course Description</b>: An Introductory course to Quantum Computing. We will introduce ideas of qubits and quantum algorithms while also exploring topics in quantum information theory. Furthermore, we will teach students the state of the art and latest developments in the field. 
                             <br>
                             <br>
