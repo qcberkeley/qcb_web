@@ -165,7 +165,7 @@
                 <img class="rounded img-fluid" src="images/glenn.jpg" alt="Card image cap">
                 <div class="card-text">
                     <h5>Glenn LeBlanc</h5>
-                    <p>Officer</p>
+                    <p>Officer, Web Dev</p>
                     <span>Data Science/Physics</span>
                 </div>
                 <div class="middle">
@@ -177,6 +177,18 @@
                 <img class="rounded img-fluid" src="images/natalie.jpg" alt="Card image cap">
                 <div class="card-text">
                     <h5>Natalie Parham</h5>
+                    <p>Officer</p>
+                    <span>EECS</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/emiliia.jpg" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Emiliia Dyrenkova</h5>
                     <p>Officer</p>
                     <span>EECS</span>
                 </div>
