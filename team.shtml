@@ -35,11 +35,11 @@
         <div class="row">
 
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/james.jpg" alt="Card image cap">
+                <img class="rounded img-fluid" src="images/emiliia.jpg" alt="Card image cap">
                 <div class="card-text">
-                    <h5>James Chen</h5>
+                    <h5>Emiliia Dyrenkova</h5>
                     <p>President</p>
-                    <span>EECS/Math</span>
+                    <span>EECS</span>
                 </div>
                 <div class="middle">
                     <div class="text">About Me!</div>
