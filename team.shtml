@@ -35,7 +35,7 @@
         <div class="row">
 
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/emiliia.jpg" alt="Card image cap">
+                <img class="rounded img-fluid" src="images/EmiliiaD.jpg" alt="Card image cap">
                 <div class="card-text">
                     <h5>Emiliia Dyrenkova</h5>
                     <p>President</p>
@@ -47,11 +47,11 @@
             </div>
 
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/debayan.jpg" alt="Card image cap">
+                <img class="rounded img-fluid" src="images/VictorL.png" alt="Card image cap">
                 <div class="card-text">
-                    <h5>Debayan Bandyopadhyay</h5>
+                    <h5>Victor Li</h5>
                     <p>Co-President</p>
-                    <span>Physics/Computer Science</span>
+                    <span>EECS</span>
                 </div>
                 <div class="middle">
                     <div class="text">About Me!</div>
@@ -59,11 +59,11 @@
             </div>
 
 	    <div class="col-lg-4 col-sm-6 text-center">
-		<img class="rounded img-fluid" src="images/james_sud_rotated.jpg" alt="Card image cap">
+		<img class="rounded img-fluid" src="images/AndrisH.jpg" alt="Card image cap">
 		<div class="card-text">
-		    <h5>James Sud</h5>
-		    <p>Project Lead</p>
-		    <span>Physics</span>
+		    <h5>Andris Huang</h5>
+		    <p>Vice President of Internal Affairs</p>
+		    <span>Physics &amp; Computer Science</span>
 		</div>
 		<div class="middle">
 		    <div class="text">About Me!</div>
@@ -91,111 +91,96 @@
                     <div class="text">About Me!</div>
                 </div>
             </div> -->
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/vladimir.jpg" alt="Card image cap">
+
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/Samyak.jpg" alt="Card image cap">
                 <div class="card-text">
-                    <h5>Vladimir Kremenetski</h5>
-                    <p>Qubit Project Co-Lead</p>
-                    <span>Applied Math/Physics</span>
+                    <h5>Samyak Surti</h5>
+                    <p>Vice President of Internal Affairs</p>
+                    <span>Math &amp; Computer Science</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/JyotiR.png" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Jyoti Rani</h5>
+                    <p>Vice President of External Affairs</p>
+                    <span>EECS & Business</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
+
+            
+
+            
+
+            <!-- <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Amol Pant</h5>
+                    <p>Officer</p>
+                    <span>Computer Science</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+	    </div> -->
+
+            <!-- <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Michael Khachatrian</h5>
+                    <p>Officer</p>
+                    <span>Physics</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Ashutosh Bhadouria</h5>
+                    <p>Officer</p>
+                    <span>Chemical Engineering</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div> -->
+            
+        </div>
+            <!-- <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/dhruv.jpg" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Dhruv Devulapalli</h5>
+                    <p>Co-Founder &amp President</p>
+                    <span>Physics/Computer Science</span>
                 </div>
                 <div class="middle">
                     <div class="text">About Me!</div>
                 </div>
             </div> -->
             <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/karsten.jpg" alt="Card image cap">
+                <img class="rounded img-fluid" src="images/daniel.jpg" alt="Card image cap">
                 <div class="card-text">
-                    <h5>Karsten Fonseca</h5>
-                    <p>Lead Developer/Webdev</p>
+                    <h5>Daniel Lengyel</h5>
+                    <p>Co-Founder &amp Co-President</p>
                     <span>Applied Math/Computer Science</span>
                 </div>
                 <div class="middle">
                     <div class="text">About Me!</div>
                 </div>
             </div> -->
-<!--            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/jordan.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Jordan Sullivan</h5>
-                    <p>Head of Research Communications</p>
-                    <span>Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-<!--             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/noah.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Noah Stevenson</h5>
-                    <p>Reading Group Lead</p>
-                    <span>Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-<!--            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Joe Singh</h5>
-                    <p>Qubit Project Co-Lead</p>
-                    <span>Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-
-            <!-- Officers -->
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/ethan.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Ethan Yeh</h5>
-                    <p>Officer</p>
-                    <span>Physics/Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/glenn.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Glenn LeBlanc</h5>
-                    <p>Officer, Web Dev</p>
-                    <span>Data Science/Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/natalie.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Natalie Parham</h5>
-                    <p>Officer</p>
-                    <span>EECS</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/emiliia.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Emiliia Dyrenkova</h5>
-                    <p>Officer</p>
-                    <span>EECS</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
+            
 
             <!-- <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
