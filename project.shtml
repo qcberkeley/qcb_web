@@ -33,9 +33,81 @@
                 <!-- NAVBAR -->
                 <!--#include file="navbar.shtml" -->
             </div>
+                <!--Upcoming Projects-->
+            <div class="About-Us" style="text-align: center;">
+                <h2 class="featurette-heading" style="padding-bottom: 20px">Current Projects
+                </h2>
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            </div>
+            <div class="container marketing">
+                <!-- <div class="row featurette"> -->
+                    <div class="row featurette" style="padding-bottom: 20px">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">Particle Reconstruction Using QML</h2>
+                            <h4>Overview</h4>
+                            <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
+                                (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                            </p>
+                            <h4>Group Size and Commitment</h4>
+                            <p>3-5 people. This project will take at least one semester.</p>
+                            <h4>Objective</h4>
+                            <p>
+                                <ol>
+                                    <li>To understand the basic particle reconstruction algorithms that exist in the field.
+                                    </li>
+                                    <li>To use the open-source dataset published by Lawrence Berkeley Lab and process them into desired forms.
+                                    </li>
+                                    <li>Implement a Quantum Machine Learning Model based on current RNN or GNN model, or other methods based on max-cut and/or decision tree.
+                                    </li>
+                                    <li>Observe the performance of the QML model and discuss potential improvements.
+                                    </li>
+                                </ol>
+                            </p>
+
+                        </div>
+                        <!--<div class="col-md-5 order-md-1" style="background-color:#000000">
+                            <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
+                        </div>-->
+                    </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette" style="padding-bottom: 20px">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">Prescribing Color to Quantum States</h2>
+                            <h4>Overview</h4>
+                            <p>To represent a quantum state, Bloch Sphere is the most widely used visualization. However, Bloch Sphere has its challenges when 
+                                it comes to representing the states for multi-qubit systems, especially for mixed states and entangled states. To solve this 
+                                problem and improve the visualization, John Paul Marceaux and some other graduate students at UC Berkeley developed a method 
+                                of using colors to represent a quantum state. Since color is fundamentally a 3D concept, it corresponds nicely with the Bloch 
+                                Sphere representation and also improves the issues with multi-qubit systems.
+                            </p>
+                            <h4>Group Size</h4>
+                            <p>3 people. This project will take one semester.</p>
+                            <h4>Objective</h4>
+                            <p>
+                                <ol>
+                                    <li>Develop a software simulation framework that colors the quantum circuits to represent the qubit states.</li>
+                                    <li>Utilize QuTiP, Quark, Javascripts and other tools to run visualization of quantum states in a user-friendly way.</li>
+                                </ol>
+                            </p>
+
+                        </div>
+                        <!--<div class="col-md-5 order-md-1" style="background-color:#000000">
+                            <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
+                        </div>-->
+                    </div> 
+                    <hr class="featurette-divider">
+
+                <!--Previous Projects-->
+
+            <div class="About-Us" style="text-align: center;">
+                <h3 class="featurette-heading" style="padding-bottom: 20px">Complete Projects
+                </h3>
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            </div>
             <div class="container marketing">
             <!-- <div class="row featurette"> -->
-                    <div class="row featurette" style="padding-bottom: 20px">
+                    
+                <div class="row featurette" style="padding-bottom: 20px">
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">COVID-19 and QAOA</h2>
                             <p class="lead">We used a quantum annealer to to determine how to safely reopen college campuses via quarantining students. We also implemented the quantum approximate optimization algorithm on Qiskit and TensorFlow Quantum, and showed numerically that for level 1 QAOA similar parameters are optimal on Erdos-Reyni and regular graphs.
