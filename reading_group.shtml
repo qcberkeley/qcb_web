@@ -40,8 +40,11 @@
                 </div>
                 <hr class="featurette-divider" style='margin-top:0rem; margin-bottom:2rem;'>
                         <p class="lead" style="opacity: 1.0;">
-                        We host a reading group to collaboratively discuss recent events in the field. This journal club is intended
-                        for individuals who have previously taken CS C191 or equivalent.
+                        We host a reading group to collaboratively discuss events in the field. 
+                        This semester we're focused on groundbreaking papers that founded qunatum computing. 
+                        Those seeking personal research are highly encouraged to join.</p>
+                        <p class="lead" style="opacity: 1.0;">
+                        The time commitment is approximately 1 hour per week.
                         </p>
 
                         <h3>Previously Discussed Papers</h3>
