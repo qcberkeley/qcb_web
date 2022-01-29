@@ -37,7 +37,7 @@
                 </h2>
             </div>
             <div class="col-md-12">
-                <h3>As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Education Program. More details coming soon, you can stay tune via our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!</h3>
+                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Education Program. More details coming soon, you can stay tune via our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!</h3>
                 <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
             </div>
             <div class="container marketing">
