@@ -32,6 +32,14 @@
                 <!-- NAVBAR -->
                 <!--#include file="navbar.shtml" -->
             </div>
+            <div class="About-Us" style="text-align: center;">
+                <h2 class="featurette-heading" style="padding-bottom: 20px">The QCB Educational Initiative
+                </h2>
+            </div>
+            <div class="col-md-12">
+                <h3>As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Education Program. More details coming soon, you can stay tune via our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!</h3>
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            </div>
             <div class="container marketing">
                 <div class="row featurette">
                     <div class="col-md-9">
@@ -39,26 +47,27 @@
                     </div>
                     <div class="col-md-3">
                         <p class="lead" style='margin:0rem; margin-top: 0.75rem;'>
-                            Fall 2019 - CS 198 (2 Units)
+                            CS 198 (2 Units)
                         </p>
                     </div>
                 </div>
                 <hr class="featurette-divider" style='margin-top:0rem; margin-bottom:2rem;'>
                 <div class="row featurette" style="padding-bottom: 20px">
                     <div class="col-md-12">
-                        <a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>
+                        <!--<a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>-->
                         <a class="btn btn-secondary" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>
-                        <h3> Due to the online nature of Fall 2020, we will unfortunately not be offering the Decal. We recommend enrolling in <a href="https://classes.berkeley.edu/content/2020-fall-physics-c191-001-lec-001">CS/Physics C191</a> instead.</h3>
-                        <p class="lead" style="opacity: 0.3;">
+                        <h3> Due to COVID-19, we will unfortunately not be offering the Decal this semester. Look for Quantum Information Science and Technology <a href="https://classes.berkeley.edu/content/2020-fall-physics-c191-001-lec-001">CS/Physics C191</a> in the Fall!</h3>
+                        <p>
+                            <br>
                             <b> Course Description</b>: An Introductory course to Quantum Computing. We will introduce ideas of qubits and quantum algorithms while also exploring topics in quantum information theory. Furthermore, we will teach students the state of the art and latest developments in the field. 
                             <br>
-                            <br>
+                            <!--<br>
                             <b> Facilitators</b>: Debayan Bandyopadhyay (debayanband@berkeley.edu), Ethan Yeh (ethan.yc.yeh@berkeley.edu), and Glenn LeBlanc (gleblanc@berkeley.edu) 
                             <br>
                             <b> Time & Location</b>: Monday, Wednesday 6:30 to 8 pm, 310 Soda Hall
                             <br>
                             <b> Starts</b>: September 9th, 2019
-                            <br>
+                            <br>-->
                             <br>
                             <b> Learning Goals</b>: Students taking this course will learn the fundamentals of quantum computing and be equipped for further study in the field and for research and industry.
                             <br>
@@ -73,13 +82,13 @@
                             <b> Textbooks</b>: Course slides/lecture notes, Vazirani lecture notes. Optional: Nielsen, Chuang; Rieffel, Polak.
                             <br>
                             <br>
-                            <b> Grades</b>: 25% midterm, 40% HW, 30% Final Project, 5% participation
+                            <b> Grading</b>: 25% midterm, 40% HW, 30% Final Project, 5% participation
                             <br>
                             <br>
-                            <b> Passing</b>: 60% No more than 2 unexcused absences.
+                            <b> Passing</b>: 60%. No more than 2 unexcused absences.
                             <br>
                             <br>
-                            <b> Final Project</b>: Will allow students to demonstrate that they achieved the learning goal of being able to study new ideas in quantum computing on their own. Students will be required to prepare a paper (4-8 pages) surveying a paper or a topic of interest.
+                            <b> Final Project</b>: Allows students to demonstrate that they achieved the learning goal of being able to study new ideas in quantum computing on their own. Students will be required to prepare a paper (4-8 pages) surveying a topic of interest.
                             <br>
                             <br>
                             <b> Midterm</b>: One midterm during the middle of the semester. Will test that students have a strong understanding of the fundamentals before proceeding to more advanced quantum algorithms.
@@ -97,7 +106,7 @@
                             <b> Special Topics</b>: Adiabatic Quantum Computing, Quantum Annealing, Spin, qubit implementations, topological/ion trap/superconducting qubits, Tensors and tensor networks
                             <br>
                             <br>
-                            <b> How to Enroll </b>: Admission is generally on a first come, first serve basis. However, we will reserve the right to admit or reject students based on the linked application. Application Deadline is Sep 11th!
+                            <b> How to Enroll </b>: Admission is generally on a first come, first serve basis. However, we will reserve the right to admit or reject students based on the linked application. Application updates will be released on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!
                         </p>
                     </div>
                 </div>
@@ -107,3 +116,4 @@
         <!--#include file="footer.shtml" -->
     </body>
 </html>
+
