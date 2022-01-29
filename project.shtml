@@ -48,22 +48,6 @@
                             <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
                                 (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
                             </p>
-                            <h4>Group Size and Commitment</h4>
-                            <p>3-5 people. This project will take at least one semester.</p>
-                            <h4>Objective</h4>
-                            <p>
-                                <ol>
-                                    <li>To understand the basic particle reconstruction algorithms that exist in the field.
-                                    </li>
-                                    <li>To use the open-source dataset published by Lawrence Berkeley Lab and process them into desired forms.
-                                    </li>
-                                    <li>Implement a Quantum Machine Learning Model based on current RNN or GNN model, or other methods based on max-cut and/or decision tree.
-                                    </li>
-                                    <li>Observe the performance of the QML model and discuss potential improvements.
-                                    </li>
-                                </ol>
-                            </p>
-
                         </div>
                         <!--<div class="col-md-5 order-md-1" style="background-color:#000000">
                             <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
@@ -80,16 +64,6 @@
                                 of using colors to represent a quantum state. Since color is fundamentally a 3D concept, it corresponds nicely with the Bloch 
                                 Sphere representation and also improves the issues with multi-qubit systems.
                             </p>
-                            <h4>Group Size</h4>
-                            <p>3 people. This project will take one semester.</p>
-                            <h4>Objective</h4>
-                            <p>
-                                <ol>
-                                    <li>Develop a software simulation framework that colors the quantum circuits to represent the qubit states.</li>
-                                    <li>Utilize QuTiP, Quark, Javascripts and other tools to run visualization of quantum states in a user-friendly way.</li>
-                                </ol>
-                            </p>
-
                         </div>
                         <!--<div class="col-md-5 order-md-1" style="background-color:#000000">
                             <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
