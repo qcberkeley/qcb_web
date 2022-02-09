@@ -37,29 +37,27 @@
                 </h2>
             </div>
             <div class="col-md-12">
-                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Education Program. More details coming soon, you can stay tune via our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!</h3>
+                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Quantum Education program.</h3>
                 <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
             </div>
             <div class="container marketing">
                 <div class="row featurette">
                     <div class="col-md-9">
-                        <h2 class="featurette-heading" style='margin-top:0px;'>Intro to Quantum Computing</h2>
+                        <h2 class="featurette-heading" style="margin-top:0px;">Ground State Education Program</h2>
                     </div>
-                    <div class="col-md-3">
-                        <p class="lead" style='margin:0rem; margin-top: 0.75rem;'>
-                            CS 198 (2 Units)
-                        </p>
-                    </div>
-                </div>
-                <hr class="featurette-divider" style='margin-top:0rem; margin-bottom:2rem;'>
+                    
+                <div class="col-md-2">
+                        <h2 style="margin-top:0px;">Fridays 5-6pm</h2>
+                    </div></div>
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:0rem;">
                 <div class="row featurette" style="padding-bottom: 20px">
                     <div class="col-md-12">
                         <!--<a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>-->
-                        <a class="btn btn-secondary" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>
-                        <h3> Due to COVID-19, we will unfortunately not be offering the Decal this semester. Look for Quantum Information Science and Technology <a href="https://classes.berkeley.edu/content/2020-fall-physics-c191-001-lec-001">CS/Physics C191</a> in the Fall!</h3>
+                        <a class="btn btn-secondary __web-inspector-hide-shortcut__" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>
+                        <h3>Unfortunately, we will not be offering the Decal this semester due to COVID-19. Instead, we're giving QC beginers the opportunity to learn the ropes through lectures and coding projects every Friday.</h3>
                         <p>
                             <br>
-                            <b> Course Description</b>: An Introductory course to Quantum Computing. We will introduce ideas of qubits and quantum algorithms while also exploring topics in quantum information theory. Furthermore, we will teach students the state of the art and latest developments in the field. 
+                            <b> Course Description</b>: An introductory course to Quantum Computing. We will introduce ideas of qubits and quantum algorithms while also exploring topics in quantum information theory. Furthermore, we will teach students the state of the art and latest developments in the field. 
                             <br>
                             <!--<br>
                             <b> Facilitators</b>: Debayan Bandyopadhyay (debayanband@berkeley.edu), Ethan Yeh (ethan.yc.yeh@berkeley.edu), and Glenn LeBlanc (gleblanc@berkeley.edu) 
@@ -72,41 +70,37 @@
                             <b> Learning Goals</b>: Students taking this course will learn the fundamentals of quantum computing and be equipped for further study in the field and for research and industry.
                             <br>
                             <br>
-                            <b> Prerequisites</b>: Math 54
+                            <b> Prerequisites</b>: Linear Algebra (Math 54, Physics 89, EECS 16A/B)
                             <br>
-                            <b> Preferred</b>: CS61A, CS70, Physics 7C (or their respective equivalents)
+                            <b> Preferred</b>: Experience with Python (CS61A, DATA8, CS88)
                             <br>
-                            <b> Beneficial for a deeper understanding</b>: Physics 137A, CS 170, Math 110
+                            <b> Beneficial for a deeper understanding</b>: Quantum Mechanics (Physics 137A), Algorithms (CS170), Advanced Linear Algebra (Math 110)
                             <br>
                             <br>
                             <b> Textbooks</b>: Course slides/lecture notes, Vazirani lecture notes. Optional: Nielsen, Chuang; Rieffel, Polak.
                             <br>
+                            
+                            
+                            
+                            
                             <br>
-                            <b> Grading</b>: 25% midterm, 40% HW, 30% Final Project, 5% participation
-                            <br>
-                            <br>
-                            <b> Passing</b>: 60%. No more than 2 unexcused absences.
-                            <br>
-                            <br>
-                            <b> Final Project</b>: Allows students to demonstrate that they achieved the learning goal of being able to study new ideas in quantum computing on their own. Students will be required to prepare a paper (4-8 pages) surveying a topic of interest.
-                            <br>
-                            <br>
-                            <b> Midterm</b>: One midterm during the middle of the semester. Will test that students have a strong understanding of the fundamentals before proceeding to more advanced quantum algorithms.
+                            
+                            
+                            <b> Midterm</b>: One midterm evaluation will test that students have a strong understanding of the fundamentals before proceeding to more advanced quantum algorithms.
                             <br>
                             <br>
-                            <b> Homework</b>: Will reinforce and test ideas from lecture as students learn new concepts. Will consist of a mix of coding and math exercises.
+                            <b> Homework</b>: A mix of coding and math exercises will reinforce and test ideas from lecture as students learn new concepts.
                             <br>
                             <br>
-                            <b> Participation</b>: Ask questions and interact in class. For students not comfortable asking questions in class, participation points can be achieved by attending office hours, attending events, scheduling meetings with instructors, or extra credit projects.
-                            <br>
-                            <br>
+                            
+                            
                             <b> Math Topics</b>: Vectors, matrix multiplication, bases, dot product, complex numbers, tensor product, diagonalization, eigenvectors
                             <br>
                             <br>
                             <b> Special Topics</b>: Adiabatic Quantum Computing, Quantum Annealing, Spin, qubit implementations, topological/ion trap/superconducting qubits, Tensors and tensor networks
                             <br>
                             <br>
-                            <b> How to Enroll </b>: Admission is generally on a first come, first serve basis. However, we will reserve the right to admit or reject students based on the linked application. Application updates will be released on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>!
+                            <b> How to Enroll </b>: Admission to the course is handled on our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>. See the Spring '22 channel for Berkeley students or contact Elias Lehman (eliaslehman@berkeley.edu) for more information.
                         </p>
                     </div>
                 </div>
