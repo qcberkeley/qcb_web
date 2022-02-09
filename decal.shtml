@@ -49,7 +49,7 @@
                 <div class="col-md-2">
                         <h2 style="margin-top:0px;">Fridays 5-6pm</h2>
                     </div></div>
-                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:0rem;">
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:1rem;">
                 <div class="row featurette" style="padding-bottom: 20px">
                     <div class="col-md-12">
                         <!--<a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>-->
