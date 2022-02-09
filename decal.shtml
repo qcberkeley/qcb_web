@@ -37,7 +37,7 @@
                 </h2>
             </div>
             <div class="col-md-12">
-                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Quantum Education program.</h3>
+                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Quantum Education program, an ongoing project to get new members comfortable with advanced Qunatum Mechanics through coursework and readings.</h3>
                 <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
             </div>
             <div class="container marketing">
@@ -53,7 +53,7 @@
                 <div class="row featurette" style="padding-bottom: 20px">
                     <div class="col-md-12">
                         <!--<a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>-->
-                        <a class="btn btn-secondary __web-inspector-hide-shortcut__" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>
+                        <!--<a class="btn btn-secondary __web-inspector-hide-shortcut__" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>-->
                         <h3>Unfortunately, we will not be offering the Decal this semester due to COVID-19. Instead, we're giving QC beginers the opportunity to learn the ropes through lectures and coding projects every Friday.</h3>
                         <p>
                             <br>
