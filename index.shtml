@@ -85,16 +85,22 @@
                 </section>
             </div>
         </div>
-        <div class="About-Us" id="Fall-2020">
-            <h3 class="featurette-heading">Welcome back students and staff!</h3>
-            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
-            <p class="lead" style="text-align: justify;">This semester we are focused on enriching and engaging the UC Berkeley community. We are putting our all into research projects and educational initiatives to foster a more advanced, and widely accesssible quantum computing network among undergraduates. We look forward to bridging our students with industry through tech talks, social events, company visits, and new competitions. Click <a href="https://airtable.com/shrtEKEW4qizUhx02"><b>Join</b></a> to get involved, or <a href="team.shtml"><b>Team</b></a> to set up a coffee chat.</p>
-        </div>
         <div class="About-Us" id="About-Us">
             <h3 class="featurette-heading">About Us</h3>
             <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
-            <p class="lead" style="text-align: justify;">Quantum computing has been growing at a rapid pace in the last few years, with hundreds of millions in venture capital funding to startups like Rigetti, and large scale R&D in companies like Google, IBM, Intel, Microsoft, and many more. On campus alone, we have the Vazirani group, the Whaley Group, the Siddiqi group, the Haeffner group and many more researchers working towards different ways of building quantum algorithms and quantum hardware. We're an undergraduate run club on campus that aims to bridge the gap between students, industry and academia in Quantum Computing. Our goal is to spread awareness of Quantum Computing and bring more people into a field in need of more researchers and engineers. We also aim to educate the general campus population on the developments in the field and how the field is going to change our world. We organize talks, hands on workshops and projects, infosessions, panel discussions, lab tours, company visits, and many more events. We additionally run an introductory DeCal in the Fall. </p>
+            <p class="lead" style="text-align: justify;"><strong>In 2020, venture capitalists poured over <strong>$683 million</strong> into the quantum computing industry. Last year, <strong>$1.02 billion</strong> was invested. To put the acceleration of this industry in perspective, a mere <strong>$187 million</strong> was invested in 2019. This industry is expanding faster than ever, and we at QCB want to support students on their journey towards its frontier. We're an undergraduate run club that aims to bridge the gap between students, the quantum computing industry, and academia. We connect students with guest speakers, research projects, panel discussions, lab tours, company visits, and we run an introductory DeCal or discusssion most semesters.</strong></p>
 
+        </div>
+        <div class="About-Us" id="Spring-2022">
+            <h3 class="featurette-heading">This Semester</h3>
+            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            <p class="lead" style="text-align: justify;">This Spring we are focused on enriching and engaging the UC Berkeley community. We are putting our all into research projects and educational initiatives to foster a more advanced, and widely accesssible quantum computing network among undergraduates. We look forward to bridging our students with industry through tech talks, social events, company visits, and new competitions. Click <a href="https://airtable.com/shrtEKEW4qizUhx02"><b>Join</b></a> to get involved, or <a href="team.shtml"><b>Team</b></a> to set up a coffee chat.</p>
+        </div>
+        <div class="About-Us" id="Sponsors">
+            <h3 class="featurette-heading">Sponsors</h3>
+            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            <p class="lead" style="text-align: justify;">We are proudly sponsored by a growing list of quantum computing companies and organizations. They generously provide our club with the resources and funding to nagivate this young industry.</p>
+        <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.jpeg" alt=""></a>
         </div>
         <!-- FOOTER -->
         <!--#include file="footer.shtml" -->
