@@ -100,7 +100,7 @@
             <h3 class="featurette-heading">Sponsors</h3>
             <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
             <p class="lead" style="text-align: justify;">We are proudly sponsored by a growing list of quantum computing companies and organizations. They generously provide our club with the resources and funding to nagivate this young industry.</p>
-        <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.jpeg" alt=""></a>
+        <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.jpeg" width="400" height="100" alt=""></a>
         </div>
         <!-- FOOTER -->
         <!--#include file="footer.shtml" -->
