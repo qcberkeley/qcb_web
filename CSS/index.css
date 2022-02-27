@@ -2,8 +2,8 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    font: 400 15px/1.8 "Cambria", sans-serif;
+    color: #000;
     /*"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     max-width: 100%;
     /*overflow-x: hidden;*/
@@ -45,7 +45,7 @@ html {
 
 .About-Us h3, p {
     text-align: center;
-    color: #5a5a5a;
+    color: #000;
     /*font-family: 'Roboto', sans-serif;*/
 }
 
