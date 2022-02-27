@@ -1,7 +1,7 @@
 /* CSS FILE FOR COMMON ELEMENTS */
 .navbar.navbar-toggleable-md.navbar-light.bg-faded {
-  background-color: transparent;
-  background: transparent;
+  background-color: black;
+  background: black;
   border-color: transparent;
 }
 
@@ -56,7 +56,7 @@
 
 .footer > .row {
   color: #ddd;
-  background-color: #282E34;
+  background-color: #000000;
   padding: 50px 80px;
   text-align: justify;
   max-width: 100%;
