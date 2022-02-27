@@ -1,9 +1,9 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Cambria", sans-serif;
   max-width: 100%;
-  color: #5a5a5a;
+  color: #000;
 }
 
 /*body{
