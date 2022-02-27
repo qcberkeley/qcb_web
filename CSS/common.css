@@ -39,8 +39,8 @@
 
   /*background-image: url(../images/image2.png);*/
   /*background-color: #1E1E1E;*/
-  background: linear-gradient(to right, #282828 , #1E1E1E);
-  min-height: 135px;
+  /*background: linear-gradient(to right, #282828 , #1E1E1E);*/
+  /*min-height: 135px;*/
   margin-bottom: 50px;
   position: relative;
   background-attachment: fixed;
