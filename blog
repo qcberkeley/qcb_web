@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/icon_black.png">
+        <!-- Tab name -->
+        <title>Blog | QC@B</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- Social link CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <!-- Custom styles -->
+        <link href="CSS/project.css" rel="stylesheet">
+        <link href="CSS/common.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+        <!-- ENABLES TOOLTIP -->
+        <script>
+        $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main role="main">
+            <!-- Parallax Image -->
+            <div class="bgimg-2">
+                <!-- NAVBAR -->
+                <!--#include file="navbar.shtml" -->
+            </div>
+            <div class="container marketing">
+                <div class="container" style="padding-bottom: 20px">
+                    <div class="col-md-14">
+                        <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <div class="container">
+                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
+                                <div class="article-text">
+                                    <h1>What is Quantum Computing</h1>
+                                    <h4>4/9/19 | 5 min read</h4>
+                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
+                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                    <hr class="featurette-divider">
+                <div class="container" style="padding-bottom: 20px">
+                    <div class="col-md-14">
+                        <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <div class="container">
+                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
+                                <div class="article-text">
+                                    <h1>What is Quantum Computing</h1>
+                                    <h4>4/9/19 | 5 min read</h4>
+                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
+                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                    <hr class="featurette-divider">
+                    <div class="container" style="padding-bottom: 20px">
+                    <div class="col-md-14">
+                        <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <div class="container">
+                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
+                                <div class="article-text">
+                                    <h1>What is Quantum Computing</h1>
+                                    <h4>4/9/19 | 5 min read</h4>
+                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
+                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <!--#include file="footer.shtml" -->
+        </body>
+    </html>
