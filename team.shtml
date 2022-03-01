@@ -31,7 +31,9 @@
             <!-- NAVBAR -->
             <!--#include file="navbar.shtml" -->
         </div>
-	<div class="About-Us" style="text-align: center;">
+	    <div class="About-Us" style="text-align: center;">
+            <h2 class="featurette-heading" style="padding-bottom: 20px; font-size: 50px">Team
+            </h2>
             <h3 class="featurette-heading" style="font-size: 20px;">Meet the bright minds leading Berkeley's premier quantum computing club.</h3>
             <h3 class="featurette-heading" style="font-size: 20px; padding-bottom: 20px;">Reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a> to organize a coffee chat!
             </h3>
@@ -123,9 +125,29 @@
                 </div>
             </div>
 
-            
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/AbhayA.png" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Abhay Agarwal</h5>
+                    <p>Ground State Program Instructor</p>
+                    <span>Physics</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
 
-            
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="rounded img-fluid" src="images/EliasL.png" alt="Card image cap">
+                <div class="card-text">
+                    <h5>Elias Lehman</h5>
+                    <p>Website Developer</p>
+                    <span>Physics</span>
+                </div>
+                <div class="middle">
+                    <div class="text">About Me!</div>
+                </div>
+            </div>
 
             <!-- <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
