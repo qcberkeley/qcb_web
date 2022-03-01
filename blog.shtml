@@ -26,24 +26,29 @@
         </script>
         <meta charset="UTF-8">
     </head>
-    <body>
+   <body>
         <main role="main">
             <!-- Parallax Image -->
             <div class="bgimg-2">
                 <!-- NAVBAR -->
                 <!--#include file="navbar.shtml" -->
             </div>
-            <div class="container marketing">
-                <div class="container" style="padding-bottom: 20px">
-                    <div class="col-md-14">
+            <div class="About-Us" style="text-align: center;">
+                <h2 class="featurette-heading" style="padding-bottom: 20px">Articles
+                </h2>
+                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
+            </div>
+
+            <!-- Articles -->
+            
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-14" style="width: 100%">
                         <a href="https://www.qcb.berkeley.edu/article1.shtml">
-                            <div class="container">
-                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
-                                <div class="article-text">
-                                    <h1>What is Quantum Computing</h1>
-                                    <h4>4/9/19 | 5 min read</h4>
-                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
-                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                            <div class="container" style="width: 100%"> 
+                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.png" width="100%" height="400px"><div class="article-text">
+                                    <h1>The Fast Fourier Transform and its Quantum Analog</h1>
+                                    <h4>April 2, 2019 | 9 min read</h4>
+                                    <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
                                     </p>
                                 </div>
                             </div>
@@ -51,41 +56,56 @@
                     </div>
                 </div>
                     <hr class="featurette-divider">
-                <div class="container" style="padding-bottom: 20px">
-                    <div class="col-md-14">
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-14" style="width: 100%">
                         <a href="https://www.qcb.berkeley.edu/article1.shtml">
-                            <div class="container">
-                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
-                                <div class="article-text">
-                                    <h1>What is Quantum Computing</h1>
-                                    <h4>4/9/19 | 5 min read</h4>
-                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
-                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                            <div class="container" style="width: 100%">
+                                <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
+                                    <h1>BB84 Encryption Protocol</h1>
+                                    <h4>March 26, 2019 | 4 min read</h4>
+                                    <p>In this article we will be talking about the first quantum cryptography protocol ever developed, BB84...<br>
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                </div>
-                    <hr class="featurette-divider">
-                    <div class="container" style="padding-bottom: 20px">
-                    <div class="col-md-14">
+               </div>
+                   <hr class="featurette-divider">
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-14" style="width: 100%">
                         <a href="https://www.qcb.berkeley.edu/article1.shtml">
-                            <div class="container">
-                                <img class="cover" alt="Article 1" src="../images/EmiliiaD.jpg" width="100%" height="500px">
-                                <div class="article-text">
-                                    <h1>What is Quantum Computing</h1>
-                                    <h4>4/9/19 | 5 min read</h4>
-                                    <p>We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
-                                        (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
+                            <div class="container" style="width: 100%">
+                                <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
+                                    <h1>Quantum Complexity</h1>
+                                    <h4>February 4, 2019 | 6 min read</h4>
+                                    <p>Before we may undergo an analysis of quantum complexity theory, it is useful to first discuss classical complexity theory...<br>
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
+               </div>
+                   <hr class="featurette-divider">
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-14" style="width: 100%">
+                       <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                           <div class="container" style="width: 100%">
+                               <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
+                                   <h1>What is Quantum Computing</h1>
+                                   <h4>September 3, 2018 | 5 min read</h4>
+                                   <p>Computers have revolutionized our world, touching almost every aspect of our daily lives...<br>
+                                   </p>
+                               </div>
+                           </div>
+                       </a>
+                    </div>
                 </div>
-            </main>
+        </main>
             <!-- FOOTER -->
             <!--#include file="footer.shtml" -->
-        </body>
+        
+    
+<div id="weava-permanent-marker" date="1646111830358"></div><div id="weava-ui-wrapper"><div class="weava-drop-area-wrapper"><div class="weava-drop-area"></div>
+<div class="weava-drop-area-text">Drop here!</div>
+</div></div></body>
     </html>
