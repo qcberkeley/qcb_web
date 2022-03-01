@@ -45,7 +45,7 @@
                     <div class="col-md-14" style="width: 100%">
                         <a href="https://www.qcb.berkeley.edu/article1.shtml">
                             <div class="container" style="width: 100%"> 
-                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.png" width="100%" height="400px"><div class="article-text">
+                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px"><div class="article-text">
                                     <h1>The Fast Fourier Transform and its Quantum Analog</h1>
                                     <h4>April 2, 2019 | 9 min read</h4>
                                     <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
