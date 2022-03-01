@@ -47,13 +47,16 @@ body, html {
 
 .article-text {
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
   left: 8px;
-  width: 80%;
-  background-color: #29292982;
+  width: 100%;
+  background-color: #00000082;
   color: white;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40%;
+  padding top: 20%;
 }
 
 .cover {
