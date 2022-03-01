@@ -54,7 +54,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="reading_group.shtml">Reading Group</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles</a>
                             <div class="dropdown-menu">
                                 <a class="nav-link" style="color: #5a5a5a;" href="article1.shtml">What is Quantum Computing?</a>
@@ -62,7 +62,7 @@
                                 <a class="nav-link" style="color: #5a5a5a;" href="article3.shtml">BB84 Encryption Protocol</a>
                                 <a class="nav-link" style="color: #5a5a5a;" href="article4.shtml">The Fast Fourier Transform and its Quantum Analog</a>
                             </div>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="https://airtable.com/shrtEKEW4qizUhx02">Join Us</a>
                         </li>
