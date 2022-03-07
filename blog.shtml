@@ -29,122 +29,79 @@
     <body>
             <main role="main">
                 <!-- Parallax Image -->
-                <div class="bgimg-2">
-                    <!-- NAVBAR -->
-                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand navbar-left" href="index.shtml">
-            <img class="logo" src="images/logo.png">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.shtml">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="team.shtml">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="project.shtml">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="decal.shtml">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="reading_group.shtml">Reading Group</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.shtml">Articles</a>
-                </li>
-                <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles</a>
-                    <div class="dropdown-menu">
-                        <a class="nav-link" style="color: #5a5a5a;" href="article1.shtml">What is Quantum Computing?</a>
-                        <a class="nav-link" style="color: #5a5a5a;" href="article2.shtml">Quantum Complexity</a>
-                        <a class="nav-link" style="color: #5a5a5a;" href="article3.shtml">BB84 Encryption Protocol</a>
-                        <a class="nav-link" style="color: #5a5a5a;" href="article4.shtml">The Fast Fourier Transform and its Quantum Analog</a>
+            <div class="bgimg-2">
+                <!-- NAVBAR -->
+                <!--#include file="navbar.shtml" -->
+            </div>
+            <div style="text-align: center;">
+                <h2 style="font-size: 50px; padding-bottom: 20px;">Articles
+                </h2>
+            </div>
+
+            <!-- Articles -->
+
+                <div class="row featurette">
+                    <div class="col-md-14" style="width: 100%">
+                        <a href="article1.shtml">
+                            <div class="container" style="width: 100%"> 
+                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px"><div class="article-text">
+                                    <h1>The Fast Fourier Transform</h1>
+                                    <h4>April 2, 2019 | 9 min read</h4>
+                                    <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScKzpYVdMcRcIqZXiw727V1yZusVuIEBF6GcxcEnKeFANGkaw/viewform?usp=sf_link">Join Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-                </div>
-                <div style="text-align: center;">
-                    <h2 style="font-size: 50px; padding-bottom: 20px;">Articles
-                    </h2>
-
                 </div>
 
-                <!-- Articles -->
-
-                    <div class="row featurette">
-                        <div class="col-md-14" style="width: 100%">
-                            <a href="article1.shtml">
-                                <div class="container" style="width: 100%"> 
-                                    <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px"><div class="article-text">
-                                        <h1>The Fast Fourier Transform</h1>
-                                        <h4>April 2, 2019 | 9 min read</h4>
-                                        <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
-                                        </p>
-                                    </div>
+                <div class="row featurette">
+                    <div class="col-md-14" style="width: 100%">
+                        <a href="article2.shtml">
+                            <div class="container" style="width: 100%">
+                                <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
+                                    <h1>BB84 Encryption Protocol</h1>
+                                    <h4>March 26, 2019 | 4 min read</h4>
+                                    <p>In this article we will be talking about the first quantum cryptography protocol ever developed, BB84...<br>
+                                    </p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
+               </div>
 
-                    <div class="row featurette">
-                        <div class="col-md-14" style="width: 100%">
-                            <a href="article2.shtml">
-                                <div class="container" style="width: 100%">
-                                    <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
-                                        <h1>BB84 Encryption Protocol</h1>
-                                        <h4>March 26, 2019 | 4 min read</h4>
-                                        <p>In this article we will be talking about the first quantum cryptography protocol ever developed, BB84...<br>
-                                        </p>
-                                    </div>
+                <div class="row featurette">
+                    <div class="col-md-14" style="width: 100%">
+                        <a href="article3.shtml">
+                            <div class="container" style="width: 100%">
+                                <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
+                                    <h1>Quantum Complexity</h1>
+                                    <h4>February 4, 2019 | 6 min read</h4>
+                                    <p>Before we may undergo an analysis of quantum complexity theory, it is useful to first discuss classical complexity theory...<br>
+                                    </p>
                                 </div>
-                            </a>
-                        </div>
-                   </div>
+                            </div>
+                        </a>
+                    </div>
+               </div>
 
-                    <div class="row featurette">
-                        <div class="col-md-14" style="width: 100%">
-                            <a href="article3.shtml">
-                                <div class="container" style="width: 100%">
-                                    <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
-                                        <h1>Quantum Complexity</h1>
-                                        <h4>February 4, 2019 | 6 min read</h4>
-                                        <p>Before we may undergo an analysis of quantum complexity theory, it is useful to first discuss classical complexity theory...<br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                   </div>
-
-                    <div class="row featurette">
-                        <div class="col-md-14" style="width: 100%">
-                           <a href="article4.shtml">
-                               <div class="container" style="width: 100%">
-                                   <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
-                                       <h1>What is Quantum Computing</h1>
-                                       <h4>September 3, 2018 | 5 min read</h4>
-                                       <p>Computers have revolutionized our world, touching almost every aspect of our daily lives...<br>
-                                       </p>
-                                   </div>
+                <div class="row featurette">
+                    <div class="col-md-14" style="width: 100%">
+                       <a href="article4.shtml">
+                           <div class="container" style="width: 100%">
+                               <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
+                                   <h1>What is Quantum Computing</h1>
+                                   <h4>September 3, 2018 | 5 min read</h4>
+                                   <p>Computers have revolutionized our world, touching almost every aspect of our daily lives...<br>
+                                   </p>
                                </div>
-                           </a>
-                        </div>
+                           </div>
+                       </a>
                     </div>
-            </main>
-                <!-- FOOTER -->
-                <div class="footer">
+                </div>
+        </main>
+            <!-- FOOTER -->
+            <div class="footer">
         <div class="row">
             <div class="col-sm-4">
                 Quantum Computing @ Berkeley <br>
