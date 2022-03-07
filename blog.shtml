@@ -85,7 +85,7 @@
 
                     <div class="row featurette">
                         <div class="col-md-14" style="width: 100%">
-                            <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <a href="article1.shtml">
                                 <div class="container" style="width: 100%"> 
                                     <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px"><div class="article-text">
                                         <h1>The Fast Fourier Transform</h1>
@@ -100,7 +100,7 @@
 
                     <div class="row featurette">
                         <div class="col-md-14" style="width: 100%">
-                            <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <a href="article2.shtml">
                                 <div class="container" style="width: 100%">
                                     <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
                                         <h1>BB84 Encryption Protocol</h1>
@@ -115,7 +115,7 @@
 
                     <div class="row featurette">
                         <div class="col-md-14" style="width: 100%">
-                            <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                            <a href="article3.shtml">
                                 <div class="container" style="width: 100%">
                                     <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
                                         <h1>Quantum Complexity</h1>
@@ -130,7 +130,7 @@
 
                     <div class="row featurette">
                         <div class="col-md-14" style="width: 100%">
-                           <a href="https://www.qcb.berkeley.edu/article1.shtml">
+                           <a href="article4.shtml">
                                <div class="container" style="width: 100%">
                                    <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
                                        <h1>What is Quantum Computing</h1>
