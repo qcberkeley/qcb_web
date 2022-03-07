@@ -102,10 +102,3 @@ body, html {
   }
 
 }
-
-@media (min-width:62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-
-}
