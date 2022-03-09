@@ -78,29 +78,7 @@
 		    <div class="text">About Me!</div>
 		</div>
 	    </div>
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/dhruv.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Dhruv Devulapalli</h5>
-                    <p>Co-Founder &amp President</p>
-                    <span>Physics/Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/daniel.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Daniel Lengyel</h5>
-                    <p>Co-Founder &amp Co-President</p>
-                    <span>Applied Math/Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-
+  
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/Samyak.jpg" alt="Card image cap">
                 <div class="card-text">
@@ -149,106 +127,28 @@
                 </div>
             </div>
 
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Amol Pant</h5>
-                    <p>Officer</p>
-                    <span>Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-	    </div> -->
-
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Michael Khachatrian</h5>
-                    <p>Officer</p>
-                    <span>Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Ashutosh Bhadouria</h5>
-                    <p>Officer</p>
-                    <span>Chemical Engineering</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-            
         </div>
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/dhruv.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Dhruv Devulapalli</h5>
-                    <p>Co-Founder &amp President</p>
-                    <span>Physics/Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/daniel.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Daniel Lengyel</h5>
-                    <p>Co-Founder &amp Co-President</p>
-                    <span>Applied Math/Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-            
-
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/amol.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Amol Pant</h5>
-                    <p>Officer</p>
-                    <span>Computer Science</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-	    </div> -->
-
-            <!-- <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Michael Khachatrian</h5>
-                    <p>Officer</p>
-                    <span>Physics</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="rounded img-fluid" src="images/joe.jpg" alt="Card image cap">
-                <div class="card-text">
-                    <h5>Ashutosh Bhadouria</h5>
-                    <p>Officer</p>
-                    <span>Chemical Engineering</span>
-                </div>
-                <div class="middle">
-                    <div class="text">About Me!</div>
-                </div>
-            </div> -->
-            
+	
+	<!-- Alumni -->
+	<div class="About-Us" style="text-align: center;">
+            <h2 class="featurette-heading" style="padding-bottom: 20px; font-size: 50px">Alumni
+            </h2>
+	    <h3 class="featurette-heading" style="font-size: 20px;">QCB graduates continue their journey at a variety of the world's most influential and competative PhD programs, labs, and tech companies.</h3>
+            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
         </div>
+	<ul style="font-size: 30px;margin-left: 10%;">
+  		<li>James Chen - Meta, Jane Street</li>
+  		<li>James Sud - LANL, LBNL, NASA QuAIL</li>
+  		<li>Jordan Sullivan - LBNL, PsiQuantum, AWS Bracket</li>
+		<li>Glenn Leblanc - NASA, Nauto</li>
+		<li>Amol Pant - Keysight, Tesla</li>
+		<li>Vladimir Kremenetski - NASA</li>
+		<li>Dhruv Devulapalli - LBNL, AWS, PhD at The University of Maryland</li>
+		<li>Daniel Lengyel - PhD at Imperial College London</li>
+		<li>Debayan Bandyopadhyay - PhD at The University of Chicago</li>
+		<li>Ethan Yeh - Samsara</li>
+		<li>Natalie Parham - Palantir, Google, QCWare, Institute for Quantum Computing</li>
+	</ul>
         <!-- FOOTER -->
         <!--#include file="footer.shtml" -->
     </body>
