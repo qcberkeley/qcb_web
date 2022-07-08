@@ -2,14 +2,11 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Cambria", sans-serif;
+  letter-spacing: 1px;
   max-width: 100%;
-  color: #000;
+  color: rgb(255, 255, 255);
+  background-color: black;
 }
-
-/*body{
-  overflow-x: hidden;
-}*/
-
 
 .navbar-brand {
   padding: 0px; /* firefox bug fix */
@@ -19,33 +16,60 @@ body, html {
   width: auto;
 }
 
-/*#qcb_logo{
-  position: absolute; 
-  padding-top: 1.25rem; 
-  padding-bottom: 1.25rem; 
-  padding-left: 0.5rem; 
-  top:0; 
-  left:0;
-  width: 200px;
+.bgimg-1 {
+  background-image: url(../images/classroom.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  opacity: 1;
 }
 
-@media only screen and (max-device-width:480px){
-  #qcb_logo{
-    width: 100px; 
-  }
-    
-}*/
+.card:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.665);
+}
 
-.black-background {background-color:#282E34;}
-.white {color:#ffffff;}
+.card-body {
+  color: black;
+}
 
-.col-md-5 {
-  width: 475px;
-  height: 500px;
-  align-items: center;
-  display: flex;
+.row {
+  align-items: center; 
   justify-content: center;
-  padding: 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(3px);
+  padding: 50px 10%;
+  text-align: justify;
+}
+
+.row.featurette {
+  padding: 0px 0%;
+}
+
+.article-text {
+  font-family: 'Courier New', Courier, monospace;
+  justify-self: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  left: 8px;
+  width: 100%;
+  background-color: #00000082;
+  color: white;
+  padding: 10%;
+}
+
+.cover {
+  object-fit: cover;
+  width: 100%;
+}
+
+.container{
+  opacity: 2;
+  height: 300px;
 }
 
 .featurette-image {
@@ -80,14 +104,8 @@ body, html {
 
 /* Featurettes */
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /* RESPONSIVE CSS */
@@ -99,9 +117,4 @@ body, html {
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
 }

@@ -59,13 +59,13 @@ body, html {
   padding-top: 20%;
 }
 
+.container {
+  opacity: 10%;
+}
+
 .cover {
   object-fit: cover;
   width: 100%
-
-.featurette-image {
-  object-fit: cover;
-  margin: 0;
 }
 
 .order-md-2 {

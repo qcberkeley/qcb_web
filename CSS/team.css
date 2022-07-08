@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Cambria", sans-serif;
-  color: #000
+  color: #000;
   /*"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   max-width: 100%;
 }
@@ -39,13 +39,13 @@ body, html {
   backface-visibility: hidden;
 }
 
-/*.card:hover .image {
+.card:hover .image {
   opacity: 0.3;
 }
 
 .card:hover .middle {
   opacity: 1;
-}*/
+}
 
 .card-text {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -80,13 +80,6 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
 }
 
 .featurette-heading {

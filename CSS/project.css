@@ -2,8 +2,10 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Cambria", sans-serif;
-  color: #000;
+  letter-spacing: 2px;
+  color: #ffffff;
   max-width: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
 /*body{
@@ -34,6 +36,17 @@ body, html {
   }
     
 }*/
+
+.bgimg-1 {
+
+  background-image: url(../images/qcb_homepage_background.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /*background-color: #1E1E1E;*/
+  /*background: linear-gradient(to right, #282828, #1E1E1E);*/
+  min-width: 100%;
+}
 
 .col-md-5 {
   background-color: #1E1E1E;
@@ -81,7 +94,8 @@ body, html {
 }
 
 /* Thin out the marketing headings */
-.featurette-heading {
+.featurette-heading.research {
+  color: black;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
@@ -100,5 +114,5 @@ body, html {
   .featurette-heading {
     font-size: 50px;
   }
-
 }
+

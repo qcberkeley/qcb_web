@@ -1,5 +1,8 @@
 /* CSS FILE FOR COMMON ELEMENTS */
 .navbar.navbar-toggleable-md.navbar-light.bg-faded {
+  position: fixed;
+  z-index: 16;
+  width: 100%;
   background-color: black;
   background: black;
   border-color: transparent;
@@ -14,11 +17,19 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
+  color: lightgrey;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
   color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: gray;
+  color: white;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
 }
 
 /*.photo-credits {
@@ -33,6 +44,63 @@
   max-height: 50px;
   width: auto;
   height: auto;
+}
+
+.button {
+  font-family: 'Courier New';
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+}
+
+.button1:hover {
+  background-color: black; 
+  color: white; 
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.448);
+}
+
+.featurette-heading {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.Header {
+  height: 100%;
+  font-family: 'Courier New';
+  font-size: 70px;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #00000046;
+  /*text-align: justify;*/
+}
+
+.a {
+  color: #c7cdff;
+}
+
+.a:hover {
+  color: #ffffff;
+}
+
+.h4, h3, p {
+  color: rgb(255, 255, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .bgimg-2 {
