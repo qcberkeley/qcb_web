@@ -4,7 +4,7 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="images/icon_black.png">
         <!-- Tab name -->
-        <title>Decal | QC@B</title>
+        <title>Education | QC@B</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- Social link CSS -->
@@ -12,6 +12,10 @@
         <!-- Custom styles -->
         <link href="CSS/decal.css" rel="stylesheet">
         <link href="CSS/common.css" rel="stylesheet">
+        <!-- Roboto - Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- MDB UI KIT -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap core JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,90 +28,349 @@
         $('[data-toggle="tooltip"]').tooltip();
         });
         </script>
+        <script src="sorttable.js"></script>
+        <meta charset="UTF-8">
     </head>
     <body>
         <main role="main">
             <!-- Parallax Image -->
-            <div class="bgimg-2">
+            <div class="bgimg-1">
                 <!-- NAVBAR -->
-                <!--#include file="navbar.shtml" -->
-            </div>
-            <div class="About-Us" style="text-align: center;">
-                <h2 class="featurette-heading" style="padding-bottom: 20px">The QCB Educational Initiative
-                </h2>
-            </div>
-            <div class="col-md-12">
-                <h3 class="lead" style="padding-bottom: 20px; padding-left: 15%; padding-right: 15%">As fast as the Quantum Computing industry is growing, we believe it is quntessential that undergraduates recieve fundamental educational resources. For this reason, QCB is exapanding its educational program beyond the usual Decal. This semester we are happy to introduce the New Member Quantum Education program, an ongoing project to get new members comfortable with advanced Qunatum Mechanics through coursework and readings.</h3>
-                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
-            </div>
-            <div class="container marketing">
-                <div class="row featurette">
-                    <div class="col-md-9">
-                        <h2 class="featurette-heading" style="margin-top:0px;">Ground State Education Program</h2>
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                    <a class="navbar-brand navbar-left" href="index.shtml">
+                        <img class="logo" src="images/logo.png">
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" margin-right="auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.shtml" aria-haspopup="true" aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu" style="background-color: #000000;">
+                                    <a class="nav-link" href="index.shtml#news" >News</a>
+                                    <a class="nav-link" href="index.shtml#about">About</a>
+                                    <a class="nav-link" href="index.shtml#membership">Membership</a>
+                                    <a class="nav-link" href="index.shtml#team">Team</a>
+                                    <a class="nav-link" href="index.shtml#events">Events</a>
+                                    <a class="nav-link" href="index.shtml#sponsors">Sponsors</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="decal.shtml" aria-haspopup="true" aria-expanded="false">Education</a>
+                                <ul class="dropdown-menu" style="background-color: #000000;">
+                                    <a class="nav-link" href="#courseware">Courseware</a>
+                                    <a class="nav-link" href="#tutorials">Tutorials</a>
+                                    <a class="nav-link" href="#articles">Articles</a>
+                                    <a class="nav-link" href="decal.shtml#library">Library</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="project.shtml" aria-haspopup="true" aria-expanded="false">Research</a>
+                                <ul class="dropdown-menu" style="background-color: black;">
+                                    <a class="nav-link" href="#current">Current</a>
+                                    <a class="nav-link" href="#complete">Complete</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" onclick="alert('Applications open in August 2022, see the event calendar on our homepage for more details.')">Join</a>
+                            </li>
+                        </ul>
                     </div>
-                    
-                <div class="col-md-2">
-                        <h2 style="margin-top:0px;">Fridays 5-6pm</h2>
-                    </div></div>
-                <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:1rem;">
-                <div class="row featurette" style="padding-bottom: 20px">
-                    <div class="col-md-12">
-                        <!--<a class="btn btn-secondary" href="https://forms.gle/YETGMJ51H5mQv1r57" target="_blank" role="button" style="margin-bottom: 20px;">Sign Up</a>-->
-                        <!--<a class="btn btn-secondary __web-inspector-hide-shortcut__" href="https://decal.berkeley.edu/courses/4963" target="_blank" role="button" style="margin-bottom: 20px;">Decal Page</a>-->
-                        <h3>Unfortunately, we will not be offering the Decal this semester due to COVID-19. Instead, we're giving QC beginers the opportunity to learn the ropes through lectures and coding projects every Friday.</h3>
-                        <p>
-                            <br>
-                            <b> Course Description</b>: An introductory course to Quantum Computing. We will introduce ideas of qubits and quantum algorithms while also exploring topics in quantum information theory. Furthermore, we will teach students the state of the art and latest developments in the field. 
-                            <br>
-                            <!--<br>
-                            <b> Facilitators</b>: Debayan Bandyopadhyay (debayanband@berkeley.edu), Ethan Yeh (ethan.yc.yeh@berkeley.edu), and Glenn LeBlanc (gleblanc@berkeley.edu) 
-                            <br>
-                            <b> Time & Location</b>: Monday, Wednesday 6:30 to 8 pm, 310 Soda Hall
-                            <br>
-                            <b> Starts</b>: September 9th, 2019
-                            <br>-->
-                            <br>
-                            <b> Learning Goals</b>: Students taking this course will learn the fundamentals of quantum computing and be equipped for further study in the field and for research and industry.
-                            <br>
-                            <br>
-                            <b> Prerequisites</b>: Linear Algebra (Math 54, Physics 89, EECS 16A/B)
-                            <br>
-                            <b> Preferred</b>: Experience with Python (CS61A, DATA8, CS88)
-                            <br>
-                            <b> Beneficial for a deeper understanding</b>: Quantum Mechanics (Physics 137A), Algorithms (CS170), Advanced Linear Algebra (Math 110)
-                            <br>
-                            <br>
-                            <b> Textbooks</b>: Course slides/lecture notes, Vazirani lecture notes. Optional: Nielsen, Chuang; Rieffel, Polak.
-                            <br>
-                            
-                            
-                            
-                            
-                            <br>
-                            
-                            
-                            <b> Midterm</b>: One midterm evaluation will test that students have a strong understanding of the fundamentals before proceeding to more advanced quantum algorithms.
-                            <br>
-                            <br>
-                            <b> Homework</b>: A mix of coding and math exercises will reinforce and test ideas from lecture as students learn new concepts.
-                            <br>
-                            <br>
-                            
-                            
-                            <b> Math Topics</b>: Vectors, matrix multiplication, bases, dot product, complex numbers, tensor product, diagonalization, eigenvectors
-                            <br>
-                            <br>
-                            <b> Special Topics</b>: Adiabatic Quantum Computing, Quantum Annealing, Spin, qubit implementations, topological/ion trap/superconducting qubits, Tensors and tensor networks
-                            <br>
-                            <br>
-                            <b> How to Enroll </b>: Admission to the course is handled on our <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-4fjgc7kh-TEmwUZJzQlOdt8CDsfKaFg">Slack</a>. See the Spring '22 channel for Berkeley students or contact Elias Lehman (eliaslehman@berkeley.edu) for more information.
-                        </p>
+                </nav>
+                <div class="caption" style="height: 500px">
+                    <span class="border">
+                        <div class="Header">
+                            <br/>
+                            Education<br/>
+                            <a href="https://forms.gle/aVHBVARyK3K7WLR87" class="button button1">Contribute</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="featurette-heading" style="font-size: 45px; text-align: center;">The QCB Educational Initiative
+                </h2>
+                <h3 class="lead" style="width: 80%">Given the accelerating growth of the Quantum Computing industry, we believe it is critical that undergraduates recieve fundamental educational resources. For this reason, QCB has expanded its educational program beyond the usual material. We now offer a variety of resources from courseware and labs, to articles, coding tutorials, and research opportunities. Read of our difference resources below.</h3>
+                <hr class="featurette-divider">
+            </div>
+            <!--Courseware-->
+            <div class="row" id="courseware" style="background-color: rgb(30, 0, 128);">
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" >Courseware</h2>
+                    <h3 class="lead">QCB offers either a Decal, an offcial course exclusively for UC Berkeley students, or introductory weekly lessons. 
+                        This Fall we are excited to once again host our Decal! 
+                        Register through your CalCentral enrollment. Below you can find the syllabus, as well as course materials, inlcuding slides and labs as they're released.</h3>
+                </div>
+
+                <div class="col-md">
+                    <div class="accordion" id="accordionExample" style="padding: 5%;">
+                        <div class="card" style="width: 80%;">
+                            <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                                <h5 class="mb-0">
+                                    <button class="btn" style="color: #ffffff; width: 100%; background-color: rgb(0, 0, 0);" data-toggle="collapse" data-target="#collapseA" aria-expanded="false" aria-controls="collapseTwo">
+                                    Homework
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseA" class="collapse">
+                                <div class="card-body" style="padding: 5%;">
+                                    <li>More Coming Soon</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 80%;">
+                            <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                                <h5 class="mb-0">
+                                    <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent; border: transparent;" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseThree">
+                                    Lab
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseB" class="collapse">
+                                <div class="card-body" style="padding: 5%;">
+                                    <li>More Coming Soon</li>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="row" style="background-color: rgb(30, 0, 128);">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                      <h5 class="mb-0">
+                        <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Decal Fall 2022
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse">
+                        <div class="card-body" style="height: 500px;">
+                            <iframe style=" height: 500px; width: 100%;" src="https://docs.google.com/document/d/e/2PACX-1vQucQbXtGXl3AbYD020LMT59liBwVfoHTuVM8EV-d7L8JnCJgaO3ttPIl-NiDLZqbV-UKtnA3SuWNrO/pub?embedded=true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!--Tutorials-->
+            <div class="row" id="tutorials" style="background-color: rgb(128, 0, 115);">
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" >Tutorials</h2>
+                    <h3 class="lead">We are developing a handful of coding tutorials from intorductory lessons on Qiskit, to implementations and use cases of Quantum Machine Learning. 
+                        We hope to release them throughout the next semester. 
+                        You will find an updated list here.</h3>
+                </div>
+    
+                <div class="col-md">
+                    <div class="accordion" id="accordionExample" style="padding: 5%;">
+                        <div class="card" style="width: 80%;">
+                            <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                                <h5 class="mb-0">
+                                    <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: black;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    QCB Codebase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse">
+                                <div class="card-body" style="padding: 5%;">
+                                    <li>More Coming Soon</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 80%;">
+                            <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                                <h5 class="mb-0">
+                                    <button class="btn" style="color: #ffffff; width: 100%; background-color: black;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    External Tutorials
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse">
+                                <div class="card-body" style="padding: 5%;">
+                                    <li>More Coming Soon</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Articles-->
+            <div class="row" id="articles" style="background-color: rgb(171, 109, 0);">
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" >Articles</h2>
+                    <h3 class="lead">We have a track record of studying and summarizing the latest Quantum Computing developments. 
+                        Here, you'll find a list of articles to read up on for your own research. 
+                        Newer articles are accompanied by power point presentations that capture the research on which the writing is based.</h3>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="width: 80%">
+                        <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                        <h5 class="mb-0">
+                            <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: black;" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Articles
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse">
+                            <div class="card-body" style="overflow-y: scroll; height: 500px">
+                                <div class="row featurette">
+                                    <div class="col-md-14" style="width: 100%">
+                                        <a href="article4.shtml">
+                                            <div class="container" style="width: 100%"> 
+                                                <img class="cover" alt="Article 4" src="images/articles/article4/cmaj9.PNG" width="100%" height="400px">
+                                                <div class="article-text">
+                                                    <h2 class="featurette-heading">The Fast Fourier Transform</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                <div class="row featurette">
+                                    <div class="col-md-14" style="width: 100%;">
+                                        <a href="https://medium.com/@qcberkeley/bb84-encryption-protocol-f4bffaeabdb8">
+                                            <div class="container" style="width: 100%"> 
+                                                <img class="cover" alt="Article 3" src="images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px">
+                                                <div class="article-text">
+                                                    <h2 class="featurette-heading">BB84 Encryption Protocol</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="row featurette">
+                                    <div class="col-md-14" style="width: 100%">
+                                        <a href="https://medium.com/@qcberkeley/quantum-complexity-39e57cc57b34">
+                                            <div class="container" style="width: 100%"> 
+                                                <img class="cover" alt="Article 2" src="images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
+                                                    <h2 class="featurette-heading">Quantum Complexity</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="row featurette">
+                                    <div class="col-md-14" style="width: 100%">
+                                        <a href="https://medium.com/@qcberkeley/what-is-quantum-computing-1a50075cbb32">
+                                            <div class="container" style="width: 100%"> 
+                                                <img class="cover" alt="Article 1" src="images/articles/article1_3.png" width="100%" height="300px"><div class="article-text">
+                                                    <h2 class="featurette-heading">What is Quantum Computing</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" id="library" style="background-color: rgb(0, 75, 86);">
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" style="background-color: rgb(0, 128, 73);">Library</h2>
+                </div>
+                <div class="container" style="overflow-y: scroll; height: 500px; background-color: white; color: black; text-align: center;">
+                    <!-- Table -->
+                    <table class="table" id="sortMe">
+                    <thead id="table-head"></thead>
+                    <tbody id="table-body"></tbody>
+                    </table>
+                    <!-- Table -->
+                </div>      
             </div>
         </main>
         <!-- FOOTER -->
         <!--#include file="footer.shtml" -->
     </body>
+
+    <!--FILL AND UPDATE TABLE FUNCTIONALITY-->
+    <!-- MDB ESSENTIAL -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Google API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!-- easyData -->
+    <script type="text/javascript" src="js/easyData-google-sheets.js"></script>
+
+    <!-- easyData - Creating table -->
+    <script>
+            // Your API KEY
+            const API_KEY = "AIzaSyAFTyJqH8di0CaxZocEOwmXglCEm4FqmEY";
+            function sortColumn(index) {
+                const rows = document.querySelectorAll('tr');
+                // Clone the rows
+                const newRows = Array.from(rows);
+                // Sort rows by the content of cells
+                alert(newRows[1].innerHTML);
+
+                newRows.sort(function (rowA, rowB) {
+                // Get the content of cells
+                const cellA = rowA.querySelectorAll('td')[index].innerHTML;
+                const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+                switch (true) {
+                    case cellA > cellB:
+                        return 1;
+                    case cellA < cellB:
+                        return -1;
+                    case cellA === cellB:
+                        return 0;
+                }
+                });
+                alert(newRows[1].innerHTML);
+                // Remove old rows
+                tableBody = "";
+
+                // Append new row
+                newRows.forEach(function (newRow) {
+                    tableBody += "<tr>";
+                    newRow.forEach((val, meta) => (tableBody += "<td>" + val + "</td>"));
+                    tableBody += "</tr>";
+                });
+                document.getElementById("table-body").innerHTML = tablebody;
+            };
+
+            function displayResult2(response) {
+            let tableHead = "";
+            let tableBody = "";
+
+            response.result.values.forEach((row, index) => {
+                if (index === 0) {
+                tableHead += "<tr>";
+                row.forEach((val, meta) => (tableHead += "<th onclick=\"sortColumn(" + meta + ")\">" + val + "</th>"));
+                tableHead += "</tr>";
+                } else {
+                tableBody += "<tr>";
+                row.forEach((val, meta) => (meta == 3 ? (tableBody += "<td><a href=\"" + val + "\">" + val + "</a></td>") : (tableBody += "<td>" + val + "</td>")));
+                tableBody += "</tr>";
+                }
+            });
+
+            document.getElementById("table-head").innerHTML = tableHead;
+            document.getElementById("table-body").innerHTML = tableBody;
+            }
+
+            function loadData() {
+            // Spreadsheet ID
+            const spreadsheetId = "1wGUNNfcvGB6R_G9Wi0lDZHvlH_vOz7ktVeX62KefJtA";
+            const range = "A1:D";
+            getPublicValues({ spreadsheetId, range }, displayResult2);
+            }
+
+            window.addEventListener("load", (e) => {
+            initOAuthClient({ apiKey: API_KEY });
+            });
+
+            document.addEventListener("gapi-loaded", (e) => {
+            loadData();
+            });
+
+            
+    </script>
 </html>
 

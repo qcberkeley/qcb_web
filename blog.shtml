@@ -40,31 +40,26 @@
 
             <!-- Articles -->
 
-                <div class="row featurette">
-                    <div class="col-md-14" style="width: 100%">
-                        <a href="article4.shtml">
-                            <div class="container" style="width: 100%"> 
-                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px"><div class="article-text">
-                                    <h1>The Fast Fourier Transform</h1>
-                                    <h4>April 2, 2019 | 9 min read</h4>
-                                    <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
-                                    </p>
-                                </div>
+                <div class="row">
+                    <a href="article4.shtml">
+                            <div class="article-text">
+                                <img class="cover" alt="Article 1" src="../images/articles/article4/cmaj9.PNG" width="100%" height="400px">
+                                <h1>The Fast Fourier Transform</h1>
+                                <h4>April 2, 2019 | 9 min read</h4>
+                                <p>The FFT significantly speeds up calculating the discrete Fourier transform by exploiting a certain periodicity in the computation...<br>
+                                </p>
                             </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="row featurette">
                     <div class="col-md-14" style="width: 100%">
                         <a href="article3.shtml">
-                            <div class="container" style="width: 100%">
-                                <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
-                                    <h1>BB84 Encryption Protocol</h1>
-                                    <h4>March 26, 2019 | 4 min read</h4>
-                                    <p>In this article we will be talking about the first quantum cryptography protocol ever developed, BB84...<br>
-                                    </p>
-                                </div>
+                            <img class="cover" alt="Article 1" src="../images/articles/article3/binary-and-quantum-computing.jpg" width="100%" height="400px"><div class="article-text">
+                                <h1>BB84 Encryption Protocol</h1>
+                                <h4>March 26, 2019 | 4 min read</h4>
+                                <p>In this article we will be talking about the first quantum cryptography protocol ever developed, BB84...<br>
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -73,13 +68,11 @@
                 <div class="row featurette">
                     <div class="col-md-14" style="width: 100%">
                         <a href="article2.shtml">
-                            <div class="container" style="width: 100%">
-                                <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
-                                    <h1>Quantum Complexity</h1>
-                                    <h4>February 4, 2019 | 6 min read</h4>
-                                    <p>Before we may undergo an analysis of quantum complexity theory, it is useful to first discuss classical complexity theory...<br>
-                                    </p>
-                                </div>
+                            <img class="cover" alt="Article 1" src="../images/articles/article2/complexity-theory-toc.jpg" width="100%" height="400px"><div class="article-text">
+                                <h1>Quantum Complexity</h1>
+                                <h4>February 4, 2019 | 6 min read</h4>
+                                <p>Before we may undergo an analysis of quantum complexity theory, it is useful to first discuss classical complexity theory...<br>
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -88,14 +81,12 @@
                 <div class="row featurette">
                     <div class="col-md-14" style="width: 100%">
                        <a href="article1.shtml">
-                           <div class="container" style="width: 100%">
-                               <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
-                                   <h1>What is Quantum Computing</h1>
-                                   <h4>September 3, 2018 | 5 min read</h4>
-                                   <p>Computers have revolutionized our world, touching almost every aspect of our daily lives...<br>
-                                   </p>
-                               </div>
-                           </div>
+                            <img class="cover" alt="Article 1" src="../images/articles/article1_3.png" width="100%" height="400px"><div class="article-text">
+                                <h1>What is Quantum Computing</h1>
+                                <h4>September 3, 2018 | 5 min read</h4>
+                                <p>Computers have revolutionized our world, touching almost every aspect of our daily lives...<br>
+                                </p>
+                            </div>
                        </a>
                     </div>
                 </div>

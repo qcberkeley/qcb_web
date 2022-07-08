@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- Social link CSS -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
         <!-- Custom styles -->
         <link href="CSS/index.css" rel="stylesheet">
         <link href="CSS/common.css" rel="stylesheet">
@@ -31,43 +30,50 @@
     </head>
     <body>
         <!--BODY OF THE WEBSITE + FIRST PARALLAX -->
-        <div class="bgimg-1">
+        
+       <div class="bgimg-1">
             <!-- NAVBAR -->
+            <video autoplay muted loop style="object-fit: cover; position: fixed; width: 100%; height: 100%;">
+                <source src="images/background.mp4" type="video/mp4">
+            </video>
             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <a class="navbar-brand navbar-left" href="index.shtml">
+                    <img class="logo" src="images/logo.png">
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-<!--                         <li class="nav-item">
-                            <a class="nav-link" href="index.shtml">Home</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="team.shtml">Team</a>
+                    <ul class="navbar-nav" margin-right="auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="index.shtml" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" style="background-color: #000000;">
+                                <a class="nav-link" href="#news">News</a>
+                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#membership">Membership</a>
+                                <a class="nav-link" href="#team">Team</a>
+                                <a class="nav-link" href="#events">Events</a>
+                                <a class="nav-link" href="#sponsors">Sponsors</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="decal.shtml" aria-haspopup="true" aria-expanded="false">Education</a>
+                            <ul class="dropdown-menu" style="background-color: #000000;">
+                                <a class="nav-link" href="decal.shtml#courseware">Courseware</a>
+                                <a class="nav-link" href="decal.shtml#tutorials">Tutorials</a>
+                                <a class="nav-link" href="decal.shtml#articles">Articles</a>
+                                <a class="nav-link" href="decal.shtml#library">Library</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="project.shtml" aria-haspopup="true" aria-expanded="false">Research</a>
+                            <ul class="dropdown-menu" style="background-color: black;">
+                                <a class="nav-link" href="#current">Current</a>
+                                <a class="nav-link" href="#complete">Complete</a>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.shtml">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.shtml">Articles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decal.shtml">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reading_group.shtml">Reading Group</a>
-                        </li>
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles</a>
-                            <div class="dropdown-menu">
-                                <a class="nav-link" style="color: #5a5a5a;" href="article1.shtml">What is Quantum Computing?</a>
-                                <a class="nav-link" style="color: #5a5a5a;" href="article2.shtml">Quantum Complexity</a>
-                                <a class="nav-link" style="color: #5a5a5a;" href="article3.shtml">BB84 Encryption Protocol</a>
-                                <a class="nav-link" style="color: #5a5a5a;" href="article4.shtml">The Fast Fourier Transform and its Quantum Analog</a>
-                            </div>
-                        </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://airtable.com/shrtEKEW4qizUhx02">Join Us</a>
+                            <a class="nav-link" href="#" onclick="alert('Applications open in August 2022, see the event calendar on our homepage for more details.')">Join</a>
                         </li>
                     </ul>
                 </div>
@@ -75,35 +81,177 @@
             <div class="caption">
                 <span class="border">
                     <div class="header-text">
-                        <img class = "logo" src="images/logo.png" style="height:auto; width: 50%">
+                        <img class="logo" src="images/logo.png" style="height:auto; width: 50%">
                         <br/>
                         Quantum Computing @ Berkeley
                     </div>
-                    <div class="header-animation">
-                        <canvas class="anim" id="canvas"/>
-                    </div>
                 </span>
-                <section id="section01" class="demo">
-                    <a href="#About-Us"><span></span>Scroll</a>
-                </section>
             </div>
         </div>
-        <div class="About-Us" id="About-Us">
-            <h3 class="featurette-heading">About Us</h3>
-            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
-            <p class="lead" style="text-align: justify;"><strong>In 2020, venture capitalists poured over <strong>$683 million</strong> into the quantum computing industry. Last year, <strong>$1.02 billion</strong> was invested. To put the acceleration of this industry in perspective, a mere <strong>$187 million</strong> was invested in 2019. This industry is expanding faster than ever, and we at QCB want to support students on their journey towards its frontier. We're an undergraduate run club that aims to bridge the gap between students, the quantum computing industry, and academia. We connect students with guest speakers, research projects, panel discussions, lab tours, company visits, and we run an introductory DeCal or discusssion most semesters.</strong></p>
 
+        <div class="row" id="news">
+            <div class="col" style="text-align: left;">
+                <h2 class="featurette-heading" style="font-size: 45px;">News</h2>
+                <hr class="featurette-divider" style="color: white;">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/news-bgd1.jpeg" class="rounded mx-auto d-block" style="object-fit: cover;">
+                            <div class="carousel-caption d-md-block">
+                                <a href="decal.shtml#courseware" class="button button1">Syllabus</a>
+                                <hr class="featurette-divider">
+                                <h2 class="featurette-heading">The QCB Decal Returns!</h2>
+                                <h3 class="lead">All UCB students can sign up through their CalCentral. Not a student? No worries! You can find all of the class materials on our Education page.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/news-bdg2.jpeg" class="rounded mx-auto d-block" style="object-fit: cover;">
+                            <div class="carousel-caption d-md-block">
+                                <a href="decal.shtml#articles" class="button button1">Browse</a>
+                                <hr class="featurette-divider">
+                                <h2 class="featurette-heading">All New Resource Library</h2>
+                                <h3 class="lead">Whether you're a beginner or a QC master, find some helpful resources in our new Library! Feel free to contriubte your own resource through the Education page.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/news-bgd3.jpg" class="rounded mx-auto d-block" style="object-fit: cover;">
+                            <div class="carousel-caption d-md-block">
+                                <a href="#team" class="button button1">Team</a>
+                                <hr class="featurette-divider">
+                                <h2 class="featurette-heading">Meet this year's Leadership</h2>
+                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on the Slack if you want to chat.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="About-Us" id="Spring-2022">
-            <h3 class="featurette-heading">This Semester</h3>
-            <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
-            <p class="lead" style="text-align: justify;">This Spring we are focused on enriching and engaging the UC Berkeley community. We are putting our all into research projects and educational initiatives to foster a more advanced, and widely accesssible quantum computing network among undergraduates. We look forward to bridging our students with industry through tech talks, social events, company visits, and new competitions. Click <a href="https://airtable.com/shrtEKEW4qizUhx02"><b>Join</b></a> to get involved, or <a href="team.shtml"><b>Team</b></a> to set up a coffee chat.</p>
+
+        <div class="row" id="about">
+            <div class="container">
+                <h2 class="featurette-heading" style="font-size: 45px;">About</h2>
+                <hr class="featurette-divider">
+                <h3 class="lead"> At QCB we aim to support students on their journey towards the Quantum Computing frontier. 
+                    We're an undergraduate run club bridging the gap between students, the quantum industry, and academia. 
+                    We are focused on enriching and engaging the UC Berkeley community by connect students with guest speakers, social events, research projects, panel discussions, lab tours, company visits, and we run an introductory DeCal or discusssion most semesters.
+                    Our group provides research opportunities and educational materials to foster a more advanced, and widely accesssible quantum computing network among our peers and beyond.   
+                </h3>
+            </div>
         </div>
-        <div class="About-Us" id="Sponsors">
-            <h3 class="featurette-heading">Sponsors</h3>
+
+        <div class="row" id="membership">
+            <div class="container">
+                <h2 class="featurette-heading" style="font-size: 45px;">Membership</h2>
+                <hr class="featurette-divider" style="color: white;">
+                <h3 class="lead">Membership is reserved for Berkeley students of all grade levels, majors, and colleges. However, if you are not a Cal student we still encourage you to participate! Get involved by <a href="decal.shtml">contributing to our Educational branch</a>. Submit a tutorial, article, or other home-made resource to support our efforts of building a quantum computing educational center.</h3>
+                <div class="container" style="padding: 20px">
+                    <h3 class="lead">Berkeley students who successfully contriubte to our <strong><a href="decal.shtml">Education</a> </strong> intitiative by submitting an article or tutorial, or pass our course will earn Certified Member recognition with a certificate, verifiable below. Alternatively, a successful semester doing <a href="project.shtml">Research</a> with QCB results in certification.</h3>
+                    <label for="ID">Enter Certification ID to verify:</label>
+                    <input type="text" size="15" placeholder="i.e. 12345678" maxlength="8" onchange="check(this.value)">
+                    <input type="button" value="Submit">
+                </div>
+                <div class="container">
+                    <h3 class="lead">As a community within UC Berkeley, we are dedicated to helping all students regardless of background or identity. As such, we recognize that there are marginalized minorities amongst the STEM population and would like to provide opportunities and help students from underrepresented groups get a footing in Quantum.</h3>
+                    <a href="#" class="button button1" style="  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.448);" onclick="alert('The Diveristy Program is launching August 2022.')">Diversity Program</a>                
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="team" style="text-align: center;">
+            <div class="container">
+                <h2 class="featurette-heading" style="font-size: 45px;">Team
+                <hr class="featurette-divider" style="color: white;">
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/AndrisH.jpg" alt="Card image cap">
+                    <div class="middle">I’m a 3rd year undergraduate student in Physics and CS. My past with quantum computing predates my first year at Berkeley. Personally, I’m a physicist by heart and a strong believer of the Bousso-Susskind Multiverse Interpretation of Quantum Mechanics. Reach out to me on 
+                        <a href="https://www.linkedin.com/in/andris-huang/">LinkedIn</a> or <a href="mailto:andrewhz@berkeley.edu">email</a>!
+                    </div>
+                    <h5 class="card-text">Andris Huang</br>Co-President</br>Physics</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/EliasL.png" alt="Card image cap">
+                    <div class="middle">Hey, Elias here. I taught the introductory discussion last semester while I too learned the intricacies of QC. I studied with the project group and, most recently, I worked a tech consulting internship. I also updated this website, enjoy! I love talking science, philosophy, music, and of course food. Ping me for coffee this Fall via <a href="https://www.linkedin.com/in/elias-lehman/">LinkedIn</a> or <a href="mailto:eliaslehman@berkeley.edu">email</a>.
+                    </div>
+                    <h5 class="card-text">Elias Lehman</br>Co-President</br>Physics & EECS (minor)</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/RileyP.png" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Riley Peterlinz</br>VP of Education</br>Physics & CS</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/Samyak.jpg" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Samyak Surti</br>VP of Research</br>Math & Computer Science</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/EmiliiaD.jpeg" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Emiliia Dyrenkova</br>Student Advisor</br>EECS</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alumni -->
+        <div class="row" id="alumni">
+            <h2 class="featurette-heading" style="font-size: 50px">Alumni
+            </h2>
+            <h3 class="lead" style="font-size: 20px;">QCB graduates continue their journey at a variety of the world's most influential PhD programs, labs, and tech companies.</h3>
+            <h3 class="lead">
+                <li>James Chen - Meta, Jane Street</li>
+                <li>James Sud - LANL, LBNL, NASA QuAIL</li>
+                <li>Jordan Sullivan - LBNL, PsiQuantum, AWS Bracket</li>
+                <li>Glenn Leblanc - NASA, Nauto</li>
+                <li>Amol Pant - Keysight, Tesla</li>
+                <li>Vladimir Kremenetski - NASA</li>
+                <li>Dhruv Devulapalli - LBNL, AWS, PhD at The University of Maryland</li>
+                <li>Daniel Lengyel - PhD at Imperial College London</li>
+                <li>Debayan Bandyopadhyay - PhD at The University of Chicago</li>
+                <li>Ethan Yeh - Samsara</li>
+                <li>Natalie Parham - Palantir, Google, QCWare, Institute for Quantum Computing</li>
+                <li>Sahil Patel - </li>
+                <li>Victor Li - Nova Labs, </li>
+            </h3>
+        </div>
+
+        <div class="row" id="events">
+            <div class="container">
+                <h2 class="featurette-heading" style="font-size: 45px;">Events</h2>
+                <a href="https://calendar.google.com/calendar/u/0?cid=amJka2lhcXRlc20wajI4cDNiNDdmOGxwcnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="button button1" style="  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.448);">Add This Calendar</a>                
+                <hr class="featurette-divider" style="color: white;">
+                <h3 class="lead">See our speaker events, competitions, and weekly meetings on this calendar.</h3>
+                <iframe src="https://calendar.google.com/calendar/embed?src=jbdkiaqtesm0j28p3b47f8lprs%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="80%" height="500" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        
+        <div class="row" id="sponsors">
+            <h3 class="featurette-heading" style="font-size: 45px;">Sponsors</h3>
             <hr class="featurette-divider" style="margin-top:0rem; margin-bottom:2rem;">
             <p class="lead" style="text-align: justify;">We are proudly sponsored by a growing list of quantum computing companies and organizations. They generously provide our club with the resources and funding to nagivate this young industry.</p>
-        <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.jpeg" width="400" height="100" alt=""></a>
+            <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.jpeg" width="400" height="100" alt=""></a>
         </div>
         <!-- FOOTER -->
         <!--#include file="footer.shtml" -->

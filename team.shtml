@@ -45,7 +45,7 @@
 
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="rounded img-fluid" src="images/EmiliiaD.jpg" alt="Card image cap">
-                <div class="card-text">
+                <div class="card-text hover">
                     <h5>Emiliia Dyrenkova</h5>
                     <p>President</p>
                     <span>EECS</span>

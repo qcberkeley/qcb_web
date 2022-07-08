@@ -1,3 +1,13 @@
+function check(input) {
+  const certIDs = ['12345678', '12345678'];
+  if (certIDs.includes(input)) {
+    alert('This Certification is valid, show it off!');
+  }
+  else {
+    alert('This Certification is invalid.');
+  }
+}
+
 function plotSine(ctx, xOffset, yOffset) {
     var width = ctx.canvas.width;
     var height = ctx.canvas.height;
@@ -48,16 +58,3 @@ function draw() {
 
     window.requestAnimationFrame(draw);
 }
-window.onload = window.requestAnimationFrame(draw);
-var step = -2;
-
-
-
-// Smooth scroll to link given hash
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-     }, 500);
-});
