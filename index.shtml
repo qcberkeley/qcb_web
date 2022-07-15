@@ -202,7 +202,8 @@
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/Samyak.jpg" alt="Card image cap">
-                    <div class="middle"></div>
+                    <div class="middle">Hey guys, my name is Samyak, I'm a 3rd-year double-majoring in Mathematics and Computer Science. I'm very interested in quantum error correction, especially QLDPC codes. This term, I'll be helping organize QC@B's Quantum Undergraduate Opportunities in Research Program. In the past, I co-led the club's journal club. You can reach me at my <a href="https://www.linkedin.com/in/spsurti/">LinkedIn</a> or my <a href="mailto:spsurti@berkeley.edu">email</a>!
+                    </div>
                     <h5 class="card-text">Samyak Surti</br>VP of Research</br>Math & Computer Science</h5>
                 </div>
             </div>
