@@ -103,7 +103,7 @@
                         <div class="carousel-item active">
                             <img src="images/news-bgd1.jpeg" class="rounded mx-auto d-block" style="object-fit: cover;">
                             <div class="carousel-caption d-md-block">
-                                <a href="decal.shtml#courseware" class="button button1">Syllabus</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScAu6Iekw4qhPCd7rTy4UOZI3czXC1iAbTZnczBz0FDUGZW6A/viewform" class="button button1">Sign Up</a>
                                 <hr class="featurette-divider">
                                 <h2 class="featurette-heading">The QCB Decal Returns!</h2>
                                 <h3 class="lead">All UCB students can sign up through their CalCentral. Not a student? No worries! You can find all of the class materials on our Education page.</h3>
@@ -186,17 +186,10 @@
             </div>
             <div class="col">
                 <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/EliasL.png" alt="Card image cap">
+                    <img class="rounded img-fluid" src="images/EliasL.JPG" alt="Card image cap">
                     <div class="middle">Hey, Elias here. I taught the introductory discussion last semester while I too learned the intricacies of QC. I studied with the project group and, most recently, I worked a tech consulting internship. I also updated this website, enjoy! I love talking science, philosophy, music, and of course food. Ping me for coffee this Fall via <a href="https://www.linkedin.com/in/elias-lehman/">LinkedIn</a> or <a href="mailto:eliaslehman@berkeley.edu">email</a>.
                     </div>
                     <h5 class="card-text">Elias Lehman</br>Co-President</br>Physics & EECS (minor)</h5>
-                </div>
-            </div>
-            <div class="col">
-                <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/RileyP.png" alt="Card image cap">
-                    <div class="middle"></div>
-                    <h5 class="card-text">Riley Peterlinz</br>VP of Education</br>Physics & CS</h5>
                 </div>
             </div>
             <div class="col">
@@ -209,9 +202,37 @@
             </div>
             <div class="col">
                 <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/RileyP.png" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Riley Peterlinz</br>VP of Education</br>Physics & CS</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
                     <img class="rounded img-fluid" src="images/EmiliiaD.jpeg" alt="Card image cap">
                     <div class="middle">I am an EECS super senior (+ transfer) graduating in December 2022. I am a former president of QCB, and I have experience with summer research programs, research at Berkeley, hackathons, and teaching quantum computing. Applying to PhD programs to start in Fall 2023, interested in chemical simulations with quantum computers. Aside from being a quantum nerd, I like to travel, pretend like I can snowboard and boulder, and do generally exciting and outdoorsy things.</div>
                     <h5 class="card-text">Emiliia Dyrenkova</br>Student Advisor</br>EECS</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/SidD.jpg" alt="Card image cap">
+                    <div class="middle">I'm Sidharth. I'm a fairly simple person. I'm a physics major, policy minor, and I like quantum computing - hardware focused stuff. I also play the bass and piano, it's fun. And I like to build stuff with my hands, though I discovered this pretty recently.</div>
+                    <h5 class="card-text">Sidharth Duthaluru</br>Treasurer</br>Physics & Policy (minor)</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/JyotiR.png" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Jyoti Rani</br></br>EECS & Business</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/BinhanH.jpeg" alt="Card image cap">
+                    <div class="middle">I am a physics and data science student from Irvine, CA. I'll be co-teaching the DeCal Full-Stack Quantum Computing in the upcoming school year. Outside of my daily struggle called school, I enjoy golf, soccer, anime, and video games (BOTW2 plz come out sooner).</div>
+                    <h5 class="card-text">Binhan Hua</br>Head of Decal Committee</br>Physics & DS</h5>
                 </div>
             </div>
         </div>
