@@ -73,7 +73,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="alert('Applications open in August 2022, see the event calendar on our homepage for more details.')">Join</a>
+                            <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
                         </li>
                     </ul>
                 </div>
@@ -209,9 +209,9 @@
             </div>
             <div class="col">
                 <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/EmiliiaD.jpeg" alt="Card image cap">
-                    <div class="middle">I am an EECS super senior (+ transfer) graduating in December 2022. I am a former president of QCB, and I have experience with summer research programs, research at Berkeley, hackathons, and teaching quantum computing. Applying to PhD programs to start in Fall 2023, interested in chemical simulations with quantum computers. Aside from being a quantum nerd, I like to travel, pretend like I can snowboard and boulder, and do generally exciting and outdoorsy things.</div>
-                    <h5 class="card-text">Emiliia Dyrenkova</br>Student Advisor</br>EECS</h5>
+                    <img class="rounded img-fluid" src="images/JyotiR.png" alt="Card image cap">
+                    <div class="middle"></div>
+                    <h5 class="card-text">Jyoti Rani</br>VP of External</br>EECS & Business</h5>
                 </div>
             </div>
             <div class="col">
@@ -223,16 +223,16 @@
             </div>
             <div class="col">
                 <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/JyotiR.png" alt="Card image cap">
-                    <div class="middle"></div>
-                    <h5 class="card-text">Jyoti Rani</br></br>EECS & Business</h5>
+                    <img class="rounded img-fluid" src="images/BinhanH.jpeg" alt="Card image cap">
+                    <div class="middle">I am a physics and data science student from Irvine, CA. I'll be co-teaching the DeCal Full-Stack Quantum Computing in the upcoming school year. Outside of my daily struggle called school, I enjoy golf, soccer, anime, and video games (BOTW2 plz come out sooner).</div>
+                    <h5 class="card-text">Binhan Hua</br>Head of Decal Committee</br>Physics & DS</h5>
                 </div>
             </div>
             <div class="col">
                 <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/BinhanH.jpeg" alt="Card image cap">
-                    <div class="middle">I am a physics and data science student from Irvine, CA. I'll be co-teaching the DeCal Full-Stack Quantum Computing in the upcoming school year. Outside of my daily struggle called school, I enjoy golf, soccer, anime, and video games (BOTW2 plz come out sooner).</div>
-                    <h5 class="card-text">Binhan Hua</br>Head of Decal Committee</br>Physics & DS</h5>
+                    <img class="rounded img-fluid" src="images/EmiliiaD.jpeg" alt="Card image cap">
+                    <div class="middle">I am an EECS super senior (+ transfer) graduating in December 2022. I am a former president of QCB, and I have experience with summer research programs, research at Berkeley, hackathons, and teaching quantum computing. Applying to PhD programs to start in Fall 2023, interested in chemical simulations with quantum computers. Aside from being a quantum nerd, I like to travel, pretend like I can snowboard and boulder, and do generally exciting and outdoorsy things.</div>
+                    <h5 class="card-text">Emiliia Dyrenkova</br>Student Advisor</br>EECS</h5>
                 </div>
             </div>
         </div>

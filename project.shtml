@@ -68,7 +68,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="alert('Applications open in August 2022, see the event calendar on our homepage for more details.')">Join</a>
+                                <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
                             </li>
                         </ul>
                     </div>
@@ -78,6 +78,7 @@
                         <div class="Header">
                             <br/>
                             Research<br/>
+                            <a href="https://forms.gle/McHCUHeAiozpWjQ27" class="button button1">QUOR F22</a>
                             <a href="https://forms.gle/MBGkq8z7a8pdF6zSA" class="button button1">Propose</a>
                         </div>
                     </span>
