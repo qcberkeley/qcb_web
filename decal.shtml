@@ -128,13 +128,20 @@
                             <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
                                 <h5 class="mb-0">
                                     <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent; border: transparent;" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseThree">
-                                    Lab
+                                    Slides
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseB" class="collapse">
                                 <div class="card-body" style="padding: 5%;">
-                                    <li>More Coming Soon</li>
+                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics I.pdf" target="_blank">Introduction to Quantum Mechanics I</a>
+                                        |
+                                        <a href="https://www.youtube.com/watch?v=rCfPQLVzus4" target="_blank">Recording</a></li>
+                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics II.pdf" target="_blank">Introduction to Quantum Mechanics II</a>
+                                        |
+                                        <a href="https://www.youtube.com/watch?v=rCfPQLVzus4" target="_blank">Recording</a></li>
+                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics III.pdf" target="_blank">Introduction to Quantum Mechanics III</a></li>
+                                    <li><a href="../courseware/Slides/Quantum Circuits I.pdf" target="_blank">Quantum Circuits I</a></li>
                                 </div>
                             </div>
                         </div>
@@ -143,11 +150,11 @@
             </div>
             
             <div class="row" style="background-color: rgb(30, 0, 128);">
-                <div class="card" style="width: 100%;">
+                <div class="card" style="width: 60%;">
                     <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
                       <h5 class="mb-0">
                         <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                          Decal Fall 2022
+                          Decal Syllabus
                         </button>
                       </h5>
                     </div>
@@ -161,12 +168,6 @@
             
            <!--Tutorials-->
             <div class="row" id="tutorials" style="background-color: rgb(128, 0, 115);">
-                <div class="col-md">
-                    <h2 class="featurette-heading" style="font-size: 45px;" >Tutorials</h2>
-                    <h3 class="lead">We are developing a handful of coding tutorials from intorductory lessons on Qiskit, to implementations and use cases of Quantum Machine Learning. 
-                        We hope to release them throughout the next semester. 
-                        You will find an updated list here.</h3>
-                </div>
     
                 <div class="col-md">
                     <div class="accordion" id="accordionExample" style="padding: 5%;">
@@ -199,6 +200,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" >Tutorials</h2>
+                    <h3 class="lead">We are developing a handful of coding tutorials from intorductory lessons on Qiskit, to implementations and use cases of Quantum Machine Learning. 
+                        We hope to release them throughout the next semester. 
+                        You will find an updated list here.</h3>
                 </div>
             </div>
 
