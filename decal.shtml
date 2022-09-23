@@ -134,12 +134,8 @@
                             </div>
                             <div id="collapseB" class="collapse">
                                 <div class="card-body" style="padding: 5%;">
-                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics I.pdf" target="_blank">Introduction to Quantum Mechanics I</a>
-                                        |
-                                        <a href="https://www.youtube.com/watch?v=rCfPQLVzus4" target="_blank">Recording</a></li>
-                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics II.pdf" target="_blank">Introduction to Quantum Mechanics II</a>
-                                        |
-                                        <a href="https://www.youtube.com/watch?v=rCfPQLVzus4" target="_blank">Recording</a></li>
+                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics I.pdf" target="_blank">Introduction to Quantum Mechanics I</a></li>
+                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics II.pdf" target="_blank">Introduction to Quantum Mechanics II</a></li>
                                     <li><a href="../courseware/Slides/Introduction to Quantum Mechanics III.pdf" target="_blank">Introduction to Quantum Mechanics III</a></li>
                                     <li><a href="../courseware/Slides/Quantum Circuits I.pdf" target="_blank">Quantum Circuits I</a></li>
                                 </div>
