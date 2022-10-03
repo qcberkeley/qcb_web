@@ -87,12 +87,11 @@ html {
 }
 
 .carousel-item {
-    height: 400px;
-    width: 500px;
+    height: 600px;
+    width: 100%;
 }
 .carousel {
     box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.92);
-    width: fit-content;
 }
 
 .iframe {
@@ -124,6 +123,7 @@ html {
     width: 400px;
     margin-bottom: .75rem;
     object-fit: cover;
+    object-position: top;
     backface-visibility: hidden;
 }
 
