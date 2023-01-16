@@ -158,7 +158,7 @@
                 <hr class="featurette-divider" style="color: white;">
                 <h3 class="lead">Membership is reserved for Berkeley students of all grade levels, majors, and colleges. However, if you are not a Cal student we still encourage you to participate! Get involved by <a href="decal.shtml">contributing to our Educational branch</a>. Submit a tutorial, article, or other home-made resource to support our efforts of building a quantum computing educational center.</h3>
                 <div class="container" style="padding: 20px">
-                    <h3 class="lead">Berkeley students who successfully contriubte to our <strong><a href="decal.shtml">Education</a> </strong> intitiative by submitting an article or tutorial, or pass our course will earn Certified Member recognition with a certificate, verifiable below. Alternatively, a successful semester doing <a href="project.shtml">Research</a> with QCB results in certification.</h3>
+                    <h3 class="lead">Berkeley students who successfully contribute to our <strong><a href="decal.shtml">Education</a> </strong> initiative by submitting an article or tutorial, or pass our course will earn Certified Member recognition with a certificate, verifiable below. Alternatively, a successful semester doing <a href="project.shtml">Research</a> with QCB results in certification.</h3>
                     <label for="ID">Enter Certification ID to verify:</label>
                     <input type="text" size="15" placeholder="i.e. 12345678" maxlength="8" onchange="check(this.value)">
                     <input type="button" value="Submit">
