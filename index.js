@@ -1,7 +1,33 @@
 function check(input) {
-  const certIDs = ['12345678', '12345678'];
-  if (certIDs.includes(input)) {
-    alert('This Certification is valid, show it off!');
+  let certIDs = new Map([
+    ["66132699", "Zhou Zhengyang"],
+    ["10403201", "Alexa Ramirez"],
+    ["21244812", "Andy Dong"],
+    ["58598436", "Angel Tu"],
+    ["59071468", "Ashley Jung"],
+    ["21390815", "Bethany Lu"],
+    ["78355393", "Binhan Hua"],
+    ["37709651", "Brandon Stinson"],
+    ["99494644", "Daniel Endraws"],
+    ["12345678", "Emiliia D"],
+    ["24962337", "Guy Eustace"],
+    ["65484289", "Jennifer Zhao"],
+    ["83082175", "Jose Gonzalez"],
+    ["11205398", "Kitty Ng Lin"],
+    ["47757667", "Mathias Joergensen"],
+    ["92118838", "Meilin Yen"],
+    ["88900937", "Meshan Khosla"],
+    ["84980915", "Ofir Dvir"],
+    ["16942191", "Raiyan Rizwan"],
+    ["90354391", "Samyak Surti"],
+    ["91170662", "Saransh Saini"],
+    ["23324282", "Sashwat Mahalingam"],
+    ["72063349", "Youxun Liu"],
+    ["56817508", "Yuetian Tang"],
+  ])
+
+  if (certIDs.has(input)) {
+    alert("This Certification belongs to " + certIDs.get(input) + ", show it off!");
   }
   else {
     alert('This Certification is invalid.');
