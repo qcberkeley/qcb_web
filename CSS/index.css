@@ -4,7 +4,7 @@ html {
     margin: 0;
     font: 400 15px/1.8 "Cambria", sans-serif;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #000000;
     /*"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     max-width: 100%;
     /*overflow-x: hidden;*/
@@ -32,23 +32,23 @@ html {
 }
 
 .p {
-    color: #ffffff;
+    color: #232323;
 }
 
 .h1 {
-    color: #ffffff;
+    color: #232323;
 }
 
 .h2 {
-    color: #ffffff;
+    color: #232323;
 }
 
 .h3 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .h4 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .bgimg-1 {
@@ -62,8 +62,7 @@ html {
 .row {
     align-items: center; 
     position: relative;
-    background-color: rgba(0, 0, 0, 0.418);
-    backdrop-filter: blur(3px);
+    background-color: rgb(255, 255, 255);
     padding: 50px 10%;
     /*text-align: justify;*/
 }
@@ -90,8 +89,9 @@ html {
     height: 600px;
     width: 100%;
 }
-.carousel {
-    box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.92);
+
+.carousel-inner{
+    align-items: center;
 }
 
 .iframe {
@@ -101,7 +101,7 @@ html {
 .carousel-caption {
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(255, 255, 255, 0.49);
 }
 
 .rounded {

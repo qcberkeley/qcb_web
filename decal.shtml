@@ -48,20 +48,21 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="index.shtml" aria-haspopup="true" aria-expanded="false">Home</a>
                                 <ul class="dropdown-menu" style="background-color: #000000;">
-                                    <a class="nav-link" href="index.shtml#news" >News</a>
-                                    <a class="nav-link" href="index.shtml#about">About</a>
-                                    <a class="nav-link" href="index.shtml#membership">Membership</a>
-                                    <a class="nav-link" href="index.shtml#team">Team</a>
-                                    <a class="nav-link" href="index.shtml#events">Events</a>
-                                    <a class="nav-link" href="index.shtml#sponsors">Sponsors</a>
+                                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                                    <a class="nav-link" href="#news">News</a>
+                                    <a class="nav-link" href="#about">About</a>
+                                    <a class="nav-link" href="#membership">Membership</a>
+                                    <a class="nav-link" href="#team">Team</a>
+                                    <a class="nav-link" href="#events">Events</a>
+                                    <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle" href="decal.shtml" aria-haspopup="true" aria-expanded="false">Education</a>
                                 <ul class="dropdown-menu" style="background-color: #000000;">
-                                    <a class="nav-link" href="#courseware">Courseware</a>
-                                    <a class="nav-link" href="#tutorials">Tutorials</a>
-                                    <a class="nav-link" href="#articles">Articles</a>
+                                    <a class="nav-link" href="decal.shtml#courseware">Courseware</a>
+                                    <a class="nav-link" href="decal.shtml#tutorials">Tutorials</a>
+                                    <a class="nav-link" href="decal.shtml#articles">Articles</a>
                                     <a class="nav-link" href="decal.shtml#library">Library</a>
                                 </ul>
                             </li>
@@ -72,20 +73,15 @@
                                     <a class="nav-link" href="#complete">Complete</a>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
-                            </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="caption" style="height: 500px">
                     <span class="border">
-                        <div class="Header">
+                        <div class="Header" style="color: white;">
                             <br/>
                             Education<br/>
-                            <a href="https://forms.gle/WFGLakXNQZJvN3E76" class="button button1">Decal F22</a>
                             <a href="https://forms.gle/aVHBVARyK3K7WLR87" class="button button1">Contribute</a>
-
                         </div>
                     </span>
                 </div>
@@ -97,7 +93,7 @@
                 <hr class="featurette-divider">
             </div>
             <!--Courseware-->
-            <div class="row" id="courseware" style="background-color: rgb(30, 0, 128);">
+            <div class="row" id="courseware" style="background-color: rgb(197, 179, 255);">
                 <div class="col-md">
                     <h2 class="featurette-heading" style="font-size: 45px;" >Courseware</h2>
                     <h3 class="lead">QCB offers either a Decal, an offcial course exclusively for UC Berkeley students, or introductory weekly lessons. 
@@ -110,34 +106,48 @@
                         <div class="card" style="width: 80%;">
                             <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
                                 <h5 class="mb-0">
-                                    <button class="btn" style="color: #ffffff; width: 100%; background-color: rgb(0, 0, 0);" data-toggle="collapse" data-target="#collapseA" aria-expanded="false" aria-controls="collapseTwo">
-                                    Homework
+                                    <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent; border: transparent;" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseThree">
+                                    Lessons
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseA" class="collapse">
+                            <div id="collapseB" class="collapse">
                                 <div class="card-body" style="padding: 5%;">
-                                    <li><a href="../courseware/Homework/CS 198-120 HW1.pdf.pdf" target="_blank">HW 1</a>
-                                    |
-                                    <a href="../courseware/Solutions/CS 198-120 HW1 Solution.pdf" target="_blank">Solution</a></li>
-                                    <li><a href="../courseware/Homework/CS 198-120 HW2.pdf" target="_blank">HW 2</a></li>
+                                    <li><a href="../courseware/Lectures/First Lecture.pptx" target="_blank">First Lecture</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Mechanics I.pdf" target="_blank">Quantum Mechanics I</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Mechanics II.pdf" target="_blank">Quantum Mechanics II</a></li>
+                                    <li><a href="../courseware/Lectures/ Quantum Mechanics III.pdf" target="_blank">Quantum Mechanics III</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Circuits I.pdf" target="_blank">Quantum Circuits I</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Circuits II.pdf" target="_blank">Quantum Circuits II</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Circuits III.pdf" target="_blank">Quantum Circuits III</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Circuits IV.pdf" target="_blank">Quantum Circuits IV</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Algorithms I.pdf" target="_blank">Quantum Circuits IV</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Algorithms II.pdf" target="_blank">Quantum Circuits IV</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Algorithms III.pdf" target="_blank">Quantum Circuits IV</a></li>
+                                    <li><a href="../courseware/Lectures/Quantum Simulation.pdf" target="_blank">Quantum Simulation</a></li>
+                                    <li><a href="../courseware/Lectures/Superconductinf Qubit.pptx" target="_blank">Quantum Hardware I</a></li>
+                                    <li><a href="../courseware/Lectures/Overview of Quantum Machine Learning" target="_blank">Quantum Machine Learning</a></li>
                                 </div>
                             </div>
                         </div>
                         <div class="card" style="width: 80%;">
                             <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
                                 <h5 class="mb-0">
-                                    <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent; border: transparent;" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseThree">
-                                    Slides
+                                    <button class="btn" style="color: #ffffff; width: 100%; background-color: rgb(0, 0, 0);" data-toggle="collapse" data-target="#collapseA" aria-expanded="false" aria-controls="collapseTwo">
+                                    Problems
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseB" class="collapse">
+                            <div id="collapseA" class="collapse">
                                 <div class="card-body" style="padding: 5%;">
-                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics I.pdf" target="_blank">Introduction to Quantum Mechanics I</a></li>
-                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics II.pdf" target="_blank">Introduction to Quantum Mechanics II</a></li>
-                                    <li><a href="../courseware/Slides/Introduction to Quantum Mechanics III.pdf" target="_blank">Introduction to Quantum Mechanics III</a></li>
-                                    <li><a href="../courseware/Slides/Quantum Circuits I.pdf" target="_blank">Quantum Circuits I</a></li>
+                                    <li><a href="../courseware/Homeworks/HW1.pdf" target="_blank">HW 1</a>
+                                    |
+                                    <a href="../courseware/Solutions/CS 198-120 HW1 Solution.pdf" target="_blank">Solution</a></li>
+                                    <li><a href="../courseware/Homeworks/HW2.pdf" target="_blank">HW 2</a></li>
+                                    <li><a href="../courseware/Homeworks/HW3.pdf" target="_blank">HW 3</a></li>
+                                    <li><a href="../courseware/Homeworks/HW4.pdf" target="_blank">HW 4</a>
+                                    |
+                                    <a href="../courseware/Solutions/198_hw4.ipynb" target="_blank">Code</a></li>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +173,7 @@
             </div>
             
            <!--Tutorials-->
-            <div class="row" id="tutorials" style="background-color: rgb(128, 0, 115);">
+            <div class="row" id="tutorials" style="background-color: rgb(245, 217, 134);">
     
                 <div class="col-md">
                     <div class="accordion" id="accordionExample" style="padding: 5%;">
@@ -207,7 +217,7 @@
             </div>
 
             <!--Articles-->
-            <div class="row" id="articles" style="background-color: rgb(171, 109, 0);">
+            <div class="row" id="articles" style="background-color: rgb(255, 208, 68);">
                 <div class="col-md">
                     <h2 class="featurette-heading" style="font-size: 45px;" >Articles</h2>
                     <h3 class="lead">We have a track record of studying and summarizing the latest Quantum Computing developments. 
@@ -281,7 +291,7 @@
                 </div>
             </div>
             
-            <div class="row" id="library" style="background-color: rgb(0, 75, 86);">
+            <div class="row" id="library" style="background-color: rgb(255, 255, 255);">
                 <div class="col-md">
                     <h2 class="featurette-heading" style="font-size: 45px;" style="background-color: rgb(0, 128, 73);">Library</h2>
                 </div>
