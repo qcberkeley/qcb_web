@@ -17,18 +17,22 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
+  font-family: 'Courier New', Courier, monospace;
   color: lightgrey;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
+  font-family: 'Courier New', Courier, monospace;
   color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
+  font-family: 'Courier New', Courier, monospace;
   color: white;
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
+  font-family: 'Courier New', Courier, monospace;
   display: block;
 }
 
@@ -57,23 +61,24 @@
   margin: 4px 2px;
   transition-duration: 0.2s;
   cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.448);
 }
 
 .button1 {
   background-color: white; 
+  font-family: 'Courier New', Courier, monospace;
   color: black; 
 }
 
 .button1:hover {
   background-color: black; 
   color: white; 
-  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.448);
   text-decoration: none;
 }
 
 .featurette-heading {
   font-family: 'Courier New', Courier, monospace;
-  color: #ffffff;
+  color: #000000;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
@@ -83,7 +88,7 @@
   height: 100%;
   font-family: 'Courier New';
   font-size: 70px;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   text-align: center;
   padding: 50px 10%;
@@ -99,8 +104,12 @@
   color: #ffffff;
 }
 
+.lead {
+  line-height: 40px;
+}
+
 .h4, h3, p {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -124,7 +133,7 @@
 }
 
 .footer > .row {
-  color: #ddd;
+  color: rgb(255, 255, 255);
   background-color: #000000;
   padding: 50px 80px;
   text-align: justify;

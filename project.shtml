@@ -10,8 +10,8 @@
         <!-- Social link CSS -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
         <!-- Custom styles -->
-        <link href="CSS/project.css" rel="stylesheet">
         <link href="CSS/common.css" rel="stylesheet">
+        <link href="CSS/project.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap core JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,12 +43,13 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="index.shtml" aria-haspopup="true" aria-expanded="false">Home</a>
                                 <ul class="dropdown-menu" style="background-color: #000000;">
-                                    <a class="nav-link" href="index.shtml#news">News</a>
-                                    <a class="nav-link" href="index.shtml#about">About</a>
-                                    <a class="nav-link" href="index.shtml#membership">Membership</a>
-                                    <a class="nav-link" href="index.shtml#team">Team</a>
-                                    <a class="nav-link" href="index.shtml#events">Events</a>
-                                    <a class="nav-link" href="index.shtml#sponsors">Sponsors</a>
+                                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                                    <a class="nav-link" href="#news">News</a>
+                                    <a class="nav-link" href="#about">About</a>
+                                    <a class="nav-link" href="#membership">Membership</a>
+                                    <a class="nav-link" href="#team">Team</a>
+                                    <a class="nav-link" href="#events">Events</a>
+                                    <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -67,15 +68,12 @@
                                     <a class="nav-link" href="#complete">Complete</a>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://airtable.com/shrGYzXraw8n9r4DL">Join</a>
-                            </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="caption" style="height: 500px">
+                <div class="caption" style="height: 500px;">
                     <span class="border">
-                        <div class="Header">
+                        <div class="Header" style="color: white;">
                             <br/>
                             Research<br/>
                             <a href="https://forms.gle/McHCUHeAiozpWjQ27" class="button button1">QUOR F22</a>
@@ -84,12 +82,13 @@
                     </span>
                 </div>
             </div>
-            <div class="row" style=" align-items: center; justify-content: center; position: relative; background-color: rgba(0, 0, 0, 0); backdrop-filter: blur(3px); padding: 50px 10%; text-align: justify;">
+            <div class="row" style=" align-items: center; justify-content: center; position: relative; background-color: rgba(0, 0, 0, 0); backdrop-filter: blur(3px); padding-top: 50px; text-align: justify;">
                 <div class="container" style="width: 80%;">
-                    <h2 class="featurette-heading" style="font-size: 45px; text-align: center;">Q.U.O.R - Quantum Undergraduate Opportuniies in Research
+                    <h2 class="featurette-heading" style="font-size: 45px; text-align: center">Q.U.O.R - Quantum Undergraduate Opportuniies in Research
                     </h2>
-                    <h3 class="lead">Welcome to the QCB Research page. Here you'll find ongoing and previous research by our club's central Research Team as well as projects from members. This Fall we're introducing our QUOR program, aimed at prepared undergraduates for intensive quantum research. This field is blooming with opportunities to push the forefront, and we believe that starts at the undegraduate level. Make a proposal above to get involved.</h3>
-                    <hr class="featurette-divider">
+                    <h3 class="lead">Welcome to the QCB Research page. Here you'll find ongoing and previous research by our club's central Research Team as well as 
+                        projects from members. This Fall we're introducing our QUOR program, aimed at prepared undergraduates for intensive quantum research. This field is
+                         blooming with opportunities to push the forefront, and we believe that starts at the undegraduate level. Make a proposal above to get involved.</h3>
                 </div>
             </div>
                 <!--Current Projects-->
@@ -100,7 +99,6 @@
                     <div class="row featurette" style="padding-bottom: 20px">
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">Particle Reconstruction Using QML</h2>
-                            <h4>Overview</h4>
                             <h3 class="lead">We aim to program a Quantum Machine Learning (QML) model that takes in information about a particle collision or decay event 
                                 (Energy, momentum, etc.) and outputs attributes about the particle(s) in the interaction (mass, charge, spin, etc.)<br>
                             </h3>
@@ -114,7 +112,6 @@
                     <div class="row featurette" style="padding-bottom: 20px">
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">Prescribing Color to Quantum States</h2>
-                            <h4>Overview</h4>
                             <h3 class="lead">To represent a quantum state, Bloch Sphere is the most widely used visualization. However, Bloch Sphere has its challenges when 
                                 it comes to representing the states for multi-qubit systems, especially for mixed states and entangled states. To solve this 
                                 problem and improve the visualization, John Paul Marceaux and some other graduate students at UC Berkeley developed a method 
@@ -129,54 +126,84 @@
                     </div> 
                 <!--Previous Projects-->
                 <div class="About-Us" style="text-align: center">
-                    <h2 class="featurette-heading" style="font-size: 45px; padding: 10%;" id="complete">Complete Projects
+                    <h2 class="featurette-heading" style="font-size: 45px; padding: 10%;" id="complete">Completed Projects
                     </h2>
                 </div>
             <div class="container marketing">
             <!-- <div class="row featurette"> -->
                     
                 <div class="row featurette" style="padding-bottom: 20px">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">COVID-19 and QAOA</h2>
-                            <p class="lead">We used a quantum annealer to to determine how to safely reopen college campuses via quarantining students. We also implemented the quantum approximate optimization algorithm on Qiskit and TensorFlow Quantum, and showed numerically that for level 1 QAOA similar parameters are optimal on Erdos-Reyni and regular graphs.
-                            <br>
-                            <a href= "pdf/covid.pdf">A presentation of the quarantine results</a>
-                            <br>
-                            <a href= "https://github.com/qcberkeley/optimization">A repo containing the project</a>
-                            </h3>
-
-                        </div>
-                        <div class="col-md-5 order-md-1" style="background-color:#000000">
-                            <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
-                        </div>
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Sentiment Analysis Using QNN
+                        </h2>
+                        <p class="lead">A RNN based on quantum circuits promises to offer several significant theoretical advantages, including
+                              avoidance of the vanishing gradients problem, and may perform better on standard NLP tasks. Our work involves applying quantum RNNs
+                               to a common sentiment-analysis task, where we categorize product reviews as positive or negative. While we do not expect performance 
+                               better than the classical state of the art, due to the relative infancy of quantum hardware, we expect to validate our approach and 
+                               demonstrate the theoretical advantages of quantum RNN.
+                        <br>
+                        <a href= "QUOR/Sentiment Analysis Using QNN.pdf">QNN Presentation</a>
                     </div>
-                    <hr class="featurette-divider">
-                    <div class="row featurette">
-                      <div class="col-md-7">
-                          <h2 class="featurette-heading">Partial Quantum Search: Spring '19</h2>
-                          <p class="lead">We implemented a variation of Grover’s canonical search algorithm, known as partial quantum search, in pyquil (a Python quantum computing library by Rigetti).
-                          <br>
-                          <a href = "pdf/PQSPosterFinal.pdf" target="_blank"> The final poster</a>.<br>
-                          <a href = "https://arxiv.org/abs/quant-ph/0407122" target="_blank"> Link to the original paper</a>.<br>
-                          </h3>
-                          </div>
-                          <div class="col-md-5" style="background-color: #fff">
-                              <img class="featurette-image img-fluid mx-auto" src="images/project2.png" alt="Generic placeholder image" style="padding-top: 139px;padding-bottom: 139px; border:1px solid #021a40;">
-                          </div>
-                      </div>
-                    <hr class="featurette-divider">
-                    <div class="row featurette" style="padding-bottom: 20px">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Qubit Project</h2>
-                            <p class="lead">The qubit project aimed to construct simulations of low-qubit quantum computers on classical computers. This was accomplished by first constructing simulations of qubits, then simulating increasingly complex gate operations on them. </h3>
-                        </div>
-                        <div class="col-md-5 order-md-1">
-                            <img class="featurette-image img-fluid mx-auto" src="images/project1.png" alt="Generic placeholder image">
-                        </div>
+                    <div class="col-md-5 order-md-1" style="background-color:#000000">
+                        <img class="featurette-image img-fluid mx-auto" src="QUOR/Sentiment Analysis Using QNN.pdf" alt="Generic placeholder image">
                     </div>
                 </div>
-            </main>
-            <!-- FOOTER -->
-            <!--#include file="footer.shtml" -->
-        </body>
-    </html>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Variational Quantum Eigensolvers; A Review of NISQ Era Algorithms</h2>
+                        <p class="lead">We implemented a variation of Grover’s canonical search algorithm, known as partial quantum search, in pyquil (a Python quantum computing library by Rigetti).
+                        <br>
+                        <a href = "QUOR/QUOR Simulation Presentation.pdf" target="_blank"> VQE Simulation Presention</a>.<br>
+                        </h3>
+                    </div>
+                    <div class="col-md-5" style="background-color: #fff">
+                        <img class="featurette-image img-fluid mx-auto" src="QUOR/QUOR Simulation Presentation.pdf" alt="Generic placeholder image" style="padding-top: 139px;padding-bottom: 139px; border:1px solid #021a40;">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">COVID-19 and QAOA</h2>
+                        <p class="lead">We used a quantum annealer to to determine how to safely reopen college campuses via quarantining students. We also implemented the quantum approximate optimization algorithm on Qiskit and TensorFlow Quantum, and showed numerically that for level 1 QAOA similar parameters are optimal on Erdos-Reyni and regular graphs.
+                        <br>
+                        <a href= "QUOR/covid.pdf">A presentation of the quarantine results</a>
+                        <br>
+                        <a href= "https://github.com/qcberkeley/optimization">A repo containing the project</a>
+                        </h3>
+
+                    </div>
+                    <div class="col-md-5 order-md-1" style="background-color:#000000">
+                        <img class="featurette-image img-fluid mx-auto" src="images/project3.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Partial Quantum Search: Spring '19</h2>
+                        <p class="lead">We implemented a variation of Grover’s canonical search algorithm, known as partial quantum search, in pyquil (a Python quantum computing library by Rigetti).
+                        <br>
+                        <a href = "QUOR/PQSPosterFinal.pdf" target="_blank"> The final poster</a>.<br>
+                        <a href = "https://arxiv.org/abs/quant-ph/0407122" target="_blank"> Link to the original paper</a>.<br>
+                        </h3>
+                    </div>
+                    <div class="col-md-5" style="background-color: #fff">
+                        <img class="featurette-image img-fluid mx-auto" src="images/project2.png" alt="Generic placeholder image" style="padding-top: 139px;padding-bottom: 139px; border:1px solid #021a40;">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette" style="padding-bottom: 20px">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Qubit Project</h2>
+                        <p class="lead">The qubit project aimed to construct simulations of low-qubit quantum computers on classical computers. This was accomplished by first constructing simulations of qubits, then simulating increasingly complex gate operations on them. </h3>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="images/project1.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <!--#include file="footer.shtml" -->
+    </body>
+</html>
