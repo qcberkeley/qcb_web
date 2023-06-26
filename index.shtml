@@ -122,7 +122,7 @@
                         <div class="carousel-item active">
                             <div class="carousel-caption d-md-block">
                                 <h2 class="featurette-heading">QCB Partners with The Quantum Insider</h2>
-                                <h3 class="lead">Last semester, we completed our first ever contracting project; a 7 part series overviewing most of quantum technology. You can read our publication on <a href="https://thequantuminsider.com/"><strong style="color: #1000a4;" >The Quantum Insider</strong></a>.</h3>
+                                <h3 class="lead">QCB completes first educational series for businesses; 7 Chapters overviewing most of quantum technology, available on <a href="https://thequantuminsider.com/"><strong style="color: #1000a4;" >The Quantum Insider</strong></a>.</h3>
                                 <a href="https://thequantuminsider.com/introduction-to-quantum-computing/" class="button button1">Quantum 101</a>
                             </div>
                             <img src="images/qcbXtqi1.png" class="rounded mx-auto d-block" style="object-fit: cover;">
@@ -137,11 +137,10 @@
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-caption d-md-block">
-                                <h2 class="featurette-heading">Meet this year's Leadership</h2>
-                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: #1000a4;" >Slack</strong></a> if you want to chat.</h3>
-                                <a href="#team" class="button button1">Team</a>
+                                <h2 class="featurette-heading">QCB's Deep Tech Conference</h2>
+                                <h3 class="lead">QCB hosts first Undergraduate Deep Tech Conference with presenters from Classiq, IBM Quantum, SandboxAQ, and more.</h3>
                             </div>
-                            <img src="images/Sidharth Duthaluru, Riley Peterlinz, Samyak Surti, Elias Lehman, Emiliia Dyrenkova, Andris Huang_2022101_214538_Zach Franzen.JPG" class="rounded mx-auto d-block" style="object-fit: cover;">
+                            <img src="images/DeepTechBadge.jpeg" class="rounded mx-auto d-block" style="object-fit: cover;">
                         </div>
                         <!---<div class="carousel-item">
                             <img src="images/news-bgd1.jpeg" class="rounded mx-auto d-block" style="object-fit: cover;">
