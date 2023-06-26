@@ -79,7 +79,7 @@
             <div class="caption">
                 <span class="border">
                     <div class="header-text">
-                        <img class="logo" src="images/logo.png" style="height:250px">
+                        <img class="logo" src="images/logo.png" style="height:250px;">
                     </div>
                     <hr class="featurette-divider" style="color: rgb(0, 0, 0);">
                     <a class="button button1" href="https://airtable.com/shrGYzXraw8n9r4DL">Apply</a>
@@ -122,8 +122,7 @@
                         <div class="carousel-item active">
                             <div class="carousel-caption d-md-block">
                                 <h2 class="featurette-heading">QCB Partners with The Quantum Insider</h2>
-                                <h3 class="lead">Last semester, we completed our first ever contracting project; a 7 part series overviewing most of quantum technology. You can read our publication on <a href="https://thequantuminsider.com/"><strong style="color: rgb(16, 0, 164);" >The Quantum Insider</strong></a>.</h3>
-                                <hr class="featurette-divider">
+                                <h3 class="lead">Last semester, we completed our first ever contracting project; a 7 part series overviewing most of quantum technology. You can read our publication on <a href="https://thequantuminsider.com/"><strong style="color: #1000a4;" >The Quantum Insider</strong></a>.</h3>
                                 <a href="https://thequantuminsider.com/introduction-to-quantum-computing/" class="button button1">Quantum 101</a>
                             </div>
                             <img src="images/qcbXtqi1.png" class="rounded mx-auto d-block" style="object-fit: cover;">
@@ -131,8 +130,15 @@
                         <div class="carousel-item">
                             <div class="carousel-caption d-md-block">
                                 <h2 class="featurette-heading">Meet this year's Leadership</h2>
-                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: lightblue;" >Slack</strong></a> if you want to chat.</h3>
-                                <hr class="featurette-divider">
+                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: #1000a4;" >Slack</strong></a> if you want to chat.</h3>
+                                <a href="#team" class="button button1">Team</a>
+                            </div>
+                            <img src="images/Sidharth Duthaluru, Riley Peterlinz, Samyak Surti, Elias Lehman, Emiliia Dyrenkova, Andris Huang_2022101_214538_Zach Franzen.JPG" class="rounded mx-auto d-block" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-md-block">
+                                <h2 class="featurette-heading">Meet this year's Leadership</h2>
+                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: #1000a4;" >Slack</strong></a> if you want to chat.</h3>
                                 <a href="#team" class="button button1">Team</a>
                             </div>
                             <img src="images/Sidharth Duthaluru, Riley Peterlinz, Samyak Surti, Elias Lehman, Emiliia Dyrenkova, Andris Huang_2022101_214538_Zach Franzen.JPG" class="rounded mx-auto d-block" style="object-fit: cover;">
@@ -151,7 +157,6 @@
                             <div class="carousel-caption d-md-block">
                                 <h2 class="featurette-heading">All New Resource Library</h2>
                                 <h3 class="lead">Whether you're a beginner or a QC master, find some helpful resources in our new Library! Feel free to contriubte your own resource through the Education page.</h3>
-                                <hr class="featurette-divider">
                                 <a href="decal.shtml#articles" class="button button1">Browse</a>
                             </div>
                         </div>
@@ -233,9 +238,9 @@
                 <div class="col">
                     <div class="col" style="width: 50%;">
                         <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/Riley Peterlinz_2022101_210612_Zach Franzen.JPG" alt="Card image cap">
-                            <div class="middle"></div>
-                            <h5 class="card-text">Riley Peterlinz</br>VP of Education</br>Physics & CS</h5>
+                            <img class="rounded img-fluid" src="images/Sidharth Duthaluru_2022101_211525_Zach Franzen.JPG" alt="Card image cap">
+                            <div class="middle">I'm Sidharth. I'm a fairly simple person. I'm a physics major, policy minor, and I like quantum computing - hardware focused stuff. I also play the bass and piano, it's fun. And I like to build stuff with my hands, though I discovered this pretty recently.</div>
+                            <h5 class="card-text">Sidharth Duthaluru</br>Treasurer</br>Physics & Policy (minor)</h5>
                         </div>
                     </div>
                 </div>
@@ -244,9 +249,9 @@
                 <div class="col">
                     <div class="col" style="width: 50%;">
                         <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/Sidharth Duthaluru_2022101_211525_Zach Franzen.JPG" alt="Card image cap">
-                            <div class="middle">I'm Sidharth. I'm a fairly simple person. I'm a physics major, policy minor, and I like quantum computing - hardware focused stuff. I also play the bass and piano, it's fun. And I like to build stuff with my hands, though I discovered this pretty recently.</div>
-                            <h5 class="card-text">Sidharth Duthaluru</br>Treasurer</br>Physics & Policy (minor)</h5>
+                            <img class="rounded img-fluid" src="images/Jenny.jpg" alt="Card image cap">
+                            <div class="middle">Hi, I'm a second year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, currently doing research on superconducting qubits. I was part of QCB's student-led research group focusing on quantum simulation. In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or <a href="mailto:jennychen42@berkeley.edu">email</a>, or you can usually find me in the physics building!</div>
+                            <h5 class="card-text">Jenny Chen</br> </br>Physics & CS</h5>
                         </div>
                     </div>
                 </div>
@@ -283,6 +288,7 @@
                 <li>Victor Li - Nova Labs </li>
                 <li>Emiliia Dyrenkova - MMath at Institute for Quantum Computing</li>
                 <li>Binhan Hua - PhD at Hardvard</li>
+                <li>Riley Peterlinz - Graduate Research at BAIR</li>
             </h3>
         </div>
 
