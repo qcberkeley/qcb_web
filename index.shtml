@@ -121,22 +121,6 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="carousel-caption d-md-block">
-                                <h2 class="featurette-heading">QCB Partners with The Quantum Insider</h2>
-                                <h3 class="lead">QCB completes first educational series for businesses; 7 Chapters overviewing most of quantum technology, available on <a href="https://thequantuminsider.com/"><strong style="color: #1000a4;" >The Quantum Insider</strong></a>.</h3>
-                                <a href="https://thequantuminsider.com/introduction-to-quantum-computing/" class="button button1">Quantum 101</a>
-                            </div>
-                            <img src="images/qcbXtqi1.png" class="rounded mx-auto d-block" style="object-fit: cover;">
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption d-md-block">
-                                <h2 class="featurette-heading">Meet this year's Leadership</h2>
-                                <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: #1000a4;" >Slack</strong></a> if you want to chat.</h3>
-                                <a href="#team" class="button button1">Team</a>
-                            </div>
-                            <img src="images/Sidharth Duthaluru, Riley Peterlinz, Samyak Surti, Elias Lehman, Emiliia Dyrenkova, Andris Huang_2022101_214538_Zach Franzen.JPG" class="rounded mx-auto d-block" style="object-fit: cover;">
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption d-md-block">
                                 <h2 class="featurette-heading">QCB's Deep Tech Conference</h2>
                                 <h3 class="lead">QCB hosts first Undergraduate Deep Tech Conference with presenters from Classiq, IBM Quantum, SandboxAQ, and more.</h3>
                             </div>
@@ -159,6 +143,22 @@
                                 <a href="decal.shtml#articles" class="button button1">Browse</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="featurette-heading">QCB Partners with The Quantum Insider</h2>
+                            <h3 class="lead">QCB completes first educational series for businesses; 7 Chapters overviewing most of quantum technology, available on <a href="https://thequantuminsider.com/"><strong style="color: #1000a4;" >The Quantum Insider</strong></a>.</h3>
+                            <a href="https://thequantuminsider.com/introduction-to-quantum-computing/" class="button button1">Quantum 101</a>
+                        </div>
+                        <img src="images/qcbXtqi1.png" class="rounded mx-auto d-block" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="featurette-heading">Meet this year's Leadership</h2>
+                            <h3 class="lead">We have a new leadership team! You can read their profiles below. Don't be shy, reach out on <a href="https://join.slack.com/t/qcberkeley/shared_invite/zt-1gpalnnuq-Qd2DWG~456mwSdFvGxyWdg"><strong style="color: #1000a4;" >Slack</strong></a> if you want to chat.</h3>
+                            <a href="#team" class="button button1">Team</a>
+                        </div>
+                        <img src="images/Sidharth Duthaluru, Riley Peterlinz, Samyak Surti, Elias Lehman, Emiliia Dyrenkova, Andris Huang_2022101_214538_Zach Franzen.JPG" class="rounded mx-auto d-block" style="object-fit: cover;">
                     </div>
                     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" style="filter: invert(100%);" aria-hidden="true"></span>
@@ -216,51 +216,43 @@
                 </div>
                 <div class="col">
                     <div class="rounded card">
+                        <img class="rounded img-fluid" src="images/Jenny.png" alt="Card image cap">
+                        <div class="middle">Hi, I'm a second year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, currently doing research on superconducting qubits. I was part of QCB's student-led research group focusing on quantum simulation. In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or <a href="mailto:jennychen42@berkeley.edu">email</a>, or you can usually find me in the physics building!</div>
+                        <h5 class="card-text">Jenny Chen</br>Co-President</br>Physics & CS</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-around;">
+                <div class="col">
+                    <div class="rounded card">
+                        <img class="rounded img-fluid" src="images/Samyak Surti_2022101_212409_Zach Franzen.JPG" alt="Card image cap">
+                        <div class="middle">Hey guys, my name is Samyak, I'm a 3rd-year double-majoring in Mathematics and Computer Science. I'm very interested in quantum error correction, especially QLDPC codes. This term, I'll be helping organize QC@B's Quantum Undergraduate Opportunities in Research Program. In the past, I co-led the club's journal club. You can reach me at my <a href="https://www.linkedin.com/in/spsurti/">LinkedIn</a> or my <a href="mailto:spsurti@berkeley.edu">email</a>!
+                        </div>
+                        <h5 class="card-text">Samyak Surti</br>VP of Research</br>Math & Computer Science</h5>
+                    </div>
+                </div>
+                <div class="col" style="width: 50%;">
+                    <div class="rounded card">
+                        <img class="rounded img-fluid" src="images/NathanS.jpg" alt="Card image cap">
+                        <div class="middle">I'm Nathan, a Physics / Math major graduating in 2025. I'm interested in quantum information, particularly algorithmic improvements and experimental AMO. I also like to play the clarinet and read books, so if you have any recommendations please send them my way!</div>
+                        <h5 class="card-text">Nathan Song</br>VP of External</br>Physics & Math</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-around;">
+                <div class="col">
+                    <div class="rounded card">
                         <img class="rounded img-fluid" src="images/Elias Lehman_2022101_212020_Zach Franzen.JPG" alt="Card image cap">
-                        <div class="middle">Hey, Elias here. I taught the introductory discussion last semester while I too learned the intricacies of QC. I studied with the project group and, most recently, I worked a tech consulting internship. I also updated this website, enjoy! I love talking science, philosophy, music, and of course food. Ping me for coffee this Fall via <a href="https://www.linkedin.com/in/elias-lehman/">LinkedIn</a> or <a href="mailto:eliaslehman@berkeley.edu">email</a>.
+                        <div class="middle">Hey, Elias here. I'm a former Co-President of QCB and researcher at the Institue for Quantum Computing. I currently research superconducting qubits at LBNL's Advanced Quantum Testbed and manage this website. I love talking science, philosophy, music, and cuisine. Ping me for coffee this Fall via <a href="https://www.linkedin.com/in/elias-lehman/">LinkedIn</a> or <a href="mailto:eliaslehman@berkeley.edu">email</a>.
                         </div>
-                        <h5 class="card-text">Elias Lehman</br>Co-President</br>Physics & EECS (minor)</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="justify-content: space-around;">
-                <div class="col">
-                    <div class="col" style="width: 50%;">
-                        <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/Samyak Surti_2022101_212409_Zach Franzen.JPG" alt="Card image cap">
-                            <div class="middle">Hey guys, my name is Samyak, I'm a 3rd-year double-majoring in Mathematics and Computer Science. I'm very interested in quantum error correction, especially QLDPC codes. This term, I'll be helping organize QC@B's Quantum Undergraduate Opportunities in Research Program. In the past, I co-led the club's journal club. You can reach me at my <a href="https://www.linkedin.com/in/spsurti/">LinkedIn</a> or my <a href="mailto:spsurti@berkeley.edu">email</a>!
-                            </div>
-                            <h5 class="card-text">Samyak Surti</br>VP of Research</br>Math & Computer Science</h5>
-                        </div>
+                        <h5 class="card-text">Elias Lehman</br>Community Lead</br>Physics & EECS (minor)</h5>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="col" style="width: 50%;">
-                        <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/Sidharth Duthaluru_2022101_211525_Zach Franzen.JPG" alt="Card image cap">
-                            <div class="middle">I'm Sidharth. I'm a fairly simple person. I'm a physics major, policy minor, and I like quantum computing - hardware focused stuff. I also play the bass and piano, it's fun. And I like to build stuff with my hands, though I discovered this pretty recently.</div>
-                            <h5 class="card-text">Sidharth Duthaluru</br>Treasurer</br>Physics & Policy (minor)</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="justify-content: space-around;">
-                <div class="col">
-                    <div class="col" style="width: 50%;">
-                        <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/Jenny.jpg" alt="Card image cap">
-                            <div class="middle">Hi, I'm a second year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, currently doing research on superconducting qubits. I was part of QCB's student-led research group focusing on quantum simulation. In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or <a href="mailto:jennychen42@berkeley.edu">email</a>, or you can usually find me in the physics building!</div>
-                            <h5 class="card-text">Jenny Chen</br> </br>Physics & CS</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="col" style="width: 50%;">
-                        <div class="rounded card">
-                            <img class="rounded img-fluid" src="images/JyotiR.png" alt="Card image cap">
-                            <div class="middle"></div>
-                            <h5 class="card-text">Jyoti Rani</br>VP of External</br>EECS & Business</h5>
-                        </div>
+                    <div class="rounded card">
+                        <img class="rounded img-fluid" src="images/Sidharth Duthaluru_2022101_211525_Zach Franzen.JPG" alt="Card image cap">
+                        <div class="middle">I'm Sidharth. I'm a fairly simple person. I'm a physics major, policy minor, and I like quantum computing - hardware focused stuff. I also play the bass and piano, it's fun. And I like to build stuff with my hands, though I discovered this pretty recently.</div>
+                        <h5 class="card-text">Sidharth Duthaluru</br>Treasurer</br>Physics & Policy (minor)</h5>
                     </div>
                 </div>
             </div>
