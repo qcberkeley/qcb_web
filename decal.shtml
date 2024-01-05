@@ -361,13 +361,25 @@
 
             response.result.values.forEach((row, index) => {
                 if (index === 0) {
-                tableHead += "<tr>";
-                row.forEach((val, meta) => (tableHead += "<td>" + val + "</td>"));
-                tableHead += "</tr>";
+                    row.forEach((val, meta) => {
+                        if (meta !==2) {
+                            // Exclude the header for the second column
+                            tableHead += "<td><b>" + val + "</b></td>";
+                        }
+                    });
+                    tableHead += "</tr></thead>";
                 } else {
-                tableBody += "<tr>";
-                row.forEach((val, meta) => (meta == 2 ? (tableBody += "<td><a href=\"" + val + "\">" + val + "</a></td>") : (tableBody += "<td>" + val + "</td>")));
-                tableBody += "</tr>";
+                    tableBody += "<tr>";
+                    row.forEach((val, meta) => {
+                        if (meta === 0) {
+                            // Link the name to the URL in the second column
+                            tableBody += "<td><a href=\"" + row[2] + "\">" + val + "</a></td>";
+                        } else if (meta !== 2) {
+                            // Skip the second column (meta == 1)
+                            tableBody += "<td>" + val + "</td>";
+                        }
+                    });
+                    tableBody += "</tr>";
                 }
             });
 
