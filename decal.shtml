@@ -362,11 +362,11 @@
             response.result.values.forEach((row, index) => {
                 if (index === 0) {
                 tableHead += "<tr>";
-                row.forEach((val, meta) => (tableHead += "<th onclick=\"sortColumn(" + meta + ")\">" + val + "</th>"));
+                row.forEach((val, meta) => (tableHead += "<td>" + val + "</td>"));
                 tableHead += "</tr>";
                 } else {
                 tableBody += "<tr>";
-                row.forEach((val, meta) => (meta == 3 ? (tableBody += "<td><a href=\"" + val + "\">" + val + "</a></td>") : (tableBody += "<td>" + val + "</td>")));
+                row.forEach((val, meta) => (meta == 2 ? (tableBody += "<td><a href=\"" + val + "\">" + val + "</a></td>") : (tableBody += "<td>" + val + "</td>")));
                 tableBody += "</tr>";
                 }
             });
