@@ -92,8 +92,23 @@
                 <h3 class="lead" style="width: 80%">Given the accelerating growth of the Quantum Computing industry, we believe it is critical that undergraduates recieve fundamental educational resources. For this reason, QCB has expanded its educational program beyond the usual material. We now offer a variety of resources from courseware and labs, to articles, coding tutorials, and research opportunities. Read of our difference resources below.</h3>
                 <hr class="featurette-divider">
             </div>
+            <!-- Library -->
+            <!-- See functionality in JS scipt at bottom -->
+            <div class="row" id="library" style="background-color: rgb(214, 238, 255);">
+                <div class="col-md">
+                    <h2 class="featurette-heading" style="font-size: 45px;" style="background-color: rgb(0, 128, 73);">Library</h2>
+                </div>
+                <div class="container" style="overflow-y: scroll; height: 500px; background-color: white; color: black; text-align: center;">
+                    <!-- Table -->
+                    <table class="table" id="sortMe">
+                    <thead id="table-head"></thead>
+                    <tbody id="table-body"></tbody>
+                    </table>
+                    <!-- Table -->
+                </div>      
+            </div>
             <!--Courseware-->
-            <div class="row" id="courseware" style="background-color: rgb(197, 179, 255);">
+            <div class="row" id="courseware" style="background-color: rgb(182, 212, 255);">
                 <div class="col-md">
                     <h2 class="featurette-heading" style="font-size: 45px;" >Courseware</h2>
                     <h3 class="lead">QCB offers either a Decal, an offcial course exclusively for UC Berkeley students, or introductory weekly lessons. 
@@ -154,26 +169,9 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row" style="background-color: rgb(30, 0, 128);">
-                <div class="card" style="width: 60%;">
-                    <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
-                      <h5 class="mb-0">
-                        <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                          Decal Syllabus
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseOne" class="collapse">
-                        <div class="card-body" style="height: 500px;">
-                            <iframe style=" height: 500px; width: 100%;" src="https://docs.google.com/document/d/e/2PACX-1vQucQbXtGXl3AbYD020LMT59liBwVfoHTuVM8EV-d7L8JnCJgaO3ttPIl-NiDLZqbV-UKtnA3SuWNrO/pub?embedded=true"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                    
            <!--Tutorials-->
-            <div class="row" id="tutorials" style="background-color: rgb(245, 217, 134);">
+            <div class="row" id="tutorials" style="background-color: rgb(141, 183, 255);">
     
                 <div class="col-md">
                     <div class="accordion" id="accordionExample" style="padding: 5%;">
@@ -217,7 +215,7 @@
             </div>
 
             <!--Articles-->
-            <div class="row" id="articles" style="background-color: rgb(255, 208, 68);">
+            <div class="row" id="articles" style="background-color: rgb(96, 154, 255);">
                 <div class="col-md">
                     <h2 class="featurette-heading" style="font-size: 45px;" >Articles</h2>
                     <h3 class="lead">We have a track record of studying and summarizing the latest Quantum Computing developments. 
@@ -290,19 +288,22 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row" id="library" style="background-color: rgb(255, 255, 255);">
-                <div class="col-md">
-                    <h2 class="featurette-heading" style="font-size: 45px;" style="background-color: rgb(0, 128, 73);">Library</h2>
+            <!-- Decal -->
+            <div class="row" style="background-color: rgb(30, 0, 128);">
+                <div class="card" style="width: 60%;">
+                    <div class="card-header" id="headingOne" style="background-color: rgb(0, 0, 0);">
+                        <h5 class="mb-0">
+                        <button class="btn" style="color: rgb(255, 255, 255); width: 100%; background-color: transparent;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Decal Syllabus
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse">
+                        <div class="card-body" style="height: 500px;">
+                            <iframe style=" height: 500px; width: 100%;" src="https://docs.google.com/document/d/e/2PACX-1vQucQbXtGXl3AbYD020LMT59liBwVfoHTuVM8EV-d7L8JnCJgaO3ttPIl-NiDLZqbV-UKtnA3SuWNrO/pub?embedded=true"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="container" style="overflow-y: scroll; height: 500px; background-color: white; color: black; text-align: center;">
-                    <!-- Table -->
-                    <table class="table" id="sortMe">
-                    <thead id="table-head"></thead>
-                    <tbody id="table-body"></tbody>
-                    </table>
-                    <!-- Table -->
-                </div>      
             </div>
         </main>
         <!-- FOOTER -->
