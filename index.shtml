@@ -94,16 +94,21 @@
             </div>
             <div class="row" style="width: 100%;">
                 <div class="col" >
-                    <a href="https://classiq.io/"><img src="images/classiq.png" style="width:80%" alt=""></a>
+                    <a href="https://www.sandboxaq.com/"><img src="images/sandboxaq-logo-accent-color-black-tm.png" style="width:80%" alt=""></a>
                 </div>
                 <div class="col" >
                     <a href="https://ciqc.berkeley.edu/"><img src="images/ciqc.png" style="width:80%" alt=""></a>
                 </div>
-                <div class="col">
-                    <a href="https://studentunion.berkeley.edu/"><img src="images/asuc.png" style="width:80%" alt=""></a>
-                </div>
+            </div>
+            <div class="row" style="width:100%;">
                 <div class="col">
                     <a href="https://atom-computing.com/"><img src="images/atom_logo_COLOR.png" style="width:80%" alt=""></a>
+                </div>
+                <div class="col" >
+                    <a href="https://classiq.io/"><img src="images/classiq.png" style="width:80%" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="https://studentunion.berkeley.edu/"><img src="images/asuc.png" style="width:80%" alt=""></a>
                 </div>
             </div>
         </div>
