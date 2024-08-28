@@ -213,17 +213,24 @@
                 <div class="col">
                     <div class="rounded card">
                         <img class="rounded img-fluid" src="images/Andris Huang_2022101_211131_Zach Franzen.JPG" alt="Card image cap">
-                        <div class="middle">I am a 3rd year undergraduate student in Physics and CS. My past with quantum computing predates my first year at Berkeley. Personally, I’m a physicist by heart and a strong believer of the Bousso-Susskind Multiverse Interpretation of Quantum Mechanics. Reach out to me on 
-                            <a href="https://www.linkedin.com/in/andris-huang/">LinkedIn</a> or <a href="mailto:andrewhz@berkeley.edu">email</a>!
+                        <div class="middle">
+                            Hi, I'm a third year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, currently doing research on superconducting qubits. 
+                            I was part of QCB's student-led research group focusing on quantum simulation. 
+                            In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via LinkedIn or email, or you can usually find me in the physics building!
                         </div>
-                        <h5 class="card-text">Andris Huang</br>Co-President</br>Physics & CS</h5>
+                        <h5 class="card-text">Jenny Chen</br>Co-President</br>Physics & CS</h5>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="rounded card">
                         <img class="rounded img-fluid" src="images/Jenny.png" alt="Card image cap">
-                        <div class="middle">Hi, I'm a second year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, currently doing research on superconducting qubits. I was part of QCB's student-led research group focusing on quantum simulation. In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or <a href="mailto:jennychen42@berkeley.edu">email</a>, or you can usually find me in the physics building!</div>
-                        <h5 class="card-text">Jenny Chen</br>Co-President</br>Physics & CS</h5>
+                        <div class="middle">
+                            I am a fourth year undergraduate student in Physics and Math. I am currently interested in quantum computing with a focus in neutral atoms, and have a strong interest 
+                            in many-body problems and cavity QED. This semester, I'll be teaching the Hardware subgroup. Feel free to reach out to me via 
+                            <a href="https://www.linkedin.com/in/nathansong314159/">LinkedIn</a> or <a href="nathansong@berkeley.edu">email</a>!
+                        </div>
+                        <h5 class="card-text">Nathan Song</br>Co-President</br>Physics & Math</h5>
                     </div>
                 </div>
             </div>
@@ -231,7 +238,8 @@
                 <div class="col">
                     <div class="rounded card">
                         <img class="rounded img-fluid" src="images/Samyak Surti_2022101_212409_Zach Franzen.JPG" alt="Card image cap">
-                        <div class="middle">Hey guys, my name is Samyak, I'm a 3rd-year double-majoring in Mathematics and Computer Science. I'm very interested in quantum error correction, especially QLDPC codes. This term, I'll be helping organize QC@B's Quantum Undergraduate Opportunities in Research Program. In the past, I co-led the club's journal club. You can reach me at my <a href="https://www.linkedin.com/in/spsurti/">LinkedIn</a> or my <a href="mailto:spsurti@berkeley.edu">email</a>!
+                        <div class="middle">
+                            
                         </div>
                         <h5 class="card-text">Samyak Surti</br>VP of Research</br>Math & Computer Science</h5>
                     </div>
