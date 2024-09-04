@@ -228,10 +228,10 @@
             <div class="row" style="justify-content: space-around;">
                 <div class="col">
                     <div class="rounded card">
-                        <img class="rounded img-fluid" src="images/2024fallleadership/jennyfar.jpg" alt="Card image cap">
+                        <img class="rounded img-fluid" src="images/2024fallleadership/jennyclose.jpg" alt="Card image cap">
                         <div class="middle">
                             Hey! I'm a third year physics and CS undergrad who loves both the hardware and theory aspect of quantum computing, and I'm currently doing research in experimental AMO. I was part of QCB's student-led research group focusing on quantum simulation. 
-                            In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or <a href="jennychen42@berkeley.edu">email</a>, or you can usually find me in the physics building!
+                            In my free time, I enjoy going on long walks and bouldering. Feel free to reach out to me via <a href="https://www.linkedin.com/in/jenny-chen-a64274255/">LinkedIn</a> or email me at jennychen42(at)berkeley.edu, or you can usually find me in the physics building!
                         </div>
                         <h5 class="card-text">Jenny Chen</br>Co-President</br>Physics & CS</h5>
                     </div>
@@ -243,7 +243,7 @@
                         <div class="middle">
                             I am a fourth year undergraduate student in Physics and Math. I am currently interested in quantum computing with a focus in neutral atoms, and have a strong interest 
                             in many-body problems and cavity QED. This semester, I'll be teaching the Hardware subgroup. Feel free to reach out to me via 
-                            <a href="https://www.linkedin.com/in/nathansong314159/">LinkedIn</a> or <a href="nathansong@berkeley.edu">email</a>!
+                            <a href="https://www.linkedin.com/in/nathansong314159/">LinkedIn</a> or nathansong(at)berkeley.edu!
                         </div>
                         <h5 class="card-text">Nathan Song</br>Co-President</br>Physics & Math</h5>
                     </div>
@@ -254,9 +254,9 @@
                     <div class="rounded card">
                         <img class="rounded img-fluid" src="images/2024fallleadership/yajurfar.jpg" alt="Card image cap">
                         <div class="middle">
-                            Hey! I’m Yajur, a sophomore studying physics and pure mathematics, and I have a passion for learning cool things. Quantum computing is pretty cool, and so is particle physics. 
+                            Hey! I'm Yajur, a sophomore studying physics and pure mathematics, and I have a passion for learning cool things. Quantum computing is pretty cool, and so is particle physics. 
                             This year, I will be leading the theory subgroup, focusing on Quantum Error Mitigation. 
-                            Other than that, I love playing the guitar, especially heavy metal, and feel free to connect with me via <a href="https://www.linkedin.com/in/yajurpreetham/">LinkedIn</a> or <a href="yajur.preetham@berkeley.edu">email</a>!
+                            Other than that, I love playing the guitar, especially heavy metal, and feel free to connect with me via <a href="https://www.linkedin.com/in/yajurpreetham/">LinkedIn</a> or email yajur.preetham(at)berkeley.edu!
                         </div>
                         <h5 class="card-text">Yajur Preetham</br>VP of Research</br>Physics & Math</h5>
                     </div>
@@ -266,7 +266,7 @@
                         <img class="rounded img-fluid" src="images/2024fallleadership/prishafar.jpg" alt="Card image cap">
                         <div class="middle">
                             Hi! I'm Prisha, a third year studying CS and Physics (maybe), and I'm the External lead at QCB this year and have an innate interest in watching and becoming part of the progression of quantum computing into industry. 
-                            You can probably catch me hiking in the Berkeley fire trails or at Cafenated on college. Feel free to reach out to me via <a href="http://www.linkedin.com/in/prisha-singh-0b8b331aa">LinkedIn</a> or <a href="prishasingh@berkeley.edu">email</a>.
+                            You can probably catch me hiking in the Berkeley fire trails or at Cafenated on college. Feel free to reach out to me via <a href="http://www.linkedin.com/in/prisha-singh-0b8b331aa">LinkedIn</a> or email me at prishasingh(at)berkeley.edu.
                         </div>
                         <h5 class="card-text">Prisha Singh</br>VP of External</br>CS & Physics</h5>
                     </div>
@@ -275,9 +275,9 @@
             <div class="row" style="justify-content: space-around;">
                 <div class="col">
                     <div class="rounded card">
-                        <img class="rounded img-fluid" src="images/2024fallleadership/lakshyafar.jpg" alt="Card image cap">
+                        <img class="rounded img-fluid" src="images/2024fallleadership/lakshyaclose.jpg" alt="Card image cap">
                         <div class="middle">
-                            Hi there! My name is Lakshya Nagal, and I am a third-year computer science & physics student, and will be the Treasurer for QCB this semester. In addition to handling the club’s finances, I will be supporting the different subgroups, and look forward to some enthralling events/conferences this semester! 
+                            Hi there! My name is Lakshya Nagal, and I am a third-year computer science & physics student, and will be the Treasurer for QCB this semester. In addition to handling the club's finances, I will be supporting the different subgroups, and look forward to some enthralling events/conferences this semester! 
                             I like (re)watching a lot of movies,  a couple favorites include Rounders, The Fugitive, and Aliens. Feel free to connect with me on <a href="http://www.linkedin.com/in/lakshyanagal">LinkedIn</a>!
                         </div>
                         <h5 class="card-text">Lakshya Nagal</br>Treasurer</br>CS & Physics</h5>
@@ -288,7 +288,7 @@
                         <img class="rounded img-fluid" src="images/2024fallleadership/jayprofile.jfif" alt="Card image cap">
                         <div class="middle">
                             Hi, I'm Jay, a sophomore studying EECS and Business. I am currently researching cavity QED systems, and I also have experience in the business side of quantum technologies. 
-                            I want to help everyone get introduced to quantum and be excited about its potential in diverse fields. Feel free to <a href="jonimbalkar@berkeley.edu">email</a> me if you have any questions about the club, 
+                            I want to help everyone get introduced to quantum and be excited about its potential in diverse fields. Feel free to email me at jonimbalkar(at)berkeley.edu if you have any questions about the club, 
                             how you can get involved in quantum, or any movie recommendations.
                         </div>
                         <h5 class="card-text">Jay Nimbalkar</br>Event Organizer</br>EECS & Business</h5>
@@ -303,13 +303,10 @@
                             Hi there! My name is Daniel Christensen, and I am a third-year chemistry &  CS student, and will be leading Internal Communications for QCB this semester.
                              Feel free to connect with me on <a href="https://www.linkedin.com/in/daniel-christensen-1387b3251/">LinkedIn</a>!
                         </div>
-                        <h5 class="card-text">Daniel Christensen</br>Head of Internal Communications</br>Chemistry & CS</h5>
+                        <h5 class="card-text">Daniel Christensen</br>Head of Internal Communications</br>Chemistry & Data Science</h5>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="rounded card">
-                    </div>
-                </div>
+    
             </div>
         </div>
 
