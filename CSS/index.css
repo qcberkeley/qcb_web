@@ -66,6 +66,15 @@ html {
     /*text-align: justify;*/
 }
 
+.grouppic {
+    align-items: center;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    /*text-align: justify;*/
+}
+
+
 .fade-in-section {
     opacity: 0;
     transform: translateY(20vh);
@@ -110,7 +119,7 @@ html {
 }
 
 .card {
-    height: 500px;
+    height: 530px;
     width: 400px;
     margin: 5%;
 }
@@ -120,7 +129,7 @@ html {
 }
 
 .rounded.img-fluid {
-    height: 400px;
+    height: 530px;
     width: 400px;
     margin-bottom: .75rem;
     object-fit: cover;
@@ -155,11 +164,11 @@ html {
 
 .middle {
     width: 100%;
-    height: 80%;
+    height: 90%;
     opacity: 0;
     color: black;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
