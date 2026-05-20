@@ -279,11 +279,12 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <!-- easyData -->
     <script type="text/javascript" src="js/easyData-google-sheets.js"></script>
+    <!-- API key (restricted to this domain + Sheets API only) -->
+    <script type="text/javascript" src="js/config.js"></script>
 
     <!-- easyData - Creating table -->
     <script>
-            // Your API KEY
-            const API_KEY = "AIzaSyAFTyJqH8di0CaxZocEOwmXglCEm4FqmEY";
+            // API_KEY is loaded from js/config.js
             function sortColumn(index) {
                 const rows = document.querySelectorAll('tr');
                 // Clone the rows
