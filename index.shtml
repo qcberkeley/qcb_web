@@ -220,22 +220,22 @@
         </div>
 
         <div class="row" style="justify-content: space-around;">
-            <div class="col">
-                <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/2026fallleadership/ian.jpg" alt="Card image cap">
-                    <div class="middle">
-                        I am Ian.
-                    </div>
-                    <h5 class="card-text">Ian Loam</br>Co-President</br>CS & Math</h5>
-                </div>
-            </div>
             <div class="col" style="width: 50%;">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Kepha.jpg" alt="Card image cap">
                     <div class="middle">
                         I am Kepha.
                     </div>
-                    <h5 class="card-text">Kepha Sher</br>Finance & Webmaster</br>CS & Math</h5>
+                    <h5 class="card-text">Kepha Sher</br>Co-President</br>CS & Math</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/2026fallleadership/Ian.jpeg" alt="Card image cap">
+                    <div class="middle">
+                        I am Ian.
+                    </div>
+                    <h5 class="card-text">Ian Loam</br>Co-President</br>CS & Math</h5>
                 </div>
             </div>
         </div>
@@ -333,7 +333,7 @@
                     <div class="middle">
                         I am Jason.
                     </div>
-                    <h5 class="card-text">Jason Dong</br>Outreach & Finance</br>CS</h5>
+                    <h5 class="card-text">Jason Dong</br>Outreach & Finance</br>CS & Physics</h5>
                 </div>
             </div>
         </div>
