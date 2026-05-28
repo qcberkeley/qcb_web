@@ -186,33 +186,7 @@
             <!-- Parallax Image -->
             <div class="bgimg-1">
                 <!-- NAVBAR -->
-                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                    <a class="navbar-brand navbar-left" href="index.shtml">
-                        <img class="logo" src="images/logo.png" alt="Quantum Computing at Berkeley logo">
-                    </a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.shtml">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="project.shtml">Research</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="decal.shtml">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="opportunities.shtml">Opportunities</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScKzpYVdMcRcIqZXiw727V1yZusVuIEBF6GcxcEnKeFANGkaw/viewform?usp=sf_link" target="_blank" rel="noopener">Join</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                <!--#include file="navbar.shtml" -->
 
                 <div class="caption" style="height: 500px;">
                     <span class="border">
