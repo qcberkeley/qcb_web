@@ -13,6 +13,7 @@
             <a class="nav-link" href="../index.shtml">Home</a>
             <a class="nav-link" href="project.shtml">Research</a>
             <a class="nav-link active" href="decal.shtml">Education</a>
+            <a class="nav-link active" href="opportunities.shtml">Opportunities</a>
             <li class="nav-item">
                 <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScKzpYVdMcRcIqZXiw727V1yZusVuIEBF6GcxcEnKeFANGkaw/viewform?usp=sf_link">Join</a>
             </li>
