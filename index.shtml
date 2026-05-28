@@ -52,7 +52,7 @@
                 </div>
                 <hr class="featurette-divider" style="color: rgb(0, 0, 0);">
                 <a class="button button1"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfXrPIMuIxzMFgdN3ObJzgut9xQYONAFtP0JMnpweKyWcXcfw/viewform?usp=header">Join</a>
+                    href="https://eqcbbwwzsk.zite.so">Join</a>
             </span>
         </div>
     </div>
@@ -218,35 +218,15 @@
             <h2 class="featurette-heading" style="font-size: 45px;">Team
                 <hr class="featurette-divider" style="color: white;">
         </div>
-        <div class="row" style="justify-content: space-around;">
-            <div class="col">
-                <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/2025fallleadership/Yajur.jpg" alt="Card image cap">
-                    <div class="middle">
-                        I am Yajur.
-                    </div>
-                    <h5 class="card-text">Yajur Preetham</br>Co-President</br>Physics</h5>
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/2025fallleadership/Keith.jpg" alt="Card image cap">
-                    <div class="middle">
-                        I am Keith.
-                    </div>
-                    <h5 class="card-text">Keith Chiang</br>Co-President</br>Physics</h5>
-                </div>
-            </div>
-        </div>
         <div class="row" style="justify-content: space-around;">
             <div class="col">
                 <div class="rounded card">
-                    <img class="rounded img-fluid" src="images/2025fallleadership/Jenny.jpg" alt="Card image cap">
+                    <img class="rounded img-fluid" src="images/2026fallleadership/ian.jpg" alt="Card image cap">
                     <div class="middle">
-                        I am Jenny.
+                        I am Ian.
                     </div>
-                    <h5 class="card-text">Jenny Chen</br>Senior advisor</br>Physics</h5>
+                    <h5 class="card-text">Ian Loam</br>Co-President</br>CS & Math</h5>
                 </div>
             </div>
             <div class="col" style="width: 50%;">
@@ -259,35 +239,61 @@
                 </div>
             </div>
         </div>
+
+        <div class="row" style="justify-content: space-around;">
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/2025fallleadership/Yajur.jpg" alt="Card image cap">
+                    <div class="middle">
+                        I am Yajur.
+                    </div>
+                    <h5 class="card-text">Yajur Preetham</br>Senior Advisor</br>Physics</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/2025fallleadership/Keith.jpg" alt="Card image cap">
+                    <div class="middle">
+                        I am Keith.
+                    </div>
+                    <h5 class="card-text">Keith Chiang</br>Senior Advisor</br>Physics</h5>
+                </div>
+            </div>
+        </div>
+
         <div class="row" style="justify-content: space-around;">
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Matthew.jpg" alt="Card image cap">
                     <div class="middle">
-                        I am MRC.
+                        I am Matthew.
                     </div>
                     <h5 class="card-text">Matthew Cai</br>Member</br>CS</h5>
                 </div>
             </div>
+
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Esha.jpg" alt="Card image cap">
                     <div class="middle">
                         I am Esha.</div>
-                    <h5 class="card-text">Esha Telang</br>Cryptography</br>Physics</h5>
+                    <h5 class="card-text">Esha Telang</br>Project Leader</br>CS</h5>
                 </div>
             </div>
         </div>
+
         <div class="row" style="justify-content: space-around;">
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Evan.jpg" alt="Card image cap">
                     <div class="middle">
-                        I am Evan
+                        I am Evan.
                     </div>
-                    <h5 class="card-text">Evan Wang</br>Member</br>Physics</h5>
+                    <h5 class="card-text">Evan Wang</br>Project Leader</br>Physics</h5>
                 </div>
             </div>
+
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Joyce.jpg" alt="Card image cap">
@@ -297,16 +303,18 @@
                 </div>
             </div>
         </div>
+
         <div class="row" style="justify-content: space-around;">
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/Melody.jpg" alt="Card image cap">
                     <div class="middle">
-                        I am Melody
+                        I am Melody.
                     </div>
                     <h5 class="card-text">Melody Wu</br>Member</br>Physics</h5>
                 </div>
             </div>
+
             <div class="col">
                 <div class="rounded card">
                     <img class="rounded img-fluid" src="images/2025fallleadership/makayla.JPG" alt="Card image cap">
@@ -314,6 +322,18 @@
                         I am Makayla.
                     </div>
                     <h5 class="card-text">Makayla Hu</br>Journal Chair</br>Physics</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="justify-content: space-around;">
+            <div class="col">
+                <div class="rounded card">
+                    <img class="rounded img-fluid" src="images/2026fallleadership/Jason.jpg" alt="Card image cap">
+                    <div class="middle">
+                        I am Jason.
+                    </div>
+                    <h5 class="card-text">Jason Dong</br>Outreach & Finance</br>CS</h5>
                 </div>
             </div>
         </div>

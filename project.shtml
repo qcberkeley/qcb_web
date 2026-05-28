@@ -38,7 +38,6 @@
                         <div class="Header" style="color: white;">
                             <br/>
                             Research<br/>
-                            <a href="https://forms.gle/McHCUHeAiozpWjQ27" class="button button1">QUOR F22</a>
                             <a href="https://forms.gle/MBGkq8z7a8pdF6zSA" class="button button1">Propose</a>
                         </div>
                     </span>
@@ -46,7 +45,7 @@
             </div>
             <div class="row" style=" align-items: center; justify-content: center; position: relative; background-color: rgba(0, 0, 0, 0); backdrop-filter: blur(3px); padding-top: 50px; text-align: justify;">
                 <div class="container" style="width: 80%;">
-                    <h2 class="featurette-heading" style="font-size: 45px; text-align: center">Q.U.O.R - Quantum Undergraduate Opportuniies in Research
+                    <h2 class="featurette-heading" style="font-size: 45px; text-align: center">Q.U.O.R - Quantum Undergraduate Opportunities in Research
                     </h2>
                     <h3 class="lead">Welcome to the QCB Research page. Here you'll find ongoing and previous research by our club's central Research Team as well as 
                         projects from members. This Fall we're introducing our QUOR program, aimed at prepared undergraduates for intensive quantum research. This field is
