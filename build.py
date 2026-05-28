@@ -73,15 +73,15 @@ def build():
             shutil.copy2(item, out)
             print(f"  copied: {rel}")
 
-    # Symlink images from old site into dist
+    # Symlink images into dist
     images_link = DIST / "images"
     if not images_link.exists():
-        old_images = (ROOT.parent / "qcb_web" / "images").resolve()
-        if old_images.exists():
-            os.symlink(old_images, images_link)
-            print(f"  linked: images → {old_images}")
+        images_src = ROOT / "images"
+        if images_src.exists():
+            os.symlink(images_src, images_link)
+            print(f"  linked: images → {images_src}")
         else:
-            print("  warning: images directory not found — create dist/images manually")
+            print("  warning: images/ directory not found at project root")
 
     print("\nDone → dist/")
 
