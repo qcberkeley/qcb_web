@@ -360,8 +360,9 @@
             <hr class="featurette-divider" style="color: white;">
             <h3 class="lead">Add yourself to our gCal to stay on top of our subgroup meetings, relevant quantum
                 information seminars, speaker events, competitions, and conferences.</h3>
+
             <iframe
-                src="https://calendar.google.com/calendar/embed?src=c_fd1a0e1adf6be69942e0af21d8eebac9fc9684ec732aa3a51462916df8fa1121%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                src="https://calendar.google.com/calendar/embed?src=quantumcomputingberkeley%40gmail.com&ctz=America%2FLos_Angeles"
                 style="border: 0" width="80%" height="500" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>

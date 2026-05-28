@@ -38,6 +38,9 @@
             <li>
                 <a class="nav-link active" href="opportunities.shtml">Opportunities</a>
             </li>
+            <li>
+                <a class="nav-link active" href="fa26decal.html">DeCal</a>
+            </li>
         </ul>
     </div>
 </nav>
