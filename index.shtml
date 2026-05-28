@@ -43,52 +43,8 @@
         <video autoplay muted loop style="object-fit: cover; position: fixed; width: 100%; height: 100%;">
             <source src="images/background.mp4" type="video/mp4">
         </video>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <a class="navbar-brand navbar-left" href="index.shtml">
-                <img class="logo" src="images/logo.png">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" margin-right="auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="index.shtml" aria-haspopup="true"
-                            aria-expanded="false">Home</a>
-                        <ul class="dropdown-menu" style="background-color: #000000;">
-                            <a class="nav-link" href="index.shtml#sponsors">Sponsors</a>
-                            <a class="nav-link" href="index.shtml#news">News</a>
-                            <a class="nav-link" href="index.shtml#about">About</a>
-                            <a class="nav-link" href="index.shtml#membership">Membership</a>
-                            <a class="nav-link" href="index.shtml#team">Team</a>
-                            <a class="nav-link" href="index.shtml#events">Events</a>
-                            <a class="nav-link"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSfXrPIMuIxzMFgdN3ObJzgut9xQYONAFtP0JMnpweKyWcXcfw/viewform?usp=header">Join</a>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="decal.shtml" aria-haspopup="true"
-                            aria-expanded="false">Education</a>
-                        <ul class="dropdown-menu" style="background-color: #000000;">
-                            <a class="nav-link" href="decal.shtml#courseware">Courseware</a>
-                            <a class="nav-link" href="decal.shtml#tutorials">Tutorials</a>
-                            <a class="nav-link" href="decal.shtml#articles">Articles</a>
-                            <a class="nav-link" href="decal.shtml#library">Library</a>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="project.shtml" aria-haspopup="true"
-                            aria-expanded="false">Research</a>
-                        <ul class="dropdown-menu" style="background-color: black;">
-                            <a class="nav-link" href="project.shtml#current">Current</a>
-                            <a class="nav-link" href="project.shtml#complete">Complete</a>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <!-- NAVBAR -->
+        <!--#include file="navbar.shtml" -->
         <div class="caption">
             <span class="border">
                 <div class="header-text">
