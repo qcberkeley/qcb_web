@@ -20,19 +20,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <style>
-    #news-track {
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-    #news-track::-webkit-scrollbar {
-      display: none;
-    }
-    .news-slide {
-      min-width: 100%;
-      scroll-snap-align: start;
-    }
-  </style>
 
 </head>
 <body class="antialiased">
@@ -56,7 +43,6 @@
       <li class="nav-dropdown">
         <a href="index.html" class="nav-link py-5 block">Home</a>
         <ul class="nav-dropdown-menu">
-          <li><a href="index.html#news" class="dropdown-item">News</a></li>
           <li><a href="index.html#about" class="dropdown-item">About</a></li>
           <li><a href="index.html#team" class="dropdown-item">Team</a></li>
           <li><a href="index.html#alumni" class="dropdown-item">Alumni</a></li>
@@ -93,7 +79,6 @@
   <div id="mobile-menu" class="hidden bg-black border-t border-gray-800 md:hidden">
     <ul class="font-mono text-sm text-gray-400 px-6 py-5 flex flex-col gap-4">
       <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-      <li><a href="index.html#news" class="hover:text-white transition-colors">News</a></li>
       <li><a href="education.html" class="hover:text-white transition-colors">Education</a></li>
       <li><a href="research.html" class="hover:text-white transition-colors">Research</a></li>
       <li><a href="opportunities.html" class="hover:text-white transition-colors">Opportunities</a></li>
@@ -253,43 +238,15 @@
     })();
   </script>
 
-  <!-- ── News ──────────────────────────────────────── -->
-  <section id="news" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
-        <div>
-          <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">News &amp; Events</p>
-          <h2 class="font-mono text-4xl font-light tracking-tight text-black">Latest from QCB</h2>
-          <div class="w-12 h-0.5 bg-black opacity-20 mt-3"></div>
-        </div>
-        <a href="#events" class="font-mono text-sm text-black hover:text-accent transition-colors">View calendar →</a>
-      </div>
-
-      <div class="relative">
-        <div id="news-track" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
-          <article class="news-slide bg-white border border-gray-200 p-6 md:p-8">
-            <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-3">News</p>
-            <h3 class="font-mono text-2xl font-light text-black mb-4">TBD</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">TBD</p>
-          </article>
-        </div>
-
-        <div class="flex justify-center gap-2 mt-5" aria-label="News slides">
-          <span class="w-2 h-2 rounded-full bg-black" aria-label="Slide 1"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ── About ─────────────────────────────────────── -->
   <section id="about" class="py-24 px-6 bg-white">
     <div class="max-w-3xl mx-auto">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">About</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
       <div class="space-y-4 text-gray-700 leading-relaxed text-[17px]">
-        <p>Founded in 2016, QCB is the only undergraduate quantum computing club at Berkeley. We aim to support students on their journey towards the Quantum Computing frontier. We're an undergraduate-run club bridging the gap between students, the quantum industry, and academia. We focus on enriching the UC Berkeley community through subgroups, seminars, conferences, research projects, guest speakers, lab tours, company visits, and the occasional DeCal.</p>
-        <p>Our goal is to help you learn what quantum is all about and get interested students involved with quantum labs on campus, while providing research opportunities and educational materials to foster an advanced, accessible quantum computing network.</p>
-        <p>Membership is open to Berkeley students of all grade levels, majors, and colleges. If you're interested in joining, please apply during our recruitment cycle and check the dates above for info sessions and application deadlines. Not a Cal student? You're still welcome — <a href="education.html" class="text-accent underline underline-offset-2 hover:opacity-75">explore our educational resources</a> and contribute tutorials or articles to our library. We're dedicated to supporting students from all backgrounds, especially those from underrepresented groups in STEM.</p>
+        <p>At QCB we aim to support students on their journey towards the Quantum Computing frontier. We're an undergraduate-run club bridging the gap between students, the quantum industry, and academia. We focus on enriching the UC Berkeley community through subgroups, seminars, conferences, research projects, guest speakers, lab tours, company visits, and the occasional DeCal.</p>
+        <p>Our goal is to help you learn what quantum is about and get interested students involved with quantum labs on campus, while providing research opportunities and educational materials to foster an advanced, accessible quantum computing network.</p>
+        <p>Membership is open to Berkeley students of all grade levels, majors, and colleges. Not a Cal student? You're still welcome — <a href="education.html" class="text-accent underline underline-offset-2 hover:opacity-75">explore our educational resources</a> and contribute tutorials or articles to our library. We're dedicated to supporting students from all backgrounds, especially those from underrepresented groups in STEM.</p>
       </div>
       <div class="mt-8">
         <a href="https://eqcbbwwzsk.zite.so" class="btn-dark btn" target="_blank" rel="noopener">Join QCB</a>
@@ -334,21 +291,6 @@
 
         <div class="team-card w-40 cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Kepha.jpg" alt="Kepha Sher">
-            <div class="team-overlay">
-              <p class="font-mono text-xs font-semibold text-black">Kepha Sher</p>
-              <p class="font-mono text-xs text-gray-600 mt-1">Co-President</p>
-              <p class="font-mono text-xs text-gray-400">CS &amp; Math</p>
-            </div>
-          </div>
-          <div class="pt-3 text-center font-mono">
-            <p class="text-sm font-semibold text-black">Kepha Sher</p>
-            <p class="text-xs text-gray-500 mt-0.5">CS &amp; Math</p>
-          </div>
-        </div>
-
-        <div class="team-card w-40 cursor-default">
-          <div class="team-photo">
             <img src="images/2026fallleadership/Ian.jpeg" alt="Ian Loam">
             <div class="team-overlay">
               <p class="font-mono text-xs font-semibold text-black">Ian Loam</p>
@@ -358,6 +300,21 @@
           </div>
           <div class="pt-3 text-center font-mono">
             <p class="text-sm font-semibold text-black">Ian Loam</p>
+            <p class="text-xs text-gray-500 mt-0.5">CS &amp; Math</p>
+          </div>
+        </div>
+
+        <div class="team-card w-40 cursor-default">
+          <div class="team-photo">
+            <img src="images/2025fallleadership/Kepha.jpg" alt="Kepha Sher">
+            <div class="team-overlay">
+              <p class="font-mono text-xs font-semibold text-black">Kepha Sher</p>
+              <p class="font-mono text-xs text-gray-600 mt-1">Co-President</p>
+              <p class="font-mono text-xs text-gray-400">CS &amp; Math</p>
+            </div>
+          </div>
+          <div class="pt-3 text-center font-mono">
+            <p class="text-sm font-semibold text-black">Kepha Sher</p>
             <p class="text-xs text-gray-500 mt-0.5">CS &amp; Math</p>
           </div>
         </div>
@@ -494,19 +451,6 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
-          <div class="team-photo">
-            <img src="images/2026fallleadership/Joel.jpg" alt="Joel Taroreh">
-            <div class="team-overlay">
-              <p class="font-mono text-xs font-semibold text-black">Joel Taroreh</p>
-              <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
-            </div>
-          </div>
-          <div class="pt-3 text-center font-mono">
-            <p class="text-sm font-semibold text-black">Joel Taroreh</p>
-            <p class="text-xs text-gray-500 mt-0.5">Physics</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>

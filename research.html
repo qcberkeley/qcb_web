@@ -129,66 +129,143 @@
 
   <!-- ── Current projects ───────────────────────────── -->
   <section id="current" class="py-20 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">Current Projects <span class="text-gray-400 text-2xl font-light">· Fall 2026</span></h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-10"></div>
       <p class="text-gray-400 font-mono text-sm">Projects TBD — check back soon.</p>
     </div>
   </section>
 
-  <!-- ── Completed projects ─────────────────────────── -->
-  <section id="complete" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="font-mono text-4xl font-light tracking-tight text-black">Completed Projects</h2>
-      <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-10"></div>
+  <!-- ── Completed projects ────────────────────────── -->
+  <section id="complete" class="py-20 px-6 bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-black">Completed Projects</h2>
+      <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
+      <p class="text-gray-600 text-[17px] leading-relaxed max-w-3xl mb-10">
+        QCB members have built open-source codebases, technical presentations, posters, and writeups across quantum algorithms, quantum machine learning, optimization, simulation, and visualization.
+      </p>
 
-      <div class="space-y-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Particle Reconstruction Using QML</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">A Quantum Machine Learning model taking in information about a particle collision or decay event (energy, momentum, etc.) and outputting attributes about the particle(s) in the interaction (mass, charge, spin, etc.).</p>
+        <article id="particle-reconstruction" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">HEP · Quantum Annealing</p>
+          <h3 class="font-mono text-xl text-black mb-3">Particle Reconstruction Using QML</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Modeled high-energy particle-collision jets as graph nodes, weighted edges by node-attribute differences, and used max-cut / annealing methods to separate target jet signatures from background.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">4</p>
+              <p class="text-gray-400">benchmarked configs</p>
+            </div>
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">83.08%</p>
+              <p class="text-gray-400">best max accuracy</p>
+            </div>
+          </div>
+          <a href="https://github.com/qcberkeley/particle_reco" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent mt-auto">View GitHub repo →</a>
         </article>
 
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Prescribing Color to Quantum States</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">Building on a method developed at UC Berkeley that uses color to represent quantum states, addressing limitations of the Bloch Sphere for multi-qubit, mixed, and entangled states.</p>
-        </article>
-
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Sentiment Analysis Using QNN</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">A RNN based on quantum circuits promises to avoid the vanishing gradients problem and may perform better on standard NLP tasks. We applied quantum RNNs to a sentiment-analysis task, categorizing product reviews as positive or negative to validate the approach and demonstrate theoretical advantages.</p>
-          <a href="./QUOR/Sentiment Analysis Using QNN.pdf" class="font-mono text-xs text-accent underline underline-offset-2 hover:opacity-75" target="_blank">View Presentation</a>
-        </article>
-
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Variational Quantum Eigensolvers — A Review of NISQ Era Algorithms</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">We implemented and evaluated VQE algorithms in the context of NISQ-era quantum hardware constraints.</p>
-          <a href="./QUOR/QUOR Simulation Presentation.pdf" class="font-mono text-xs text-accent underline underline-offset-2 hover:opacity-75" target="_blank">View Presentation</a>
-        </article>
-
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">COVID-19 and QAOA</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">We used a quantum annealer to determine how to safely reopen college campuses via quarantining students, and implemented QAOA on Qiskit and TensorFlow Quantum, showing numerically that for level-1 QAOA similar parameters are optimal on Erdős–Rényi and regular graphs.</p>
-          <div class="flex flex-wrap gap-4 font-mono text-xs">
-            <a href="./QUOR/covid.pdf" class="text-accent underline underline-offset-2 hover:opacity-75" target="_blank">Quarantine Results</a>
-            <a href="https://github.com/qcberkeley/optimization" class="text-accent underline underline-offset-2 hover:opacity-75" target="_blank" rel="noopener">GitHub Repo</a>
+        <article id="covid-qaoa" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">Quantum Annealing</p>
+          <h3 class="font-mono text-xl text-black mb-3">COVID-19 and QAOA</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Used max-cut, QAOA, and D-Wave quantum annealing tools to study data-driven quarantine groupings for campus reopening scenarios.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">50%+</p>
+              <p class="text-gray-400">infection reduction scenario</p>
+            </div>
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">~20%</p>
+              <p class="text-gray-400">housing scenario reduction</p>
+            </div>
+          </div>
+          <div class="mt-auto flex flex-col gap-2">
+            <a href="https://github.com/qcberkeley/optimization/tree/master/quarantine_maxcut" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent">View code →</a>
+            <a href="./QUOR/covid.pdf" target="_blank" rel="noopener" class="font-mono text-sm text-gray-500 hover:text-black">View presentation →</a>
           </div>
         </article>
 
-        <article class="border-b border-gray-200 pb-8">
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Partial Quantum Search — Spring '19</h3>
-          <p class="text-gray-600 leading-relaxed mb-3">We implemented a variation of Grover's canonical search algorithm known as partial quantum search in PyQuil (a Python quantum computing library by Rigetti).</p>
-          <div class="flex flex-wrap gap-4 font-mono text-xs">
-            <a href="./QUOR/PQSPosterFinal.pdf" class="text-accent underline underline-offset-2 hover:opacity-75" target="_blank">Final Poster</a>
-            <a href="https://arxiv.org/abs/quant-ph/0407122" class="text-accent underline underline-offset-2 hover:opacity-75" target="_blank" rel="noopener">Original Paper</a>
+        <article id="sentiment-qnn" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">Quantum Machine Learning</p>
+          <h3 class="font-mono text-xl text-black mb-3">Sentiment Analysis Using QNN</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Tested quantum neural-network approaches for sentiment classification, including recurrent quantum circuits and sentence-to-circuit workflows.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">75.8%</p>
+              <p class="text-gray-400">QRNN training accuracy</p>
+            </div>
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">69.6%</p>
+              <p class="text-gray-400">Lambeq embedding result</p>
+            </div>
+          </div>
+          <a href="./QUOR/Sentiment%20Analysis%20Using%20QNN.pdf" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent mt-auto">View presentation →</a>
+        </article>
+
+        <article id="vqe-review" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">NISQ algorithms · simulation</p>
+          <h3 class="font-mono text-xl text-black mb-3">Variational Quantum Eigensolver Review</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Reviewed hybrid VQE methods for molecular Hamiltonians, including resource estimation, Hartree-Fock setup, and simulations for H₂ and H₂O.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">2</p>
+              <p class="text-gray-400">molecules studied</p>
+            </div>
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">~20</p>
+              <p class="text-gray-400">max simulatable qubits noted</p>
+            </div>
+          </div>
+          <a href="./QUOR/QUOR%20Simulation%20Presentation.pdf" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent mt-auto">View presentation →</a>
+        </article>
+
+        <article id="prescribing-color" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">Visualization</p>
+          <h3 class="font-mono text-xl text-black mb-3">Prescribing Color to Quantum States</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Explored a color-based alternative to Bloch-sphere visualization for multi-qubit, mixed-state, and entangled-state representations.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">JPM</p>
+              <p class="text-gray-400">John Paul Marceaux method</p>
+            </div>
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">Qudit</p>
+              <p class="text-gray-400">color-state visualization</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-6 font-mono text-[11px] text-gray-500">
+          </div>
+          <a href="https://qcb.studentorg.berkeley.edu/project.shtml" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent mt-auto">View archive entry →</a>
+        </article>
+
+        <article id="partial-quantum-search" class="border border-gray-200 bg-white p-6 flex flex-col">
+          <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">Quantum Search</p>
+          <h3 class="font-mono text-xl text-black mb-3">Partial Quantum Search</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            Implemented a variation of Grover's canonical search algorithm in PyQuil, studying the case where the goal is to identify the target block rather than the exact database item.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <div class="border border-gray-100 p-3">
+              <p class="text-black text-lg">PyQuil</p>
+              <p class="text-gray-400">implementation</p>
+            </div>
+          </div>
+          <div class="mt-auto flex flex-col gap-2">
+            <a href="./QUOR/PQSPosterFinal.pdf" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent">View poster →</a>
+            <a href="https://arxiv.org/abs/quant-ph/0407122" target="_blank" rel="noopener" class="font-mono text-sm text-gray-500 hover:text-black">Original paper →</a>
           </div>
         </article>
 
-        <article>
-          <h3 class="font-mono text-lg font-semibold text-black mb-2">Qubit Simulation Project</h3>
-          <p class="text-gray-600 leading-relaxed">The Qubit Project constructed simulations of low-qubit quantum computers on classical computers — first simulating individual qubits, then increasingly complex gate operations.</p>
-        </article>
-
+       
       </div>
     </div>
   </section>
