@@ -1,5 +1,8 @@
 /* ── Base ────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-padding-top: 70px;
+}
 body { font-family: 'Inter', system-ui, sans-serif; }
 
 /* ── Buttons ─────────────────────────────────────────── */
