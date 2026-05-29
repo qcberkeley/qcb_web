@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/icon_black.png">
+  <title>Sponsor Us | QC@B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { accent: '#1000a4' },
+          fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body class="antialiased bg-white text-black">
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-black border-b border-gray-900">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+
+    <a href="index.html" class="flex-shrink-0">
+      <img src="images/logo.png" alt="QC@B" class="h-9">
+    </a>
+
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" class="md:hidden text-gray-400 hover:text-white p-1" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="nav-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        <path id="nav-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Desktop links -->
+    <ul class="hidden md:flex items-center gap-7 font-mono text-sm text-gray-400">
+      <li class="nav-dropdown">
+        <a href="index.html" class="nav-link py-5 block">Home</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="index.html#about" class="dropdown-item">About</a></li>
+          <li><a href="index.html#team" class="dropdown-item">Team</a></li>
+          <li><a href="index.html#alumni" class="dropdown-item">Alumni</a></li>
+          <li><a href="index.html#sponsors" class="dropdown-item">Sponsors</a></li>
+          <li><a href="index.html#events" class="dropdown-item">Events</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="education.html" class="nav-link py-5 block">Education</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="education.html#library" class="dropdown-item">Library</a></li>
+          <li><a href="education.html#courseware" class="dropdown-item">Courseware</a></li>
+          <li><a href="education.html#articles" class="dropdown-item">Articles</a></li>
+          <li><a href="education.html#tutorials" class="dropdown-item">Tutorials</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="research.html" class="nav-link py-5 block">Research</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="research.html#current" class="dropdown-item">Current</a></li>
+          <li><a href="research.html#complete" class="dropdown-item">Completed</a></li>
+        </ul>
+      </li>
+      <li><a href="opportunities.html" class="nav-link">Opportunities</a></li>
+      <li><a href="sponsor-us.html" class="nav-link">Sponsor Us</a></li>
+      <li><a href="fa26decal.html" class="nav-link">DeCal</a></li>
+      <li>
+        <a href="https://eqcbbwwzsk.zite.so" class="btn-nav" target="_blank" rel="noopener">Join</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden bg-black border-t border-gray-800 md:hidden">
+    <ul class="font-mono text-sm text-gray-400 px-6 py-5 flex flex-col gap-4">
+      <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+      <li><a href="education.html" class="hover:text-white transition-colors">Education</a></li>
+      <li><a href="research.html" class="hover:text-white transition-colors">Research</a></li>
+      <li><a href="opportunities.html" class="hover:text-white transition-colors">Opportunities</a></li>
+      <li><a href="sponsor-us.html" class="hover:text-white transition-colors">Sponsor Us</a></li>
+      <li><a href="fa26decal.html" class="hover:text-white transition-colors">DeCal</a></li>
+      <li class="pt-2 border-t border-gray-800">
+        <a href="https://eqcbbwwzsk.zite.so" class="text-white font-semibold hover:text-gray-300 transition-colors" target="_blank" rel="noopener">Join →</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('nav-icon-open');
+    var iconClose = document.getElementById('nav-icon-close');
+
+    toggle.addEventListener('click', function () {
+      var open = menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !open);
+      iconClose.classList.toggle('hidden', open);
+    });
+
+    // Highlight current page
+    var page = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('#main-nav a[href]').forEach(function (a) {
+      if (a.getAttribute('href').split('#')[0] === page) {
+        a.classList.add('text-white');
+      }
+    });
+  })();
+</script>
+
+<!-- title: Sponsor Us -->
+
+<main>
+
+  <!-- ── Hero ──────────────────────────────────────── -->
+  <section class="relative min-h-[78vh] flex items-center bg-black overflow-hidden pt-16">
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 py-24 text-white">
+      <p class="font-mono text-xs tracking-[0.3em] uppercase text-white/45 mb-5">Quantum Computing at Berkeley</p>
+      <h1 class="font-mono text-5xl md:text-7xl font-light tracking-tight leading-tight">Sponsor Us</h1>
+      <div class="w-16 h-0.5 bg-white/25 mt-6 mb-8"></div>
+      <p class="text-xl md:text-2xl text-white/80 max-w-3xl leading-relaxed">Support Berkeley's undergraduate quantum community: a diverse, research-driven group building education, research, speaker, conference, and career opportunities in quantum technology.</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="mailto:contact@qcb.berkeley.edu?subject=QCB%20Sponsorship%20Inquiry" class="btn">Contact Us</a>
+        <a href="#packages" class="btn bg-transparent text-white hover:bg-white hover:text-black">View Packages</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById('hero-canvas');
+      var ctx = canvas.getContext('2d');
+      var particles = [];
+      var raf;
+      var N = 80;
+      var DIST = 150;
+
+      function resize() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+
+      function Particle() { this.reset(); }
+      Particle.prototype.reset = function () {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vx = (Math.random() - 0.5) * 0.38;
+        this.vy = (Math.random() - 0.5) * 0.38;
+        this.r = Math.random() * 1.2 + 0.5;
+      };
+      Particle.prototype.update = function () {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+      };
+
+      function init() {
+        resize();
+        particles = [];
+        for (var i = 0; i < N; i++) particles.push(new Particle());
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < particles.length; i++) particles[i].update();
+        for (var i = 0; i < particles.length; i++) {
+          for (var j = i + 1; j < particles.length; j++) {
+            var dx = particles[i].x - particles[j].x;
+            var dy = particles[i].y - particles[j].y;
+            var dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < DIST) {
+              var alpha = (1 - dist / DIST) * 0.30;
+              ctx.strokeStyle = 'rgba(255,255,255,' + alpha + ')';
+              ctx.lineWidth = 0.7;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        ctx.fillStyle = 'rgba(255,255,255,0.7)';
+        for (var i = 0; i < particles.length; i++) {
+          ctx.beginPath();
+          ctx.arc(particles[i].x, particles[i].y, particles[i].r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        raf = requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', function () {
+        cancelAnimationFrame(raf);
+        init();
+        draw();
+      });
+
+      init();
+      draw();
+    })();
+  </script>
+
+  <!-- ── Why Sponsor ───────────────────────────────── -->
+  <section id="why" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-3xl">
+        <h2 class="font-mono text-4xl font-light tracking-tight text-black">Why Sponsor QCB?</h2>
+        <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
+        <p class="text-gray-700 leading-relaxed text-[17px]">QCB is an on-campus organization that provides UC Berkeley undergraduates with a supportive community, interdisciplinary education, and career-advancing opportunities in the quantum technology space. Sponsorship helps us keep those opportunities accessible while connecting partners with students, faculty, and researchers across the deep tech ecosystem.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="border border-gray-200 p-7 bg-white">
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-4">Students</p>
+          <h3 class="font-mono text-xl text-black mb-3">Reach emerging quantum talent</h3>
+          <p class="text-gray-600 leading-relaxed">Connect with UC Berkeley students from physics, computer science, math, engineering, and other STEM fields working on frontier research and development.</p>
+        </div>
+        <div class="border border-gray-200 p-7 bg-white">
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-4">Events</p>
+          <h3 class="font-mono text-xl text-black mb-3">Join high-signal programming</h3>
+          <p class="text-gray-600 leading-relaxed">Participate in panels, speaker events, workshops, info sessions, networking sessions, and student project presentations.</p>
+        </div>
+        <div class="border border-gray-200 p-7 bg-white">
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-4">Ecosystem</p>
+          <h3 class="font-mono text-xl text-black mb-3">Build long-term collaboration</h3>
+          <p class="text-gray-600 leading-relaxed">Support cross-field projects, undergraduate research participation, and long-term connections between companies and student organizations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Community Snapshot ─────────────────────────── -->
+  <section id="community" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-mono text-4xl font-light tracking-tight text-black">Community Snapshot</h2>
+        <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
+        <p class="text-gray-600 text-[17px] leading-relaxed">QCB programming spans research projects, education programs, speaker series, community events, commercially scoped projects, and conference-style collaborations.</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+        <div class="bg-white border border-gray-200 p-6 text-center">
+          <p class="font-mono text-3xl text-black">1507</p>
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mt-2">Slack members reported in 2026</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 text-center">
+          <p class="font-mono text-3xl text-black">300+</p>
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mt-2">Registered speaker-event attendees</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 text-center">
+          <p class="font-mono text-3xl text-black">30</p>
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mt-2">Active project members</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 text-center">
+          <p class="font-mono text-3xl text-black">29</p>
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mt-2">Intro course students</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sponsor Value ──────────────────────────────── -->
+  <section id="benefits" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
+      <div>
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-gray-400 mb-4">Immediate connections</p>
+        <h2 class="font-mono text-4xl font-light tracking-tight text-black">What Sponsors Get</h2>
+        <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
+        <ul class="space-y-5 text-gray-700 text-[17px] leading-relaxed">
+          <li class="flex gap-4"><span class="font-mono text-accent">01</span><span>UC Berkeley students from a range of STEM fields working on frontier research and development in quantum and deep tech.</span></li>
+          <li class="flex gap-4"><span class="font-mono text-accent">02</span><span>Faculty and researchers attending QCB events, panels, and discussions.</span></li>
+          <li class="flex gap-4"><span class="font-mono text-accent">03</span><span>Experts and company representatives working in related technical fields.</span></li>
+        </ul>
+      </div>
+      <div class="bg-black text-white p-8 md:p-10">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-white/40 mb-4">Long-term impact</p>
+        <h3 class="font-mono text-3xl font-light mb-8">What Your Support Enables</h3>
+        <ul class="space-y-5 text-white/75 leading-relaxed">
+          <li class="border-t border-white/10 pt-5">An inclusive environment for undergraduate STEM education and research participation.</li>
+          <li class="border-t border-white/10 pt-5">Inspiration from undergraduate research projects and the potential for long-term company-student collaboration.</li>
+          <li class="border-t border-white/10 pt-5">Cross-field projects where technologies from different deep tech areas can reinforce each other.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Partnership Formats ────────────────────────── -->
+  <section id="formats" class="py-24 px-6 bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+      <div>
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-white/40 mb-4">Event partnership</p>
+        <h2 class="font-mono text-4xl font-light tracking-tight">Conference + Workshop Formats</h2>
+        <div class="w-12 h-0.5 bg-white opacity-20 mt-3 mb-8"></div>
+        <p class="text-white/70 leading-relaxed text-[17px]">QCB can work with sponsors through speaker events, workshops, info sessions, panels, networking sessions, and conference-style collaborations across the Berkeley deep tech ecosystem.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="border border-white/10 p-6 bg-white/[0.03]">
+          <h3 class="font-mono text-lg mb-3">Audience</h3>
+          <p class="text-white/70 leading-relaxed">Students and faculty passionate about quantum, deep tech, and their foreseeable futures.</p>
+        </div>
+        <div class="border border-white/10 p-6 bg-white/[0.03]">
+          <h3 class="font-mono text-lg mb-3">Format</h3>
+          <p class="text-white/70 leading-relaxed">Student project presentations, panels with academia and industry, and structured networking sessions.</p>
+        </div>
+        <div class="border border-white/10 p-6 bg-white/[0.03]">
+          <h3 class="font-mono text-lg mb-3">Collaborators</h3>
+          <p class="text-white/70 leading-relaxed">Past co-hosts have included peer Berkeley groups in extended reality, machine learning, physics, and undergraduate labs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Packages ───────────────────────────────────── -->
+  <section id="packages" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-mono text-4xl font-light tracking-tight text-black">Sponsorship Packages</h2>
+        <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
+        <p class="text-gray-600 text-[17px] leading-relaxed">Choose a contribution tier or partner through event participation. Higher tiers include all benefits of the lower tiers.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6 mt-12">
+        <article class="border border-gray-200 bg-white p-7 flex flex-col">
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-3">Third Tier</p>
+          <h3 class="font-mono text-2xl text-black">Principal Level</h3>
+          <p class="font-mono text-3xl text-black mt-5">$500</p>
+          <p class="text-gray-500 mt-2">or one speaker / networking participation</p>
+          <div class="w-full h-px bg-gray-200 my-6"></div>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>Company logo featured on the website and banners/T-shirts</li>
+            <li>Social media shoutout</li>
+            <li>Access to the list of projects and students working on them</li>
+          </ul>
+        </article>
+
+        <article class="border border-gray-300 bg-gray-50 p-7 flex flex-col">
+          <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-3">Second Tier</p>
+          <h3 class="font-mono text-2xl text-black">Diffuse Level</h3>
+          <p class="font-mono text-3xl text-black mt-5">$1,000</p>
+          <p class="text-gray-500 mt-2">or $500 + speaker / networking participation</p>
+          <div class="w-full h-px bg-gray-200 my-6"></div>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>Access to QCB Slack for job postings at any time</li>
+            <li>Opportunity to host workshops or info sessions</li>
+            <li>All Principal Level benefits</li>
+          </ul>
+        </article>
+
+        <article class="border border-black bg-black text-white p-7 flex flex-col">
+          <p class="font-mono text-xs tracking-widest uppercase text-white/40 mb-3">Top Tier</p>
+          <h3 class="font-mono text-2xl">Fundamental Level</h3>
+          <p class="font-mono text-3xl mt-5">$2,000</p>
+          <p class="text-white/55 mt-2">or $1,000 + speaker / networking participation</p>
+          <div class="w-full h-px bg-white/15 my-6"></div>
+          <ul class="space-y-3 text-white/75 leading-relaxed">
+            <li>Stipend or award in your company's name</li>
+            <li>Acknowledgment in student project presentations</li>
+            <li>All Diffuse and Principal Level benefits</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact CTA ────────────────────────────────── -->
+  <section id="contact" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-mono text-4xl font-light tracking-tight text-black">Ready to Sponsor QCB?</h2>
+      <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
+      <p class="text-gray-600 text-[17px] leading-relaxed max-w-2xl mx-auto">We are happy to tailor sponsorships, workshops, panels, recruiting opportunities, and event collaborations to your organization's goals.</p>
+      <div class="mt-9 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:contact@qcb.berkeley.edu?subject=QCB%20Sponsorship%20Inquiry" class="btn-dark btn">Email contact@qcb.berkeley.edu</a>
+        <a href="index.html#sponsors" class="btn-dark btn bg-transparent text-black hover:bg-black hover:text-white">View Current Sponsors</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-black border-t border-gray-800 text-gray-500 font-mono text-sm">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div>
+      <p class="text-white font-semibold mb-2">Quantum Computing @ Berkeley</p>
+      <p>2495 Bancroft Ext<br>Berkeley, CA 94720</p>
+      <p class="mt-2">
+        <a href="mailto:contact@qcb.berkeley.edu" class="hover:text-white transition-colors">contact@qcb.berkeley.edu</a>
+      </p>
+    </div>
+    <div class="text-center text-xs text-gray-600">
+      <p class="text-gray-500 mb-2">&copy; 2026 QCB — All Rights Reserved</p>
+      <p>We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p>
+    </div>
+    <div class="flex flex-col items-start sm:items-end gap-3">
+      <a href="https://www.ocf.berkeley.edu" target="_blank" rel="noopener">
+        <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" class="h-8">
+      </a>
+      <div class="flex gap-5 text-lg">
+        <a href="https://www.facebook.com/qcberkeley/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/qcberkeley/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:contact@qcb.berkeley.edu" class="hover:text-white transition-colors" aria-label="Email">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
