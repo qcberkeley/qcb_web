@@ -166,17 +166,6 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 }
 .team-card:hover .team-overlay { opacity: 1; }
 
-/* ── Sponsor logos ───────────────────────────────────── */
-.sponsor-logo {
-  filter: grayscale(100%);
-  opacity: 0.65;
-  transition: filter 0.2s, opacity 0.2s;
-}
-.sponsor-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
 /* ── Accordion (Education & Research) ───────────────── */
 .accordion-trigger {
   width: 100%;
