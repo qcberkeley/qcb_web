@@ -11,7 +11,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { accent: '#1000a4' },
+          colors: { accent: '#555555' },
           fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
         }
       }
@@ -118,10 +118,10 @@
 
 <!-- title: Opportunities -->
 
-<main class="pt-16">
+<main>
 
   <!-- ── Page hero ──────────────────────────────────── -->
-  <section class="bg-black py-20 px-6 text-center">
+  <section class="bg-black pt-36 pb-20 px-6 text-center">
     <h1 class="font-mono text-5xl font-light tracking-tight text-white mb-4">Opportunities</h1>
     <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
       QCB regularly receives announcements from companies, labs, startups, and academic groups across the quantum ecosystem. Internships, research programs, fellowships, jobs, conferences, hackathons, and more — all in one place.
@@ -132,7 +132,7 @@
 
   <!-- ── Opportunities board ────────────────────────── -->
   <section id="opportunities" class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black text-center">Current Opportunities</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-10 mx-auto"></div>
 
@@ -165,7 +165,7 @@
 
   <!-- ── Share an opportunity ───────────────────────── -->
   <section class="py-20 px-6 bg-gray-900 text-white text-center">
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-2xl mx-auto reveal">
       <h2 class="font-mono text-3xl font-light tracking-tight mb-4">Share an Opportunity</h2>
       <p class="text-gray-400 text-[17px] mb-6">Are you a company, research group, or organizer with a quantum-related opportunity for Berkeley students? Send the posting link, deadline, eligibility, and a short description to us.</p>
       <a href="mailto:contact@qcb.berkeley.edu?subject=Quantum%20Opportunity%20Submission" class="btn">contact@qcb.berkeley.edu</a>
@@ -290,5 +290,6 @@
   </div>
 </footer>
 
+<script src="js/scroll.js"></script>
 </body>
 </html>

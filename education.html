@@ -10,7 +10,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { accent: '#1000a4' },
+          colors: { accent: '#555555' },
           fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
         }
       }
@@ -117,10 +117,10 @@
 
 <!-- title: Education -->
 
-<main class="pt-16">
+<main>
 
   <!-- ── Page intro ────────────────────────────────── -->
-  <section class="bg-black py-16 px-6 text-center">
+  <section class="bg-black pt-32 pb-16 px-6 text-center">
     <h1 class="font-mono text-5xl font-light tracking-tight text-white mb-3">Education</h1>
     <p class="text-gray-400 text-lg max-w-2xl mx-auto">
       QCB's education program spans semester DeCals, course archives, articles, tutorials, and an open resource library for students at every level.
@@ -129,7 +129,7 @@
 
   <!-- ── DeCal — main feature ──────────────────────── -->
   <section id="decal" class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">Current · Fall 2026</p>
       <h2 class="font-mono text-4xl font-light tracking-tight text-black mb-1">Quantum Algorithms DeCal</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
@@ -171,7 +171,7 @@
 
   <!-- ── Past DeCals ───────────────────────────────── -->
   <section id="past-decals" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">Course Archive</p>
       <h2 class="font-mono text-3xl font-light tracking-tight text-black">Past DeCals</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6"></div>
@@ -179,7 +179,7 @@
         QCB's DeCal offerings have evolved from introductory quantum computing foundations to hardware, full-stack perspectives, industry applications, and algorithms.
       </p>
 
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-2 gap-6 reveal-group">
         <article class="bg-white border border-gray-200 p-6 hover:border-gray-300 transition-colors">
           <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">Fall 2022</p>
           <h3 class="font-mono text-xl font-light text-black mb-2">Full-Stack Quantum Computing</h3>
@@ -248,7 +248,7 @@
 
   <!-- ── Resource Library ──────────────────────────── -->
   <section id="library" class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">Open Resources</p>
       <h2 class="font-mono text-3xl font-light tracking-tight text-black">Resource Library</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6"></div>
@@ -280,7 +280,7 @@
 
   <!-- ── Articles and Tutorials ────────────────────── -->
   <section id="study-materials" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">Study Materials</p>
       <h2 class="font-mono text-3xl font-light tracking-tight text-black">Articles and Tutorials</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6"></div>
@@ -451,5 +451,6 @@
   </div>
 </footer>
 
+<script src="js/scroll.js"></script>
 </body>
 </html>

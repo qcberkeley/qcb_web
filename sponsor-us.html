@@ -11,7 +11,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { accent: '#1000a4' },
+          colors: { accent: '#555555' },
           fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
         }
       }
@@ -149,7 +149,7 @@
       var ctx = canvas.getContext('2d');
       var particles = [];
       var raf;
-      var N = 80;
+      var N;
       var DIST = 150;
 
       function resize() {
@@ -174,6 +174,7 @@
 
       function init() {
         resize();
+        N = window.innerWidth < 768 ? 25 : 80;
         particles = [];
         for (var i = 0; i < N; i++) particles.push(new Particle());
       }
@@ -219,7 +220,7 @@
 
   <!-- ── Why Sponsor ───────────────────────────────── -->
   <section id="why" class="py-24 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <div class="max-w-3xl">
         <h2 class="font-mono text-4xl font-light tracking-tight text-black">Why Sponsor QCB?</h2>
         <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
@@ -248,7 +249,7 @@
 
   <!-- ── Community Snapshot ─────────────────────────── -->
   <section id="community" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="font-mono text-4xl font-light tracking-tight text-black">Community Snapshot</h2>
         <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
@@ -278,7 +279,7 @@
 
   <!-- ── Sponsor Value ──────────────────────────────── -->
   <section id="benefits" class="py-24 px-6 bg-white">
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-start reveal">
       <div>
         <p class="font-mono text-xs tracking-[0.25em] uppercase text-gray-400 mb-4">Immediate connections</p>
         <h2 class="font-mono text-4xl font-light tracking-tight text-black">What Sponsors Get</h2>
@@ -303,7 +304,7 @@
 
   <!-- ── Partnership Formats ────────────────────────── -->
   <section id="formats" class="py-24 px-6 bg-gray-900 text-white">
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start reveal">
       <div>
         <p class="font-mono text-xs tracking-[0.25em] uppercase text-white/40 mb-4">Event partnership</p>
         <h2 class="font-mono text-4xl font-light tracking-tight">Conference + Workshop Formats</h2>
@@ -329,14 +330,14 @@
 
   <!-- ── Packages ───────────────────────────────────── -->
   <section id="packages" class="py-24 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="font-mono text-4xl font-light tracking-tight text-black">Sponsorship Packages</h2>
         <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
         <p class="text-gray-600 text-[17px] leading-relaxed">Choose a contribution tier or partner through event participation. Higher tiers include all benefits of the lower tiers.</p>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-6 mt-12">
+      <div class="grid lg:grid-cols-3 gap-6 mt-12 reveal-group">
         <article class="border border-gray-200 bg-white p-7 flex flex-col">
           <p class="font-mono text-xs tracking-widest uppercase text-gray-400 mb-3">Third Tier</p>
           <h3 class="font-mono text-2xl text-black">Principal Level</h3>
@@ -381,7 +382,7 @@
 
   <!-- ── Sponsors ───────────────────────────────────── -->
   <section id="sponsors" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="font-mono text-4xl font-light tracking-tight text-black">Sponsors</h2>
         <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
@@ -420,7 +421,7 @@
 
   <!-- ── Contact CTA ────────────────────────────────── -->
   <section id="contact" class="py-24 px-6 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
+    <div class="max-w-4xl mx-auto text-center reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">Ready to Sponsor QCB?</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8 mx-auto"></div>
       <p class="text-gray-600 text-[17px] leading-relaxed max-w-2xl mx-auto">We are happy to tailor sponsorships, workshops, panels, recruiting opportunities, and event collaborations to your organization's goals.</p>
@@ -465,5 +466,6 @@
   </div>
 </footer>
 
+<script src="js/scroll.js"></script>
 </body>
 </html>

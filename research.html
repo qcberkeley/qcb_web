@@ -11,7 +11,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { accent: '#1000a4' },
+          colors: { accent: '#555555' },
           fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
         }
       }
@@ -118,10 +118,10 @@
 
 <!-- title: Research -->
 
-<main class="pt-16">
+<main>
 
   <!-- ── Page hero ──────────────────────────────────── -->
-  <section class="bg-black py-20 px-6 text-center">
+  <section class="bg-black pt-36 pb-20 px-6 text-center">
     <h1 class="font-mono text-5xl font-light tracking-tight text-white mb-4">Research</h1>
     <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
       QCB's QUOR program — Quantum Undergraduate Opportunities in Research — connects prepared undergraduates with intensive quantum research. Propose a project or join an existing one.
@@ -131,7 +131,7 @@
 
   <!-- ── Current projects ───────────────────────────── -->
   <section id="current" class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">Current Projects <span class="text-gray-400 text-2xl font-light">· Fall 2026</span></h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-10"></div>
       <p class="text-gray-400 font-mono text-sm">Projects TBD — check back soon.</p>
@@ -140,14 +140,14 @@
 
   <!-- ── Completed projects ────────────────────────── -->
   <section id="complete" class="py-20 px-6 bg-white border-t border-gray-100">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto reveal">
       <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-black">Completed Projects</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
       <p class="text-gray-600 text-[17px] leading-relaxed max-w-3xl mb-10">
         QCB members have built open-source codebases, technical presentations, posters, and writeups across quantum algorithms, quantum machine learning, optimization, simulation, and visualization.
       </p>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 reveal-group">
 
         <article id="particle-reconstruction" class="border border-gray-200 bg-white p-6 flex flex-col">
           <p class="font-mono text-[11px] tracking-widest text-gray-400 uppercase mb-3">HEP · Quantum Annealing</p>
@@ -306,5 +306,6 @@
   </div>
 </footer>
 
+<script src="js/scroll.js"></script>
 </body>
 </html>

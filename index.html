@@ -11,7 +11,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { accent: '#1000a4' },
+          colors: { accent: '#555555' },
           fontFamily: { mono: ['"Courier New"', 'Courier', 'monospace'] }
         }
       }
@@ -175,7 +175,7 @@
       var ctx = canvas.getContext('2d');
       var particles = [];
       var raf;
-      var N = 90;
+      var N;
       var DIST = 160;
 
       function resize() {
@@ -202,6 +202,7 @@
 
       function init() {
         resize();
+        N = window.innerWidth < 768 ? 30 : 90;
         particles = [];
         for (var i = 0; i < N; i++) particles.push(new Particle());
       }
@@ -255,7 +256,7 @@
 
   <!-- ── News ──────────────────────────────────────── -->
   <section id="news" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
         <div>
           <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">News &amp; Events</p>
@@ -283,7 +284,7 @@
 
   <!-- ── About ─────────────────────────────────────── -->
   <section id="about" class="py-24 px-6 bg-white">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">About</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-8"></div>
       <div class="space-y-4 text-gray-700 leading-relaxed text-[17px]">
@@ -299,7 +300,7 @@
 
   <!-- ── Sponsors ───────────────────────────────────── -->
   <section id="sponsors" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto text-center">
+    <div class="max-w-5xl mx-auto text-center reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black">Proudly Sponsored By</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-10 mx-auto"></div>
       <div class="flex flex-wrap items-center justify-center gap-10 md:gap-14">
@@ -328,13 +329,13 @@
 
   <!-- ── Team ──────────────────────────────────────── -->
   <section id="team" class="py-24 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black text-center">Team</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-12 mx-auto"></div>
 
       <!-- Co-Presidents -->
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase text-center mb-6">Co-Presidents</p>
-      <div class="flex flex-wrap justify-center gap-6 mb-14 max-w-sm mx-auto">
+      <div class="flex flex-wrap justify-center gap-6 mb-14 max-w-sm mx-auto reveal-group">
 
         <div class="team-card w-40 cursor-default">
           <div class="team-photo">
@@ -370,7 +371,7 @@
 
       <!-- Officers -->
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase text-center mb-6">Officers</p>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 reveal-group">
 
         <div class="team-card cursor-default">
           <div class="team-photo">
@@ -518,7 +519,7 @@
 
   <!-- ── Alumni ─────────────────────────────────────── -->
   <section id="alumni" class="py-24 px-6 bg-gray-900 text-white">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight">Alumni</h2>
       <div class="w-12 h-0.5 bg-white opacity-20 mt-3 mb-4"></div>
       <p class="text-gray-400 text-[17px] mb-8">QCB graduates continue their journey at a variety of the world's most influential PhD programs, labs, and tech companies.</p>
@@ -550,7 +551,7 @@
 
   <!-- ── Events ─────────────────────────────────────── -->
   <section id="events" class="py-24 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black text-center">Events</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6 mx-auto"></div>
       <p class="text-gray-600 text-[17px] text-center max-w-2xl mx-auto mb-8">Add yourself to our gCal to stay on top of subgroup meetings, quantum information seminars, speaker events, competitions, and conferences.</p>
@@ -602,5 +603,6 @@
   </div>
 </footer>
 
+<script src="js/scroll.js"></script>
 </body>
 </html>
