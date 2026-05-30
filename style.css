@@ -314,7 +314,7 @@ body {
   aspect-ratio: 3 / 4;
   overflow: hidden;
   position: relative;
-  background-color: #03030b;
+  background-color: #f3f4f6;
 }
 
 .team-photo img {
@@ -324,20 +324,23 @@ body {
   object-position: top;
   display: block;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .team-card:hover .team-photo img {
-  transform: scale(1.06) rotate(0.5deg);
+  transform: scale(1.06) rotate(0.5deg) translateZ(0);
 }
 
 .team-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.88); /* Frosted light frosted glass overlay */
+  background: rgba(255, 255, 255, 0.67); /* Frosted light frosted glass overlay */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(12px) translateZ(0);
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
               transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
@@ -346,6 +349,8 @@ body {
   justify-content: center;
   padding: 1.25rem;
   text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .team-card:hover .team-overlay {
