@@ -1,0 +1,7 @@
+# Legacy page redirects for search engines and old inbound links.
+Redirect 301 /team.shtml https://qcb.berkeley.edu/#team
+Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal.html
+Redirect 301 /blog.shtml https://qcb.berkeley.edu/education.html#articles
+Redirect 301 /project.shtml https://qcb.berkeley.edu/research.html
+
+RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education.html#articles
