@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/icon_black.png">
+  <link rel="canonical" href="https://qcb.berkeley.edu/events/qiskit-fall-fest-2026.html">
+  <title>Qiskit Fall Fest 2026 | QC@B &amp; IBM Quantum</title>
+  <meta name="description" content="QC@B Qiskit Fall Fest 2026 at UC Berkeley in collaboration with IBM Quantum. Featuring the IBM Santa Clara team, panel talk, social mixer, workshops, and IBM challenge track.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qcb.berkeley.edu/events/qiskit-fall-fest-2026.html">
+  <meta property="og:title" content="Qiskit Fall Fest 2026 | QC@B &amp; IBM Quantum">
+  <meta property="og:description" content="QC@B Qiskit Fall Fest 2026 at UC Berkeley in collaboration with IBM Quantum. Featuring the IBM Santa Clara team, panel talk, social mixer, workshops, and IBM challenge track.">
+  <meta property="og:image" content="https://qcb.berkeley.edu/images/qcb_homepage_background.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#1000a4',
+            'qcb-primary': '#858585',
+            'qcb-secondary': '#ffffff',
+            'qcb-accent': '#555555',
+            'qcb-dark': '#03030b',
+            'ibm-blue': '#0f62fe',
+            'ibm-blue-hover': '#0353e9',
+            'ibm-blue-active': '#002d9c',
+            'ibm-gray-10': '#f4f4f4',
+            'ibm-gray-20': '#e0e0e0',
+            'ibm-gray-30': '#c6c6c6',
+            'ibm-gray-50': '#8d8d8d',
+            'ibm-gray-60': '#6f6f6f',
+            'ibm-gray-70': '#525252',
+            'ibm-gray-80': '#393939',
+            'ibm-gray-90': '#262626',
+            'ibm-gray-100': '#161616',
+          },
+          fontFamily: {
+            sans: ['"IBM Plex Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', '"Courier New"', 'Courier', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    /* IBM Carbon Design System Button Styles */
+    .cds--btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background-color: #0f62fe;
+      color: #ffffff;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0.875rem 1.25rem;
+      border: 1px solid #0f62fe;
+      border-radius: 0;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cds--btn-primary:hover {
+      background-color: #0353e9;
+      border-color: #0353e9;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .cds--btn-primary:active {
+      background-color: #002d9c;
+      border-color: #002d9c;
+    }
+    /* IBM Carbon Style Action Button */
+    .cds--btn-ibm {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      background-color: #2b3035;
+      color: #ffffff;
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      padding: 0.8125rem 1.25rem;
+      border: 1px solid #3c424a;
+      border-radius: 0;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cds--btn-ibm:hover {
+      background-color: #383f47;
+      border-color: #525a66;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .cds--btn-ibm:active {
+      background-color: #1f2327;
+      border-color: #1f2327;
+    }
+    .cds--btn-ibm svg {
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cds--btn-ibm:hover svg {
+      transform: translate(2px, -2px);
+    }
+    .cds--btn-ghost-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background-color: transparent;
+      color: #ffffff;
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      padding: 0.8125rem 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 0;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cds--btn-ghost-dark:hover {
+      background-color: #ffffff;
+      color: #161616;
+      border-color: #ffffff;
+      text-decoration: none;
+    }
+    /* IBM Carbon Tile Pattern */
+    .cds--tile {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      padding: 1.5rem;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .cds--tile:hover {
+      border-color: #0f62fe;
+    }
+    .cds--tag-blue {
+      display: inline-flex;
+      align-items: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.125rem 0.5rem;
+      background-color: #edf5ff;
+      color: #0043ce;
+      border: 1px solid #a6c8ff;
+    }
+    .cds--tag-gray {
+      display: inline-flex;
+      align-items: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.125rem 0.5rem;
+      background-color: #f4f4f4;
+      color: #161616;
+      border: 1px solid #e0e0e0;
+    }
+    .hero-gradient {
+      background: radial-gradient(ellipse 100% 90% at 50% 0%, rgba(75, 75, 75, 0.5) 0%, rgba(22, 22, 22, 1) 70%), #161616;
+    }
+  </style>
+</head>
+<body class="antialiased">
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-black border-b border-gray-900">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="../index.html" class="flex-shrink-0">
+      <img src="../images/logo.png" alt="QC@B" class="h-9">
+    </a>
+
+    <button id="nav-toggle" class="md:hidden text-gray-400 hover:text-white p-1" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="nav-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        <path id="nav-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <ul class="hidden md:flex items-center gap-7 font-mono text-sm text-gray-400">
+      <li class="nav-dropdown">
+        <a href="../index.html" class="nav-link py-5 block hover:text-white transition-colors">Home</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../index.html#about" class="dropdown-item">About</a></li>
+          <li><a href="../index.html#events" class="dropdown-item">Events</a></li>
+          <li><a href="../index.html#sponsors" class="dropdown-item">Sponsors</a></li>
+          <li><a href="../index.html#team" class="dropdown-item">Team</a></li>
+          <li><a href="../index.html#alumni" class="dropdown-item">Alumni</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../education.html" class="nav-link py-5 block hover:text-white transition-colors">Education</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../education.html#decal" class="dropdown-item">Current DeCal</a></li>
+          <li><a href="../education.html#past-decals" class="dropdown-item">Past DeCals</a></li>
+          <li><a href="../education.html#library" class="dropdown-item">Library</a></li>
+          <li><a href="../education.html#articles" class="dropdown-item">Articles</a></li>
+          <li><a href="../education.html#tutorials" class="dropdown-item">Tutorials</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../research.html" class="nav-link py-5 block hover:text-white transition-colors">Research</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../research.html#current" class="dropdown-item">Current</a></li>
+          <li><a href="../research.html#complete" class="dropdown-item">Completed</a></li>
+        </ul>
+      </li>
+      <li><a href="../opportunities.html" class="nav-link hover:text-white transition-colors">Opportunities</a></li>
+      <li><a href="../sponsor-us.html" class="nav-link hover:text-white transition-colors">Sponsor Us</a></li>
+      <li><a href="../fa26decal.html" class="nav-link hover:text-white transition-colors">DeCal</a></li>
+      <li>
+        <a href="https://eqcbbwwzsk.zite.so" class="btn-nav" target="_blank" rel="noopener">Join</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="mobile-menu" class="hidden bg-black border-t border-gray-800 md:hidden">
+    <ul class="font-mono text-sm text-gray-400 px-6 py-5 flex flex-col gap-4">
+      <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+      <li><a href="../education.html" class="hover:text-white transition-colors">Education</a></li>
+      <li><a href="../research.html" class="hover:text-white transition-colors">Research</a></li>
+      <li><a href="../opportunities.html" class="hover:text-white transition-colors">Opportunities</a></li>
+      <li><a href="../sponsor-us.html" class="hover:text-white transition-colors">Sponsor Us</a></li>
+      <li><a href="../fa26decal.html" class="hover:text-white transition-colors">DeCal</a></li>
+      <li class="pt-2 border-t border-gray-800">
+        <a href="https://eqcbbwwzsk.zite.so" class="text-white font-semibold hover:text-gray-300 transition-colors" target="_blank" rel="noopener">Join →</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('nav-icon-open');
+    var iconClose = document.getElementById('nav-icon-close');
+
+    toggle.addEventListener('click', function () {
+      var open = menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !open);
+      iconClose.classList.toggle('hidden', open);
+    });
+  })();
+</script>
+
+<main>
+  <!-- Hero Section (Carbon G100 Dark Theme with Ambient Top Gradient & 2-Column Split) -->
+  <section class="hero-gradient relative px-6 pt-24 pb-14 md:pt-28 md:pb-20 flex items-center border-b border-ibm-gray-80 overflow-hidden">
+    <div class="relative max-w-6xl mx-auto w-full text-white">
+      <a href="../index.html#events" class="font-mono text-xs tracking-widest uppercase text-ibm-gray-30 hover:text-white transition-colors inline-block mb-4">← Events</a>
+      
+      <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-12 items-center">
+        <!-- Left Column: Title, Details & CTA Buttons -->
+        <div>
+          <div class="inline-flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 bg-ibm-blue inline-block"></span>
+            <p class="font-mono text-xs tracking-[0.2em] uppercase text-ibm-gray-30">Fall 2026 • QCB &amp; IBM Quantum</p>
+          </div>
+          <h1 class="font-mono text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white leading-tight">
+            Qiskit Fall Fest 2026 (Berkeley)
+          </h1>
+          <p class="text-base md:text-lg text-ibm-gray-30 mt-4 leading-relaxed font-sans max-w-xl">
+            A premier collegiate quantum computing celebration hosted by Quantum Computing at Berkeley in collaboration with IBM Quantum. Featuring an industry panel talk, social mixer, and challenge track provided by the Santa Clara team of IBM.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a href="#register" class="cds--btn-primary">
+              <span>Register</span>
+              <span class="text-base font-mono">→</span>
+            </a>
+            <a href="#ibm-spotlight" class="cds--btn-ghost-dark">
+              <span>Program Overview</span>
+            </a>
+            <a href="#program" class="cds--btn-ghost-dark">
+              <span>Event Schedule</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: 5-Qubit Bernstein-Vazirani Quantum Circuit Graphic -->
+        <div class="w-full bg-[#161616]/80 border border-ibm-gray-80/60 p-4 sm:p-6 shadow-2xl backdrop-blur-sm relative flex items-center justify-center">
+          <svg class="w-full h-auto" viewBox="0 0 630 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="5-Qubit Bernstein-Vazirani Quantum Circuit">
+            <!-- Qubit & Classical Register Labels (5 Qubits: 4 Data + 1 Ancilla) -->
+            <text x="12" y="36" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₀⟩</text>
+            <text x="12" y="81" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₁⟩</text>
+            <text x="12" y="126" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₂⟩</text>
+            <text x="12" y="171" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₃⟩</text>
+            <text x="12" y="216" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₄⟩</text>
+            <text x="12" y="266" fill="#8d8d8d" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">c: 4</text>
+
+            <!-- Qubit Wire Lines -->
+            <line x1="48" y1="32" x2="610" y2="32" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            <line x1="48" y1="77" x2="610" y2="77" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            <line x1="48" y1="122" x2="610" y2="122" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            <line x1="48" y1="167" x2="610" y2="167" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            <line x1="48" y1="212" x2="610" y2="212" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            <!-- Classical Bus Double Line -->
+            <line x1="48" y1="260" x2="610" y2="260" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+            <line x1="48" y1="264" x2="610" y2="264" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+
+            <!-- Stage 1: Superposition & Ancilla Prep (Hadamard #fa4d56 & Pauli-X #009d9a) -->
+            <!-- 4 Data Qubit Hadamards -->
+            <rect x="65" y="19" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="78" y="37" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="65" y="64" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="78" y="82" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="65" y="109" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="78" y="127" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="65" y="154" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="78" y="172" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <!-- Ancilla Qubit (q4): X then H into |-> state -->
+            <rect x="65" y="199" width="26" height="26" fill="#161616" stroke="#009d9a" stroke-width="2" />
+            <text x="78" y="217" fill="#009d9a" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">X</text>
+
+            <rect x="105" y="199" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="118" y="217" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <!-- Barrier 1 (Pre-Oracle) -->
+            <line x1="148" y1="12" x2="148" y2="232" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="3 3" />
+
+            <!-- Stage 2: Bernstein-Vazirani Oracle Uf for secret bitstring s = 1011 -->
+            <!-- CNOT: q0 -> q4 (Ancilla) -->
+            <line x1="185" y1="32" x2="185" y2="212" stroke="#0f62fe" stroke-width="2" />
+            <circle cx="185" cy="32" r="5" fill="#0f62fe" />
+            <circle cx="185" cy="212" r="9" fill="#161616" stroke="#0f62fe" stroke-width="2" />
+            <line x1="185" y1="205" x2="185" y2="219" stroke="#0f62fe" stroke-width="2" />
+            <line x1="178" y1="212" x2="192" y2="212" stroke="#0f62fe" stroke-width="2" />
+
+            <!-- CNOT: q1 -> q4 (Ancilla) -->
+            <line x1="230" y1="77" x2="230" y2="212" stroke="#0f62fe" stroke-width="2" />
+            <circle cx="230" cy="77" r="5" fill="#0f62fe" />
+            <circle cx="230" cy="212" r="9" fill="#161616" stroke="#0f62fe" stroke-width="2" />
+            <line x1="230" y1="205" x2="230" y2="219" stroke="#0f62fe" stroke-width="2" />
+            <line x1="223" y1="212" x2="237" y2="212" stroke="#0f62fe" stroke-width="2" />
+
+            <!-- CNOT: q3 -> q4 (Ancilla) (q2 is skipped because s_2 = 0) -->
+            <line x1="275" y1="167" x2="275" y2="212" stroke="#0f62fe" stroke-width="2" />
+            <circle cx="275" cy="167" r="5" fill="#0f62fe" />
+            <circle cx="275" cy="212" r="9" fill="#161616" stroke="#0f62fe" stroke-width="2" />
+            <line x1="275" y1="205" x2="275" y2="219" stroke="#0f62fe" stroke-width="2" />
+            <line x1="268" y1="212" x2="282" y2="212" stroke="#0f62fe" stroke-width="2" />
+
+            <!-- Barrier 2 (Post-Oracle) -->
+            <line x1="320" y1="12" x2="320" y2="232" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="3 3" />
+
+            <!-- Stage 3: Final Interference Hadamards on 4 Data Qubits -->
+            <rect x="355" y="19" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="368" y="37" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="355" y="64" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="368" y="82" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="355" y="109" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="368" y="127" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <rect x="355" y="154" width="26" height="26" fill="#161616" stroke="#fa4d56" stroke-width="2" />
+            <text x="368" y="172" fill="#fa4d56" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">H</text>
+
+            <!-- Barrier 3 (Pre-Measurement) -->
+            <line x1="405" y1="12" x2="405" y2="232" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="3 3" />
+
+            <!-- Stage 4: Readout into Classical Register c: 4 (Extracts secret string s = 1011) -->
+            <!-- q0 -> c0 -->
+            <rect x="440" y="19" width="28" height="26" fill="#161616" stroke="#8d8d8d" stroke-width="1.5" />
+            <path d="M447,38 A 5,5 0 0 1 459,38 M453,38 L456,26" fill="none" stroke="#ffffff" stroke-width="1.5" />
+            <line x1="453" y1="45" x2="453" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="2 2" />
+
+            <!-- q1 -> c1 -->
+            <rect x="480" y="64" width="28" height="26" fill="#161616" stroke="#8d8d8d" stroke-width="1.5" />
+            <path d="M487,83 A 5,5 0 0 1 499,83 M493,83 L496,71" fill="none" stroke="#ffffff" stroke-width="1.5" />
+            <line x1="493" y1="90" x2="493" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="2 2" />
+
+            <!-- q2 -> c2 -->
+            <rect x="520" y="109" width="28" height="26" fill="#161616" stroke="#8d8d8d" stroke-width="1.5" />
+            <path d="M527,128 A 5,5 0 0 1 539,128 M533,128 L536,116" fill="none" stroke="#ffffff" stroke-width="1.5" />
+            <line x1="533" y1="135" x2="533" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="2 2" />
+
+            <!-- q3 -> c3 -->
+            <rect x="560" y="154" width="28" height="26" fill="#161616" stroke="#8d8d8d" stroke-width="1.5" />
+            <path d="M567,173 A 5,5 0 0 1 579,173 M573,173 L576,161" fill="none" stroke="#ffffff" stroke-width="1.5" />
+            <line x1="573" y1="180" x2="573" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="2 2" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Strip (Carbon Partner Tier - Above the fold) -->
+  <section class="py-6 md:py-8 px-6 bg-white border-b border-ibm-gray-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="font-mono text-xs tracking-[0.25em] uppercase text-ibm-gray-70 mb-4 font-semibold">Hosted by</p>
+      <div class="grid grid-cols-3 items-center justify-items-center max-w-xl sm:max-w-2xl mx-auto">
+        <div class="w-full flex items-center justify-center sm:justify-end sm:pr-4">
+          <img src="../images/logo_black.png" alt="Quantum Computing at Berkeley" class="h-7 sm:h-8 md:h-10 w-auto object-contain">
+        </div>
+        <div class="w-full flex items-center justify-center">
+          <img src="../images/ibm_quantum.png" alt="IBM Quantum" class="h-10 sm:h-12 md:h-14 w-auto object-contain">
+        </div>
+        <div class="w-full flex items-center justify-center sm:justify-start sm:pl-4">
+          <img src="../images/bga_logo.svg" alt="Berkeley Gateway Accelerator" class="h-8 sm:h-9 md:h-11 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section (Carbon G10 Theme) -->
+  <section class="py-20 px-6 bg-ibm-gray-10 border-b border-ibm-gray-20">
+    <div class="max-w-5xl mx-auto grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
+          <p class="font-mono text-xs tracking-[0.2em] text-ibm-blue uppercase font-semibold">Overview</p>
+        </div>
+        <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Quantum Computing at Berkeley | IBM Quantum</h2>
+        <div class="w-12 h-1 bg-ibm-blue mt-3 mb-6"></div>
+        <div class="space-y-5 text-ibm-gray-70 text-[17px] leading-relaxed font-sans">
+          <p>Qiskit Fall Fest 2026 is an annual student-led quantum computing event organized by QC@B in partnership with IBM Quantum. The event brings together students, researchers, and quantum enthusiasts across UC Berkeley and the Bay Area to build, learn, and explore quantum information science.</p>
+          <p>We are excited to announce that the <strong>Santa Clara team of IBM</strong> will participate directly in our Fall Fest. IBM engineers and researchers will deliver a featured panel talk, host an interactive social mixer, and provide an afternoon hackathon challenge track with dedicated mentorship.</p>
+        </div>
+      </div>
+      
+      <!-- Key Pillars (Carbon Tiles) -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="cds--tile border-l-4 border-l-ibm-blue">
+          <span class="cds--tag-blue mb-2">Featured Guest</span>
+          <p class="font-mono text-2xl text-ibm-gray-100 font-light mt-1">IBM Santa Clara</p>
+          <p class="text-xs text-ibm-gray-70 mt-1">Panel, mixer &amp; challenge track</p>
+        </div>
+        <div class="cds--tile">
+          <span class="cds--tag-gray mb-2">Platform</span>
+          <p class="font-mono text-2xl text-ibm-gray-100 font-light mt-1">Qiskit</p>
+          <p class="text-xs text-ibm-gray-70 mt-1">Quantum SDK &amp; runtime primitives</p>
+        </div>
+        <div class="cds--tile">
+          <span class="cds--tag-gray mb-2">Competition</span>
+          <p class="font-mono text-2xl text-ibm-gray-100 font-light mt-1">Hackathon</p>
+          <p class="text-xs text-ibm-gray-70 mt-1">Collegiate quantum challenges</p>
+        </div>
+        <div class="cds--tile">
+          <span class="cds--tag-gray mb-2">Community</span>
+          <p class="font-mono text-2xl text-ibm-gray-100 font-light mt-1">Networking</p>
+          <p class="text-xs text-ibm-gray-70 mt-1">Direct mentorship &amp; social hour</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IBM Santa Clara Spotlight (Carbon Feature Section) -->
+  <section id="ibm-spotlight" class="py-20 px-6 bg-white border-b border-ibm-gray-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
+        <p class="font-mono text-xs tracking-[0.2em] text-ibm-blue uppercase font-semibold">Featured Collaboration</p>
+      </div>
+      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Provided by the IBM Santa Clara Team</h2>
+      <div class="w-12 h-1 bg-ibm-blue mt-3 mb-8"></div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- 1. Panel Talk -->
+        <article class="cds--tile flex flex-col justify-between border-t-4 border-t-ibm-blue relative">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="cds--tag-blue">Session 01</span>
+              <span class="font-mono text-xs text-ibm-blue font-semibold">IBM Team</span>
+            </div>
+            <h3 class="font-mono text-xl font-normal text-ibm-gray-100 mb-3">IBM Panel Talk</h3>
+            <p class="text-ibm-gray-70 text-sm leading-relaxed mb-4 font-sans">
+              A panel discussion with members of the IBM Santa Clara team covering quantum computing industry developments, research horizons, and career pathways in quantum.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ibm-gray-20 font-mono text-xs text-ibm-gray-70 flex justify-between items-center">
+            <span>Panel Talk &amp; Q&amp;A</span>
+            <span class="text-ibm-blue font-mono">→</span>
+          </div>
+        </article>
+
+        <!-- 2. Social Mixer -->
+        <article class="cds--tile flex flex-col justify-between border-t-4 border-t-ibm-blue relative">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="cds--tag-blue">Session 02</span>
+              <span class="font-mono text-xs text-ibm-blue font-semibold">IBM Team</span>
+            </div>
+            <h3 class="font-mono text-xl font-normal text-ibm-gray-100 mb-3">Social Mixer &amp; Networking</h3>
+            <p class="text-ibm-gray-70 text-sm leading-relaxed mb-4 font-sans">
+              An informal social hour for attendees and hackathon participants to meet, chat, and connect directly with engineers and researchers from IBM.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ibm-gray-20 font-mono text-xs text-ibm-gray-70 flex justify-between items-center">
+            <span>Community Mixer</span>
+            <span class="text-ibm-blue font-mono">→</span>
+          </div>
+        </article>
+
+        <!-- 3. Challenge Track -->
+        <article class="cds--tile flex flex-col justify-between border-t-4 border-t-ibm-blue relative">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="cds--tag-blue">Session 03</span>
+              <span class="font-mono text-xs text-ibm-blue font-semibold">IBM Team</span>
+            </div>
+            <h3 class="font-mono text-xl font-normal text-ibm-gray-100 mb-3">Afternoon Challenge Track</h3>
+            <p class="text-ibm-gray-70 text-sm leading-relaxed mb-4 font-sans">
+              A dedicated hackathon challenge track provided by the IBM Santa Clara team, featuring technical guidance and hands-on mentoring.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ibm-gray-20 font-mono text-xs text-ibm-gray-70 flex justify-between items-center">
+            <span>Mentored Track</span>
+            <span class="text-ibm-blue font-mono">→</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program & Schedule Overview (Carbon Structured List) -->
+  <section id="program" class="py-20 px-6 bg-ibm-gray-10 border-b border-ibm-gray-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
+        <p class="font-mono text-xs tracking-[0.2em] text-ibm-blue uppercase font-semibold">Program Overview</p>
+      </div>
+      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Event Schedule</h2>
+      <div class="w-12 h-1 bg-ibm-blue mt-3 mb-8"></div>
+
+      <!-- ========================================================================= -->
+      <!-- DEVELOPER NOTE:                                                           -->
+      <!-- Replace the placeholder schedule blocks below when exact dates,           -->
+      <!-- room locations, and minute-by-minute timings are confirmed.               -->
+      <!-- ========================================================================= -->
+
+      <div class="border border-ibm-gray-20 bg-white divide-y divide-ibm-gray-20 shadow-sm">
+        <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center hover:bg-ibm-gray-10/50 transition-colors">
+          <div>
+            <span class="font-mono text-xs text-ibm-gray-70 uppercase tracking-widest">Opening &amp; Kickoff</span>
+            <p class="font-mono text-base text-ibm-gray-100 mt-1 font-medium">Fall Fest Welcome</p>
+          </div>
+          <p class="text-ibm-gray-70 text-sm font-sans">
+            Event check-in, opening remarks, and introduction to Qiskit resources and hackathon challenge guidelines.
+          </p>
+        </div>
+
+        <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center bg-[#edf5ff] border-l-4 border-l-ibm-blue">
+          <div>
+            <span class="cds--tag-blue">IBM Feature Session</span>
+            <p class="font-mono text-base text-ibm-gray-100 mt-1 font-semibold">IBM Santa Clara Panel Talk</p>
+          </div>
+          <p class="text-ibm-gray-70 text-sm font-sans">
+            Industry panel discussion with the IBM Santa Clara team on quantum advancements, hardware/software roadmaps, and career pathways.
+          </p>
+        </div>
+
+        <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center bg-[#edf5ff] border-l-4 border-l-ibm-blue">
+          <div>
+            <span class="cds--tag-blue">IBM Feature Session</span>
+            <p class="font-mono text-base text-ibm-gray-100 mt-1 font-semibold">IBM Social Mixer</p>
+          </div>
+          <p class="text-ibm-gray-70 text-sm font-sans">
+            Social and networking hour with members of the IBM Santa Clara team and fellow student participants.
+          </p>
+        </div>
+
+        <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center bg-[#edf5ff] border-l-4 border-l-ibm-blue">
+          <div>
+            <span class="cds--tag-blue">IBM Feature Session</span>
+            <p class="font-mono text-base text-ibm-gray-100 mt-1 font-semibold">IBM Challenge Track &amp; Hacking</p>
+          </div>
+          <p class="text-ibm-gray-70 text-sm font-sans">
+            Kickoff for the IBM Santa Clara hackathon challenge track, open hacking period, and technical mentorship.
+          </p>
+        </div>
+
+        <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center hover:bg-ibm-gray-10/50 transition-colors">
+          <div>
+            <span class="font-mono text-xs text-ibm-gray-70 uppercase tracking-widest">Demos &amp; Awards</span>
+            <p class="font-mono text-base text-ibm-gray-100 mt-1 font-medium">Project Expo &amp; Conclusion</p>
+          </div>
+          <p class="text-ibm-gray-70 text-sm font-sans">
+            Student project demonstrations, judging deliberation, track awards announcement, and closing remarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section (Carbon Dark Theme G100) -->
+  <section id="register" class="py-20 px-6 bg-ibm-gray-100 text-white border-t border-ibm-gray-80">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- IBM Quantum Microwave Control Pulse Waveform Graphic -->
+      <div class="flex justify-center mb-6">
+        <svg class="w-72 sm:w-96 h-12" viewBox="0 0 380 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="ibmPulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0f62fe" stop-opacity="0.1" />
+              <stop offset="25%" stop-color="#0f62fe" stop-opacity="0.9" />
+              <stop offset="65%" stop-color="#8a3ffc" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#0f62fe" stop-opacity="0.1" />
+            </linearGradient>
+          </defs>
+          <!-- Baseline -->
+          <line x1="10" y1="24" x2="370" y2="24" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="3 3" />
+          <!-- DRAG Pulse Waveform Envelope -->
+          <path d="M10,24 Q50,24 70,24 T110,8 Q130,-4 150,24 T190,24 T230,6 Q250,-8 270,24 T310,24 Q340,24 370,24" stroke="url(#ibmPulseGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <!-- Modulation markers -->
+          <circle cx="130" cy="3" r="3.5" fill="#0f62fe" />
+          <circle cx="250" cy="1" r="3.5" fill="#8a3ffc" />
+          <line x1="130" y1="3" x2="130" y2="24" stroke="#0f62fe" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
+          <line x1="250" y1="1" x2="250" y2="24" stroke="#8a3ffc" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
+        </svg>
+      </div>
+
+      <div class="inline-flex items-center gap-2 mb-2">
+        <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
+        <p class="font-mono text-xs tracking-[0.25em] text-ibm-blue uppercase font-semibold">Registration</p>
+      </div>
+      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-white mb-4">Register for Qiskit Fall Fest 2026</h2>
+      <p class="text-ibm-gray-30 text-[17px] max-w-2xl mx-auto mb-8 leading-relaxed font-sans">
+        Join QC@B or check back here for registration links and event announcements.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <!-- DEVELOPER NOTE: Replace '#' with the live registration link once available -->
+        <a href="#" class="cds--btn-ibm">
+          <span>Register</span>
+          <svg class="w-4 h-4 text-white" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12L12 4M6 4h6v6"/>
+          </svg>
+        </a>
+        <a href="../index.html#events" class="cds--btn-ghost-dark">
+          <span>View Club Calendar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-black border-t border-gray-800 text-gray-500 font-mono text-sm">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div>
+      <p class="text-white font-semibold mb-2">Quantum Computing @ Berkeley</p>
+      <p>2495 Bancroft Ext<br>Berkeley, CA 94720</p>
+      <p class="mt-2">
+        <a href="mailto:contact@qcb.berkeley.edu" class="hover:text-white transition-colors">contact@qcb.berkeley.edu</a>
+      </p>
+    </div>
+    <div class="text-center text-xs text-gray-600">
+      <p class="text-gray-500 mb-2">&copy; 2026 QCB — All Rights Reserved</p>
+      <p>We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p>
+    </div>
+    <div class="flex flex-col items-start sm:items-end gap-3">
+      <a href="https://www.ocf.berkeley.edu" target="_blank" rel="noopener">
+        <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" class="h-8">
+      </a>
+      <div class="flex gap-5 text-lg">
+        <a href="https://www.facebook.com/qcberkeley/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/qcberkeley/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:contact@qcb.berkeley.edu" class="hover:text-white transition-colors" aria-label="Email">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
