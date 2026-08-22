@@ -89,28 +89,28 @@
       align-items: center;
       justify-content: space-between;
       gap: 1.25rem;
-      background-color: #2b3035;
+      background-color: #0f62fe;
       color: #ffffff;
       font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 0.9375rem;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 0.01em;
       padding: 0.8125rem 1.25rem;
-      border: 1px solid #3c424a;
+      border: 1px solid #0f62fe;
       border-radius: 0;
       transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
       cursor: pointer;
       text-decoration: none;
     }
     .cds--btn-ibm:hover {
-      background-color: #383f47;
-      border-color: #525a66;
+      background-color: #0353e9;
+      border-color: #0353e9;
       color: #ffffff;
       text-decoration: none;
     }
     .cds--btn-ibm:active {
-      background-color: #1f2327;
-      border-color: #1f2327;
+      background-color: #002d9c;
+      border-color: #002d9c;
     }
     .cds--btn-ibm svg {
       transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -177,7 +177,7 @@
       border: 1px solid #e0e0e0;
     }
     .hero-gradient {
-      background: radial-gradient(ellipse 100% 90% at 50% 0%, rgba(75, 75, 75, 0.5) 0%, rgba(22, 22, 22, 1) 70%), #161616;
+      background-color: #2c323a;
     }
   </style>
 </head>
@@ -263,41 +263,86 @@
 </script>
 
 <main>
-  <!-- Hero Section (Carbon G100 Dark Theme with Ambient Top Gradient & 2-Column Split) -->
-  <section class="hero-gradient relative px-6 pt-24 pb-14 md:pt-28 md:pb-20 flex items-center border-b border-ibm-gray-80 overflow-hidden">
+  <!-- Top Breadcrumb / Sub-Navigation Strip (White IBM Carbon Style) -->
+  <div class="pt-16 bg-white border-b border-ibm-gray-20 px-6">
+    <div class="max-w-6xl mx-auto py-3.5 flex items-center justify-between">
+      <a href="../index.html#events" class="font-mono text-xs tracking-widest uppercase text-ibm-gray-70 hover:text-ibm-blue transition-colors inline-flex items-center gap-1.5 font-semibold">
+        <span class="text-ibm-blue font-bold">←</span>
+        <span>Events</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section (Dark Slate G90/G100 Theme) -->
+  <section class="hero-gradient relative px-6 pt-6 pb-12 md:pt-8 md:pb-16 flex items-center border-b border-ibm-gray-80 overflow-hidden">
     <div class="relative max-w-6xl mx-auto w-full text-white">
-      <a href="../index.html#events" class="font-mono text-xs tracking-widest uppercase text-ibm-gray-30 hover:text-white transition-colors inline-block mb-4 reveal">← Events</a>
-      
       <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-12 items-center">
         <!-- Left Column: Title, Details & CTA Buttons -->
         <div class="reveal">
-          <div class="inline-flex items-center gap-2 mb-3">
+          <div class="inline-flex items-center gap-2 mb-4">
             <span class="w-2 h-2 bg-ibm-blue inline-block"></span>
             <p class="font-mono text-xs tracking-[0.2em] uppercase text-ibm-gray-30">Fall 2026 • QCB &amp; IBM Quantum</p>
           </div>
           <h1 class="font-mono text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white leading-tight">
             Qiskit Fall Fest 2026 (Berkeley)
           </h1>
-          <p class="text-base md:text-lg text-ibm-gray-30 mt-4 leading-relaxed font-sans max-w-xl">
-            A premier collegiate quantum computing celebration hosted by Quantum Computing at Berkeley in collaboration with IBM Quantum. Featuring an industry panel talk, social mixer, and challenge track provided by the Santa Clara team of IBM.
+          <p class="text-base md:text-lg text-ibm-gray-30 mt-6 leading-relaxed font-sans max-w-lg">
+            A collegiate quantum computing event hosted by QC@B and IBM Quantum, featuring an industry panel, networking mixer, and hackathon challenge.
           </p>
-          <div class="flex flex-wrap gap-3 mt-8">
-            <a href="#register" class="cds--btn-primary">
-              <span>Register</span>
-              <span class="text-base font-mono">→</span>
+          <!-- Carbon Numbered Navigation Tabs (Hero Actions) -->
+          <div class="flex items-end gap-6 sm:gap-8 mt-10 border-b border-ibm-gray-80/60 pb-0">
+            <!-- 01 Register (Primary Emphasized Tab) -->
+            <a href="#register" class="group pb-3 border-b-2 border-ibm-blue -mb-[1px] text-left transition-all">
+              <span class="block font-mono text-xs text-[#78a9ff] font-semibold mb-0.5">01</span>
+              <span class="font-sans text-sm sm:text-base font-semibold text-white group-hover:text-[#78a9ff] inline-flex items-center gap-1.5 transition-colors">
+                <span>Register</span>
+                <span class="font-mono text-xs text-[#78a9ff] group-hover:translate-x-0.5 transition-transform">→</span>
+              </span>
             </a>
-            <a href="#ibm-spotlight" class="cds--btn-ghost-dark">
-              <span>Program Overview</span>
+
+            <!-- 02 Program Overview -->
+            <a href="#ibm-spotlight" class="group pb-3 border-b-2 border-transparent -mb-[1px] hover:border-ibm-gray-60 text-left transition-all">
+              <span class="block font-mono text-xs text-ibm-gray-40 group-hover:text-ibm-gray-20 mb-0.5 transition-colors">02</span>
+              <span class="font-sans text-sm sm:text-base text-ibm-gray-30 group-hover:text-white transition-colors">Program Overview</span>
             </a>
-            <a href="#program" class="cds--btn-ghost-dark">
-              <span>Event Schedule</span>
+
+            <!-- 03 Event Schedule -->
+            <a href="#program" class="group pb-3 border-b-2 border-transparent -mb-[1px] hover:border-ibm-gray-60 text-left transition-all">
+              <span class="block font-mono text-xs text-ibm-gray-40 group-hover:text-ibm-gray-20 mb-0.5 transition-colors">03</span>
+              <span class="font-sans text-sm sm:text-base text-ibm-gray-30 group-hover:text-white transition-colors">Event Schedule</span>
             </a>
           </div>
         </div>
 
-        <!-- Right Column: 5-Qubit Bernstein-Vazirani Quantum Circuit Graphic -->
-        <div class="w-full bg-[#161616]/80 border border-ibm-gray-80/60 p-4 sm:p-6 shadow-2xl backdrop-blur-sm relative flex items-center justify-center reveal delay-150">
-          <svg class="w-full h-auto" viewBox="0 0 630 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="5-Qubit Bernstein-Vazirani Quantum Circuit">
+        <!-- Right Column: Qiskit Code Execution & Bernstein-Vazirani Circuit Graphic -->
+        <div class="w-full reveal delay-150">
+          <!-- Code Block (Matplotlib Drawing) -->
+          <div class="bg-[#12161f] border border-ibm-gray-80 shadow-2xl relative p-3 sm:p-4 font-mono text-xs md:text-sm">
+            <button id="copy-draw-btn" class="absolute top-3 right-3 text-ibm-gray-40 hover:text-white transition-colors p-1" title="Copy code" onclick="navigator.clipboard.writeText('circuit.draw(output=\x22mpl\x22)'); const icon = this.querySelector('svg'); icon.style.opacity='0.4'; setTimeout(() => icon.style.opacity='1', 500);" aria-label="Copy code">
+              <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5.5" y="2.5" width="8" height="9" stroke="currentColor" />
+                <path d="M2.5 5.5v8h8" stroke="currentColor" />
+              </svg>
+            </button>
+
+            <div class="flex items-start">
+              <div class="text-ibm-gray-60 select-none pr-3 sm:pr-4 border-r border-ibm-gray-80 text-right w-6 sm:w-7 font-mono leading-relaxed">
+                <div>1</div>
+              </div>
+              <div class="pl-3 sm:pl-4 font-mono leading-relaxed">
+                <div>
+                  <span class="text-white">circuit</span><span class="text-[#78a9ff]">.draw</span><span class="text-white">(output=</span><span class="text-[#ff7eb6]">"mpl"</span><span class="text-white">)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Label -->
+          <p class="font-mono text-xs text-ibm-gray-40 mt-3 mb-2">Output:</p>
+
+          <!-- 5-Qubit Bernstein-Vazirani Quantum Circuit Graphic -->
+          <div class="w-full bg-[#161616]/80 border border-ibm-gray-80/60 p-4 sm:p-6 shadow-2xl backdrop-blur-sm relative flex items-center justify-center">
+            <svg class="w-full h-auto" viewBox="0 0 630 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="5-Qubit Bernstein-Vazirani Quantum Circuit">
             <!-- Qubit & Classical Register Labels (5 Qubits: 4 Data + 1 Ancilla) -->
             <text x="12" y="36" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₀⟩</text>
             <text x="12" y="81" fill="#c6c6c6" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600">|q₁⟩</text>
@@ -402,6 +447,7 @@
             <path d="M567,173 A 5,5 0 0 1 579,173 M573,173 L576,161" fill="none" stroke="#ffffff" stroke-width="1.5" />
             <line x1="573" y1="180" x2="573" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="2 2" />
           </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -544,7 +590,22 @@
         <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
         <p class="font-mono text-xs tracking-[0.2em] text-ibm-blue uppercase font-semibold">Program Overview</p>
       </div>
-      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Event Schedule</h2>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Event Schedule</h2>
+        
+        <!-- Single-Line Qiskit Pipeline Code -->
+        <div class="hidden sm:inline-flex items-center gap-2 md:gap-2.5 font-mono text-xs md:text-sm lg:text-[15px] tracking-tight self-start sm:self-center select-none" title="Qiskit circuit execution pipeline">
+          <span class="text-[#fa4d56] font-semibold">qc.h(0)</span>
+          <span class="text-ibm-gray-40">→</span>
+          <span class="text-ibm-gray-60">qc.barrier()</span>
+          <span class="text-ibm-gray-40">→</span>
+          <span class="text-[#8a3ffc] font-semibold">qc.u(θ,φ,λ)</span>
+          <span class="text-ibm-gray-40">→</span>
+          <span class="text-ibm-gray-60">qc.barrier()</span>
+          <span class="text-ibm-gray-40">→</span>
+          <span class="text-ibm-blue font-semibold">qc.measure_all()</span>
+        </div>
+      </div>
       <div class="w-12 h-1 bg-ibm-blue mt-3 mb-8"></div>
 
       <!-- ========================================================================= -->
