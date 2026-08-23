@@ -1,7 +1,24 @@
+Options +MultiViews
+RewriteEngine On
+
+# 301 Redirect index.html to root /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 301 Redirect any incoming request with .html to its extensionless URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internally resolve extensionless requests to .html files if they exist
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
 # Legacy page redirects for search engines and old inbound links.
 Redirect 301 /team.shtml https://qcb.berkeley.edu/#team
-Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal.html
-Redirect 301 /blog.shtml https://qcb.berkeley.edu/education.html#articles
-Redirect 301 /project.shtml https://qcb.berkeley.edu/research.html
+Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal
+Redirect 301 /blog.shtml https://qcb.berkeley.edu/education#articles
+Redirect 301 /project.shtml https://qcb.berkeley.edu/research
 
-RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education.html#articles
+RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education#articles
+
