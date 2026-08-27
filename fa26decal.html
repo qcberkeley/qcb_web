@@ -6,11 +6,11 @@
   <title>Quantum Algorithms DeCal | QC@B</title>
   <link rel="icon" type="image/png" href="images/icon_black.png" />
   <link rel="canonical" href="https://qcb.berkeley.edu/fa26decal" />
-  <meta name="description" content="CS 198-148: Quantum Algorithms DeCal at UC Berkeley. Learn quantum circuits, complexity, Grover's, Shor's algorithm, Hamiltonian simulation, and variational methods." />
+  <meta name="description" content="CS 198: Fall 2026 Quantum Algorithms DeCal at UC Berkeley covering quantum circuits, complexity, Grover's, Shor's algorithm, Hamiltonian simulation, and variational methods." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://qcb.berkeley.edu/fa26decal" />
-  <meta property="og:title" content="Quantum Algorithms DeCal (CS 198-148) | QC@B" />
-  <meta property="og:description" content="CS 198-148: Quantum Algorithms DeCal at UC Berkeley. Learn quantum circuits, complexity, Grover's, Shor's algorithm, Hamiltonian simulation, and variational methods." />
+  <meta property="og:title" content="Quantum Algorithms DeCal (CS 198) | QC@B" />
+  <meta property="og:description" content="CS 198: Fall 2026 Quantum Algorithms DeCal at UC Berkeley covering quantum circuits, complexity, Grover's, Shor's algorithm, Hamiltonian simulation, and variational methods." />
   <meta property="og:image" content="https://qcb.berkeley.edu/images/qcb_design.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -264,41 +264,43 @@
   <h1>Welcome to Quantum Algorithms DeCal</h1>
 
   <div class="course-info" id="about">
-    <strong>Course:</strong> CS 198-148
+    <strong>Course:</strong> CS 198
+    &nbsp;·&nbsp;
+    <strong>Term:</strong> Fall 2026
     &nbsp;·&nbsp;
     <strong>Units:</strong> 2 (P/NP)<br />
     <strong>Instructors:</strong>
-    Ian Loam, Kepha Sher, Jason Dong, Bruno Leopoldo, Morris Hsu<br />
-    <strong>Faculty Advisor:</strong> John Wright<br />
-    <strong>Lecture:</strong> Two 1-hour lectures per week
+    Kepha Sher, Ian Loam, Jason Dong, Bruno Leopoldo, Morris Hsu<br />
+    <strong>Lecture:</strong> Mondays and Wednesdays, 6–7pm @ ETCH 3111
     &nbsp;·&nbsp;
-    <strong>Office Hours:</strong> Campbell 101
+    <strong>Office Hours:</strong> TBD @ Campbell 101
     <br />
     <strong>Email:</strong>
-    <a href="mailto:ianloam@berkeley.edu">ianloam</a>,
     <a href="mailto:kephasher@berkeley.edu">kephasher</a>,
+    <a href="mailto:ianloam@berkeley.edu">ianloam</a>,
     <a href="mailto:jasondong1@berkeley.edu">jasondong1</a>,
     <a href="mailto:morris.c.hsu@berkeley.edu">morris.c.hsu</a>,
     <a href="mailto:brunoleopoldo@berkeley.edu">brunoleopoldo</a>
     @berkeley.edu
   </div>
 
-  <p>This course surveys the development of quantum algorithms, from Shor's original breakthrough to modern approaches. Emphasis is placed on hands-on experience, including implementation using <strong>Qiskit (AER)</strong>. A final project serves as the capstone.</p>
+  <p>The purpose of this course is to survey the development of quantum algorithms, from Shor's original breakthrough to more recent approaches. Emphasis is placed on hands-on experience, including implementation using <strong>Qiskit (AER)</strong>. Students will learn about extensions on classic results, gaining a modern perspective on original algorithms. Special topics lectures inspire students to explore their own interests, with a final capstone project to demonstrate their achievement.</p>
+  <p style="margin-top:.75rem"><strong>Prerequisites:</strong> Linear Algebra (Math 54, Physics 89 or equivalent) and Python programming experience (e.g., CS 61A or equivalent). Knowledge of Physics 191A, or concurrent enrollment, is strongly preferred. No instructor permission required.</p>
 
   <hr id="schedule" />
 
   <!-- ── UNIT 1 ─────────────────────────────────────── -->
   <span class="unit-label">Unit 1 — Introductory Material</span>
 
-  <h2><a href="#week-1">Week 1</a></h2>
+  <h2 id="week-1"><a href="#week-1">Week 1</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 1</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Logistics, Qiskit Intro, The Circuit Model</span>
+        <span class="entry-title">Logistics, Qiskit Intro, Quantum Circuits</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 2.1–3</a>
         </div>
       </div>
     </div>
@@ -306,25 +308,20 @@
       <div class="entry-date">Lec 2</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Deutsch-Jozsa Algorithm</span>
-        <div class="entry-links">
-          <a href="#">Slides</a>
-        </div>
+        <span class="entry-title">Qiskit and Quantum Circuits</span>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-2">Week 2</a></h2>
+  <h2 id="week-2"><a href="#week-2">Week 2</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 3</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Qiskit Implementation</span>
+        <span class="entry-title">Deutsch-Jozsa Algorithm</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
-          &nbsp;·&nbsp;
-          <a href="#">Lab Notebook</a>
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 2.4</a>
         </div>
       </div>
     </div>
@@ -332,15 +329,15 @@
       <div class="entry-date">Lec 4</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Universal Quantum Computation</span>
+        <span class="entry-title">Quantum Complexity (1)</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank" rel="noopener">Reading: Childs ch. 2.3</a>
         </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-3">Week 3</a></h2>
+  <h2 id="week-3"><a href="#week-3">Week 3</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 5</div>
@@ -348,7 +345,7 @@
         <span class="entry-type type-lecture">Lecture</span>
         <span class="entry-title">Quantum Complexity (1)</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 13</a>
         </div>
       </div>
     </div>
@@ -358,24 +355,24 @@
         <span class="entry-type type-lecture">Lecture</span>
         <span class="entry-title">Quantum Complexity (2)</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 14</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ── UNIT 2 ─────────────────────────────────────── -->
-  <span class="unit-label">Unit 2 — Classic Algorithms</span>
+  <span class="unit-label">Unit 2 — Algorithms</span>
 
-  <h2><a href="#week-4">Week 4</a></h2>
+  <h2 id="week-4"><a href="#week-4">Week 4</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 7</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Grover's Algorithm (1)</span>
+        <span class="entry-title">Quantum Fourier Transform and Quantum Phase Estimation</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 16.1, 16.3</a>
         </div>
       </div>
     </div>
@@ -383,25 +380,23 @@
       <div class="entry-date">Lec 8</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Grover's Algorithm (2)</span>
+        <span class="entry-title">Grover’s Algorithm and Quantum Counting</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
-          &nbsp;·&nbsp;
-          <a href="#">Lab Notebook</a>
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 11.1</a>
         </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-5">Week 5</a></h2>
+  <h2 id="week-5"><a href="#week-5">Week 5</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 9</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Shor's Algorithm</span>
+        <span class="entry-title">Shor’s Algorithm</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 5</a>
         </div>
       </div>
     </div>
@@ -409,137 +404,151 @@
       <div class="entry-date">Lec 10</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Abelian Stabilizer Problem</span>
+        <span class="entry-title">Adiabatic Quantum Computation</span>
         <div class="entry-links">
-          <a href="#">Slides</a>
+          <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank" rel="noopener">Reading: Childs ch. 31</a>
         </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-6">Week 6</a></h2>
+  <h2 id="week-6"><a href="#week-6">Week 6</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 11</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Hidden Subgroup Problem (1)</span>
-        <div class="entry-links">
-          <a href="#">Slides</a>
-        </div>
+        <span class="entry-title">Variational Approaches (1)</span>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 12</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Hidden Subgroup Problem (2)</span>
-        <div class="entry-links">
-          <a href="#">Slides</a>
-        </div>
+        <span class="entry-title">Variational Approaches (2)</span>
       </div>
     </div>
   </div>
 
   <!-- ── UNIT 3 ─────────────────────────────────────── -->
-  <span class="unit-label">Unit 3 — Hamiltonian Simulation</span>
+  <span class="unit-label">Unit 3 — Hamiltonian Simulations and Beyond</span>
 
-  <h2><a href="#week-7">Week 7</a></h2>
+  <h2 id="week-7"><a href="#week-7">Week 7</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 13</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Trotter Expansion</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Block Encoding</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 9</a>
+        </div>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 14</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Block Encoding, Qubitization</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Qubitization</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 10</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-8">Week 8</a></h2>
+  <h2 id="week-8"><a href="#week-8">Week 8</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 15</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
         <span class="entry-title">Quantum Signal Processing</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 12</a>
+        </div>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 16</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Quantum Walk (1)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Quantum Singular Value Transformation (1)</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 13.2–3</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-9">Week 9</a></h2>
+  <h2 id="week-9"><a href="#week-9">Week 9</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 17</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Quantum Walk (2)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Quantum Singular Value Transformation (2)</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 13</a>
+        </div>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 18</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Adiabatic Quantum Computation (1)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Block Encoding based Hamiltonian Simulation</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 14.1–2</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-10">Week 10</a></h2>
+  <h2 id="week-10"><a href="#week-10">Week 10</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 19</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Adiabatic Quantum Computation (2)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Operator Splitting based Hamiltonian Simulation</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 15.1–3</a>
+        </div>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 20</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Variational Approaches (1)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Quantum Walks (1)</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 17</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-11">Week 11</a></h2>
+  <h2 id="week-11"><a href="#week-11">Week 11</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 21</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Variational Approaches (2)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">Quantum Walks (2)</span>
+        <div class="entry-links">
+          <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Reading: Lin ch. 17</a>
+        </div>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 22</div>
       <div class="entry-body">
         <span class="entry-type type-lecture">Lecture</span>
-        <span class="entry-title">Variational Approaches (3)</span>
-        <div class="entry-links"><a href="#">Slides</a></div>
+        <span class="entry-title">HHL Algorithm</span>
+        <div class="entry-links">
+          <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Reading: de Wolf ch. 10</a>
+        </div>
       </div>
     </div>
   </div>
@@ -547,25 +556,25 @@
   <!-- ── UNIT 4 ─────────────────────────────────────── -->
   <span class="unit-label">Unit 4 — Special Topics</span>
 
-  <h2><a href="#week-12">Week 12</a></h2>
+  <h2 id="week-12"><a href="#week-12">Week 12</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 23</div>
       <div class="entry-body">
         <span class="entry-type type-special">Special Topic</span>
-        <span class="entry-title">TBD</span>
+        <span class="entry-title">Special Topic (TBD)</span>
       </div>
     </div>
     <div class="entry">
       <div class="entry-date">Lec 24</div>
       <div class="entry-body">
         <span class="entry-type type-special">Special Topic</span>
-        <span class="entry-title">TBD</span>
+        <span class="entry-title">Special Topic (TBD)</span>
       </div>
     </div>
   </div>
 
-  <h2><a href="#week-13">Week 13</a></h2>
+  <h2 id="week-13"><a href="#week-13">Week 13</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">Lec 25</div>
@@ -586,7 +595,7 @@
   <!-- ── UNIT 5 ─────────────────────────────────────── -->
   <span class="unit-label">Unit 5 — Final Project</span>
 
-  <h2><a href="#finals">Finals</a></h2>
+  <h2 id="finals"><a href="#finals">Finals</a></h2>
   <div class="week-entries">
     <div class="entry">
       <div class="entry-date">TBD</div>
@@ -600,39 +609,50 @@
   <hr id="policies" />
 
   <h2>Policies</h2>
-  <p>This course is graded <strong>P/NP</strong>. Regular attendance, participation, and completion of the final project are required for a Pass. Students have <strong>2 unexcused absences</strong>; additional absences require emailing the instructors in advance and after slides are posted. Lectures will not be recorded.</p>
-  <p><strong>Grading:</strong> Attendance 20% · Final Project 80%</p>
-  <p><strong>Homeworks:</strong> Optional. Lab notebooks are provided for Qiskit implementation practice.</p>
+  <p>This course is graded on a <strong>P/NP</strong> basis. Regular attendance, participation, and completion of assignments is required for a Pass grade. A final project must be completed in order to pass.</p>
+  <p><strong>Grading:</strong> Attendance 20% &nbsp;·&nbsp; Final Project 80%</p>
+  <p><strong>Attendance:</strong> Students have <strong>2 unexcused absences</strong>. Excused absences are allowed, but students will need to email the instructors in advance, and after lecture slides are posted. Lectures will not be recorded.</p>
+  <p><strong>Homeworks:</strong> Optional. Lab notebooks will be provided for you to implement in Qiskit.</p>
+  <p><strong>Final Project:</strong> A capstone project on a topic of your choice. The point of a project is for you to explore an algorithm not discussed in class (or an extension of what we talked about), and present it to the class. Implementation of your algorithm of choice is required. Submitting a final project is required to pass the course.</p>
 
   <hr id="resources" />
 
   <h2>Resources</h2>
-  <ul style="margin-left:1.25rem; line-height:2">
-    <li>Nielsen &amp; Chuang — <em>Quantum Computing and Quantum Information</em> (Cambridge, 2010)</li>
-    <li>Kitaev, Shen &amp; Vyalyi — <em>Classical and Quantum Computation</em> (AMS, 2002)</li>
-    <li><a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank" rel="noopener">Andrew Childs' Lecture Notes</a></li>
-    <li><a href="https://arxiv.org/pdf/2507.11565" target="_blank" rel="noopener">Faryad's Notes</a></li>
-    <li><a href="https://quantumalgorithmzoo.org/" target="_blank" rel="noopener">Quantum Algorithm Zoo</a></li>
+
+  <p style="margin-bottom:.4rem;"><strong>Primary Books &amp; Readings (Required):</strong></p>
+  <p style="font-size:.875rem; color:var(--text-muted); margin-bottom:.6rem;">Students are required to read the corresponding sections for each lecture from these texts:</p>
+  <ul style="margin-left:1.25rem; line-height:2; margin-bottom:1.5rem;">
+    <li><a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf" target="_blank" rel="noopener">Ronald de Wolf — <em>Quantum Computing: Lecture Notes</em> (de Wolf)</a></li>
+    <li><a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf" target="_blank" rel="noopener">Lin Lin — <em>Quantum Algorithms for Scientific Computation</em> (Lin)</a></li>
+    <li><a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank" rel="noopener">Andrew Childs — <em>Lecture Notes on Quantum Algorithms</em> (Childs)</a></li>
+  </ul>
+
+  <p style="margin-bottom:.4rem;"><strong>Supplemental Materials:</strong></p>
+  <p style="font-size:.875rem; color:var(--text-muted); margin-bottom:.6rem;">Students are encouraged to learn more by exploring the following materials:</p>
+  <ul style="margin-left:1.25rem; line-height:2;">
+    <li>Nielsen &amp; Chuang — <em>Quantum Computing and Quantum Information</em> (Cambridge University Press, 2010)</li>
+    <li>Kitaev, Shen, &amp; Vyalyi — <em>Classical and Quantum Computation</em> (American Mathematical Society, 2002)</li>
+    <li><a href="https://quantumalgorithmzoo.org/#ONML" target="_blank" rel="noopener">Quantum Algorithm Zoo</a></li>
     <li><a href="https://qiskit.org/textbook/preface.html" target="_blank" rel="noopener">Qiskit Textbook</a></li>
+    <li><a href="https://qcb.studentorg.berkeley.edu/" target="_blank" rel="noopener">QC@B Website &amp; Past Project Examples</a></li>
   </ul>
 
   <hr id="staff" />
 
   <h2>Staff</h2>
   <p>
-    <a href="mailto:ianloam@berkeley.edu">Ian Loam</a> ·
     <a href="mailto:kephasher@berkeley.edu">Kepha Sher</a> ·
+    <a href="mailto:ianloam@berkeley.edu">Ian Loam</a> ·
     <a href="mailto:jasondong1@berkeley.edu">Jason Dong</a> ·
     <a href="mailto:brunoleopoldo@berkeley.edu">Bruno Leopoldo</a> ·
     <a href="mailto:morris.c.hsu@berkeley.edu">Morris Hsu</a>
   </p>
-  <p style="margin-top:.75rem"><strong>Faculty Advisor:</strong> John Wright</p>
 
 </div>
 
 <footer>
   <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
-    <span>CS 198: Quantum Algorithms DeCal · UC Berkeley</span>
+    <span>CS 198: Quantum Algorithms DeCal · UC Berkeley · Fall 2026</span>
     <a href="https://qcb.studentorg.berkeley.edu/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:.5rem; color:var(--text-muted); text-decoration:none;">
       <span style="font-size:.8125rem;">A course by</span>
       <img src="images/logo_black.png" alt="Quantum Computing @ Berkeley" style="height:18px; display:block;">
