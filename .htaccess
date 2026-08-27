@@ -1,5 +1,41 @@
-Options +MultiViews
+# ==============================================================================
+# General Server Settings
+# ==============================================================================
+# Disable directory listings & enable MultiViews
+Options -Indexes +MultiViews
+AddDefaultCharset UTF-8
+
+# Custom Error Documents
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# ==============================================================================
+# Security Headers & Rules
+# ==============================================================================
+# Prevent access to hidden files (e.g. .git, .DS_Store, .htaccess)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ==============================================================================
+# Rewrite Engine & Routing Rules
+# ==============================================================================
 RewriteEngine On
+
+# 301 Redirect /events or /events/ to /#events
+RewriteRule ^events/?$ /#events [R=301,NE,L]
+
+# 301 Redirect asset subdirectories to their respective parent pages
+RewriteRule ^courseware/?$ /education#library [R=301,NE,L]
+RewriteRule ^syllabi/?$ /education#library [R=301,NE,L]
+RewriteRule ^QUOR/?$ /research [R=301,NE,L]
 
 # 301 Redirect index.html to root /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
@@ -14,11 +50,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
-# Legacy page redirects for search engines and old inbound links.
+# ==============================================================================
+# Legacy Redirects (for search engines & inbound links)
+# ==============================================================================
 Redirect 301 /team.shtml https://qcb.berkeley.edu/#team
 Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal
 Redirect 301 /blog.shtml https://qcb.berkeley.edu/education#articles
 Redirect 301 /project.shtml https://qcb.berkeley.edu/research
 
 RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education#articles
+
 
