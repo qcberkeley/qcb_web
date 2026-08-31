@@ -36,9 +36,21 @@
     #news-track::-webkit-scrollbar {
       display: none;
     }
-    .news-slide {
-      min-width: 100%;
-      scroll-snap-align: start;
+    #news-track > article {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      #news-track > article {
+        width: calc(50% - 12px);
+      }
+    }
+    @media (min-width: 1024px) {
+      #news-track:has(> article:nth-child(3)) > article {
+        width: calc(33.333% - 16px);
+      }
+    }
+    #news:not(:has(#news-track > article:nth-child(3))) #news-nav-controls {
+      display: none;
     }
   </style>
 
@@ -426,38 +438,109 @@
   </script>
 
   <!-- ── News ──────────────────────────────────────── -->
-  <section id="news" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto reveal">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+  <section id="news" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div>
           <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">News &amp; Events</p>
           <h2 class="font-mono text-4xl font-light tracking-tight text-black">Latest from QCB</h2>
           <div class="w-12 h-0.5 bg-black opacity-20 mt-3"></div>
         </div>
-        <a href="#events" class="font-mono text-sm text-black hover:text-accent transition-colors">View calendar →</a>
+        <div class="flex items-center gap-4">
+          <a href="https://quantumcomputingberkeley.substack.com" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">Subscribe to newsletter →</a>
+          <span class="text-gray-300">·</span>
+          <a href="#events" class="font-mono text-sm text-black hover:text-accent transition-colors">View calendar →</a>
+          <div id="news-nav-controls" class="hidden sm:flex items-center gap-2 ml-2">
+            <button id="news-prev" aria-label="Previous news" class="w-8 h-8 rounded border border-gray-300 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="news-next" aria-label="Next news" class="w-8 h-8 rounded border border-gray-300 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="relative">
-        <div id="news-track" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
-          <article class="news-slide bg-white border border-gray-200 p-6 md:p-8">
-            <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-3">News</p>
-            <h3 class="font-mono text-2xl font-light text-black mb-4">QCB goes to iQuHACK!</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
-              QCB members Ian, Kepha, and Jason competed as a team at
-              <a href="https://www.iquise.mit.edu/iQuHACK/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">iQuHACK</a>,
-              MIT's quantum hackathon, where they took on IonQ's Quantum Entanglement Distillation Game challenge.
-              Their work can be found
-              <a href="https://github.com/KephaSher/iQuHacks-2026-Quih" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">here</a>.
-            </p>
+        <div id="news-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 pt-1">
+          <article class="flex-shrink-0 snap-start bg-white border border-gray-200 overflow-hidden flex flex-col justify-between hover:border-gray-300 transition-colors">
+            <div>
+              <div class="h-44 w-full overflow-hidden bg-gray-100 border-b border-gray-100">
+                <img src="https://substackcdn.com/image/fetch/$s_!isEp!,w_800,c_limit,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff1241b6d-fbaf-4279-a397-1c23df237c8c_2347x1751.png"
+                  alt="QC@B tabling at Calapalooza"
+                  class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="font-mono text-xs tracking-widest text-gray-400 uppercase">Newsletter</span>
+                  <time datetime="2026-08-30" class="font-mono text-xs text-gray-400">Aug 30, 2026</time>
+                </div>
+                <h3 class="font-mono text-xl font-light text-black mb-1">Welcome to QC@B!</h3>
+                <p class="font-mono text-xs text-gray-500 mb-3">By Ajla Trumic</p>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  Semester kick-off updates including hybrid infosessions on Sep 1 &amp; 8 in Physics 375, new presidential leadership with Kepha Sher and Ian Loam, funded research projects, and the upcoming IBM Fall Fest on Oct 10.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0">
+              <a href="https://quantumcomputingberkeley.substack.com/p/welcome-to-qcb" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">
+                Read on Substack →
+              </a>
+            </div>
           </article>
-        </div>
 
-        <div class="flex justify-center gap-2 mt-5" aria-label="News slides">
-          <span class="w-2 h-2 rounded-full bg-black" aria-label="Slide 1"></span>
+          <article class="flex-shrink-0 snap-start bg-white border border-gray-200 overflow-hidden flex flex-col justify-between hover:border-gray-300 transition-colors">
+            <div>
+              <div class="h-44 w-full overflow-hidden bg-gray-50 border-b border-gray-100 flex items-center justify-center p-6">
+                <img src="images/iquhack_logo.png"
+                  alt="iQuHACK logo"
+                  class="max-h-full max-w-full object-contain">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="font-mono text-xs tracking-widest text-gray-400 uppercase">News</span>
+                  <time datetime="2026-02-01" class="font-mono text-xs text-gray-400">Feb 2026</time>
+                </div>
+                <h3 class="font-mono text-xl font-light text-black mb-3">QCB goes to iQuHACK!</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  QCB members Ian, Kepha, and Jason competed as a team at
+                  <a href="https://www.iquise.mit.edu/iQuHACK/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">iQuHACK</a>,
+                  MIT's quantum hackathon, where they took on IonQ's Quantum Entanglement Distillation Game challenge.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0">
+              <a href="https://github.com/KephaSher/iQuHacks-2026-Quih" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">
+                View work →
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    (function () {
+      var track = document.getElementById('news-track');
+      var prevBtn = document.getElementById('news-prev');
+      var nextBtn = document.getElementById('news-next');
+      if (!track || !prevBtn || !nextBtn) return;
+
+      function getScrollAmount() {
+        var card = track.querySelector('article');
+        return card ? card.offsetWidth + 24 : 400;
+      }
+
+      prevBtn.addEventListener('click', function () {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', function () {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+    })();
+  </script>
 
   <!-- ── About ─────────────────────────────────────── -->
   <section id="about" class="py-24 px-6 bg-white">
