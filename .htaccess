@@ -1,7 +1,71 @@
-# Legacy page redirects for search engines and old inbound links.
-Redirect 301 /team.shtml https://qcb.berkeley.edu/#team
-Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal.html
-Redirect 301 /blog.shtml https://qcb.berkeley.edu/education.html#articles
-Redirect 301 /project.shtml https://qcb.berkeley.edu/research.html
+# ==============================================================================
+# General Server Settings
+# ==============================================================================
+# Disable directory listings & enable MultiViews
+Options -Indexes +MultiViews
+AddDefaultCharset UTF-8
 
-RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education.html#articles
+# Custom Error Documents
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# ==============================================================================
+# Security Headers & Rules
+# ==============================================================================
+# Prevent access to hidden files (e.g. .git, .DS_Store, .htaccess)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.fontawesome.com; font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com; img-src 'self' data: https:; connect-src 'self' https://docs.google.com https://www.ocf.berkeley.edu; frame-src 'self' https://calendar.google.com; frame-ancestors 'none'; form-action 'self' https://docs.google.com; object-src 'none'; base-uri 'self';"
+</IfModule>
+
+# ==============================================================================
+# Rewrite Engine & Routing Rules
+# ==============================================================================
+RewriteEngine On
+
+# Force HTTPS (compatible with direct Apache and OCF reverse proxy)
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 301 Redirect /events or /events/ to /#events
+RewriteRule ^events/?$ /#events [R=301,NE,L]
+
+# 301 Redirect asset subdirectories to their respective parent pages
+RewriteRule ^courseware/?$ /education#library [R=301,NE,L]
+RewriteRule ^syllabi/?$ /education#library [R=301,NE,L]
+RewriteRule ^QUOR/?$ /research [R=301,NE,L]
+
+# 301 Redirect index.html to root /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 301 Redirect any incoming request with .html to its extensionless URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internally resolve extensionless requests to .html files if they exist
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# ==============================================================================
+# Legacy Redirects (for search engines & inbound links)
+# ==============================================================================
+Redirect 301 /team.shtml https://qcb.berkeley.edu/#team
+Redirect 301 /decal.shtml https://qcb.berkeley.edu/fa26decal
+Redirect 301 /blog.shtml https://qcb.berkeley.edu/education#articles
+Redirect 301 /project.shtml https://qcb.berkeley.edu/research
+
+RedirectMatch 301 ^/article[0-9]+\.shtml$ https://qcb.berkeley.edu/education#articles
+
+

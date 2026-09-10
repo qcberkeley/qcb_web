@@ -6,6 +6,13 @@
   <link rel="icon" type="image/png" href="images/icon_black.png">
   <link rel="canonical" href="https://qcb.berkeley.edu/">
   <title>Home | QC@B</title>
+  <meta name="description" content="Founded in 2016, QC@B is the premier undergraduate quantum computing club at UC Berkeley, bridging students, academia, and industry through research, DeCals, and events.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qcb.berkeley.edu/">
+  <meta property="og:title" content="QC@B | Quantum Computing at Berkeley">
+  <meta property="og:description" content="Founded in 2016, QC@B is the premier undergraduate quantum computing club at UC Berkeley, bridging students, academia, and industry through research, DeCals, and events.">
+  <meta property="og:image" content="https://qcb.berkeley.edu/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,7 +27,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <style>
     #news-track {
       scrollbar-width: none;
@@ -29,18 +36,219 @@
     #news-track::-webkit-scrollbar {
       display: none;
     }
-    .news-slide {
-      min-width: 100%;
-      scroll-snap-align: start;
+    #news-track > article {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      #news-track > article {
+        width: calc(50% - 12px);
+      }
+    }
+    @media (min-width: 1024px) {
+      #news-track:has(> article:nth-child(3)) > article {
+        width: calc(33.333% - 16px);
+      }
+    }
+    #news:not(:has(#news-track > article:nth-child(3))) #news-nav-controls {
+      display: none;
     }
   </style>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Quantum Computing at Berkeley",
+    "alternateName": "QC@B",
+    "url": "https://qcb.berkeley.edu/",
+    "logo": "https://qcb.berkeley.edu/images/logo.png",
+    "description": "Founded in 2016, QCB is the only undergraduate quantum computing club at Berkeley. We aim to support students on their journey towards the Quantum Computing frontier. We're an undergraduate-run club bridging the gap between students, the quantum industry, and academia. We focus on enriching the UC Berkeley community through subgroups, seminars, conferences, research projects, guest speakers, lab tours, company visits, and the occasional DeCal.",
+    "member": [
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#kepha-sher",
+          "url": "https://qcb.berkeley.edu/#kepha-sher",
+          "name": "Kepha Sher",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/kepha-sher.jpg"
+        },
+        "roleName": "Co-President"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#ian-loam",
+          "url": "https://qcb.berkeley.edu/#ian-loam",
+          "name": "Ian Loam",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/ian-loam.jpeg"
+        },
+        "roleName": "Co-President"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#yajur-preetham",
+          "url": "https://qcb.berkeley.edu/#yajur-preetham",
+          "name": "Yajur Preetham",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/yajur-preetham.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#keith-chiang",
+          "url": "https://qcb.berkeley.edu/#keith-chiang",
+          "name": "Keith Chiang",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/keith-chiang.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#matthew-cai",
+          "url": "https://qcb.berkeley.edu/#matthew-cai",
+          "name": "Matthew Cai",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/matthew-cai.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#esha-telang",
+          "url": "https://qcb.berkeley.edu/#esha-telang",
+          "name": "Esha Telang",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/esha-telang.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#evan-wang",
+          "url": "https://qcb.berkeley.edu/#evan-wang",
+          "name": "Evan Wang",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/evan-wang.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#joyce-qiao",
+          "url": "https://qcb.berkeley.edu/#joyce-qiao",
+          "name": "Joyce Qiao",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/joyce-qiao.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#melody-wu",
+          "url": "https://qcb.berkeley.edu/#melody-wu",
+          "name": "Melody Wu",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/melody-wu.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#makayla-hu",
+          "url": "https://qcb.berkeley.edu/#makayla-hu",
+          "name": "Makayla Hu",
+          "image": "https://qcb.berkeley.edu/images/2025fallleadership/makayla-hu.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#jason-dong",
+          "url": "https://qcb.berkeley.edu/#jason-dong",
+          "name": "Jason Dong",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/jason-dong.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#joel-taroreh",
+          "url": "https://qcb.berkeley.edu/#joel-taroreh",
+          "name": "Joel Taroreh",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/joel-taroreh.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#ajla-trumic",
+          "url": "https://qcb.berkeley.edu/#ajla-trumic",
+          "name": "Ajla Trumic",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/ajla-trumic.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#laney-saye",
+          "url": "https://qcb.berkeley.edu/#laney-saye",
+          "name": "Laney Saye",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/laney-saye.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#daniel-christensen",
+          "url": "https://qcb.berkeley.edu/#daniel-christensen",
+          "name": "Daniel Christensen",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/daniel-christensen.jpg"
+        },
+        "roleName": "Officer"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Person",
+          "@id": "https://qcb.berkeley.edu/#armin-loftman",
+          "url": "https://qcb.berkeley.edu/#armin-loftman",
+          "name": "Armin Loftman",
+          "image": "https://qcb.berkeley.edu/images/2026fallleadership/armin-loftman.jpg"
+        },
+        "roleName": "Officer"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="antialiased">
 <nav id="main-nav" class="fixed top-0 w-full z-50 bg-black border-b border-gray-900">
   <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
 
-    <a href="index.html" class="flex-shrink-0">
+    <a href="/" class="flex-shrink-0">
       <img src="images/logo.png" alt="QC@B" class="h-9">
     </a>
 
@@ -55,35 +263,35 @@
     <!-- Desktop links -->
     <ul class="hidden md:flex items-center gap-7 font-mono text-sm text-gray-400">
       <li class="nav-dropdown">
-        <a href="index.html" class="nav-link py-5 block">Home</a>
+        <a href="/" class="nav-link py-5 block">Home</a>
         <ul class="nav-dropdown-menu">
-          <li><a href="index.html#about" class="dropdown-item">About</a></li>
-          <li><a href="index.html#events" class="dropdown-item">Events</a></li>
-          <li><a href="index.html#sponsors" class="dropdown-item">Sponsors</a></li>
-          <li><a href="index.html#team" class="dropdown-item">Team</a></li>
-          <li><a href="index.html#alumni" class="dropdown-item">Alumni</a></li>
+          <li><a href="#about" class="dropdown-item">About</a></li>
+          <li><a href="#events" class="dropdown-item">Events</a></li>
+          <li><a href="#sponsors" class="dropdown-item">Sponsors</a></li>
+          <li><a href="#team" class="dropdown-item">Team</a></li>
+          <li><a href="#alumni" class="dropdown-item">Alumni</a></li>
         </ul>
       </li>
       <li class="nav-dropdown">
-        <a href="education.html" class="nav-link py-5 block">Education</a>
+        <a href="education" class="nav-link py-5 block">Education</a>
         <ul class="nav-dropdown-menu">
-          <li><a href="education.html#decal" class="dropdown-item">Current DeCal</a></li>
-          <li><a href="education.html#past-decals" class="dropdown-item">Past DeCals</a></li>
-          <li><a href="education.html#library" class="dropdown-item">Library</a></li>
-          <li><a href="education.html#articles" class="dropdown-item">Articles</a></li>
-          <li><a href="education.html#tutorials" class="dropdown-item">Tutorials</a></li>
+          <li><a href="education#decal" class="dropdown-item">Current DeCal</a></li>
+          <li><a href="education#past-decals" class="dropdown-item">Past DeCals</a></li>
+          <li><a href="education#library" class="dropdown-item">Library</a></li>
+          <li><a href="education#articles" class="dropdown-item">Articles</a></li>
+          <li><a href="education#tutorials" class="dropdown-item">Tutorials</a></li>
         </ul>
       </li>
       <li class="nav-dropdown">
-        <a href="research.html" class="nav-link py-5 block">Research</a>
+        <a href="research" class="nav-link py-5 block">Research</a>
         <ul class="nav-dropdown-menu">
-          <li><a href="research.html#current" class="dropdown-item">Current</a></li>
-          <li><a href="research.html#complete" class="dropdown-item">Completed</a></li>
+          <li><a href="research#current" class="dropdown-item">Current</a></li>
+          <li><a href="research#complete" class="dropdown-item">Completed</a></li>
         </ul>
       </li>
-      <li><a href="opportunities.html" class="nav-link">Opportunities</a></li>
-      <li><a href="sponsor-us.html" class="nav-link">Sponsor Us</a></li>
-      <li><a href="fa26decal.html" class="nav-link">DeCal</a></li>
+      <li><a href="opportunities" class="nav-link">Opportunities</a></li>
+      <li><a href="sponsor-us" class="nav-link">Sponsor Us</a></li>
+      <li><a href="fa26decal" class="nav-link">DeCal</a></li>
       <li>
         <a href="https://eqcbbwwzsk.zite.so" class="btn-nav" target="_blank" rel="noopener">Join</a>
       </li>
@@ -93,12 +301,12 @@
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden bg-black border-t border-gray-800 md:hidden">
     <ul class="font-mono text-sm text-gray-400 px-6 py-5 flex flex-col gap-4">
-      <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-      <li><a href="education.html" class="hover:text-white transition-colors">Education</a></li>
-      <li><a href="research.html" class="hover:text-white transition-colors">Research</a></li>
-      <li><a href="opportunities.html" class="hover:text-white transition-colors">Opportunities</a></li>
-      <li><a href="sponsor-us.html" class="hover:text-white transition-colors">Sponsor Us</a></li>
-      <li><a href="fa26decal.html" class="hover:text-white transition-colors">DeCal</a></li>
+      <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+      <li><a href="education" class="hover:text-white transition-colors">Education</a></li>
+      <li><a href="research" class="hover:text-white transition-colors">Research</a></li>
+      <li><a href="opportunities" class="hover:text-white transition-colors">Opportunities</a></li>
+      <li><a href="sponsor-us" class="hover:text-white transition-colors">Sponsor Us</a></li>
+      <li><a href="fa26decal" class="hover:text-white transition-colors">DeCal</a></li>
       <li class="pt-2 border-t border-gray-800">
         <a href="https://eqcbbwwzsk.zite.so" class="text-white font-semibold hover:text-gray-300 transition-colors" target="_blank" rel="noopener">Join →</a>
       </li>
@@ -120,9 +328,10 @@
     });
 
     // Highlight current page
-    var page = location.pathname.split('/').pop() || 'index.html';
+    var page = location.pathname.split('/').filter(Boolean).pop() || '';
     document.querySelectorAll('#main-nav a[href]').forEach(function (a) {
-      if (a.getAttribute('href').split('#')[0] === page) {
+      var target = a.getAttribute('href').split('#')[0].replace(/^\/|\.html$/g, '');
+      if ((target === '' && page === '') || (target !== '' && target === page)) {
         a.classList.add('text-white');
       }
     });
@@ -141,22 +350,18 @@
       <img src="images/logo.png" alt="QC@B" class="hero-logo h-52 md:h-72 mx-auto mb-3">
       <p class="hero-subtitle font-mono text-sm md:text-base tracking-[0.28em] uppercase text-white/70 mb-8">Quantum Computing at Berkeley</p>
 
-      <div class="hero-cta font-mono text-sm text-white/70 mb-8 space-y-2">
-        <div class="flex items-center justify-center gap-4">
-          <span class="text-white/40 text-xs tracking-widest uppercase">Info Session #1</span>
-          <span class="w-px h-3 bg-white/20"></span>
-          <span>09/02/26 | 6:00 PM</span>
-        </div>
-        <div class="flex items-center justify-center gap-4">
-          <span class="text-white/40 text-xs tracking-widest uppercase">Info Session #2</span>
-          <span class="w-px h-3 bg-white/20"></span>
-          <span>09/04/26 | 6:00 PM</span>
-        </div>
-        <div class="flex items-center justify-center gap-4">
-          <span class="text-white/40 text-xs tracking-widest uppercase">Applications Due</span>
-          <span class="w-px h-3 bg-white/20"></span>
-          <span>09/11/26 | 11:59 PM</span>
-        </div>
+      <div class="hero-cta font-mono text-sm text-white/70 mb-8 w-fit mx-auto grid grid-cols-[auto_auto_auto] items-center gap-x-4 gap-y-2 text-left">
+        <span class="text-white/40 text-xs tracking-widest uppercase">Info Session #1</span>
+        <span class="w-px h-3 bg-white/20"></span>
+        <span>09/01/26 | 05:00 PM | Physics Building 375</span>
+
+        <span class="text-white/40 text-xs tracking-widest uppercase">Info Session #2</span>
+        <span class="w-px h-3 bg-white/20"></span>
+        <span>09/08/26 | 05:00 PM | Physics Building 375</span>
+
+        <span class="text-white/40 text-xs tracking-widest uppercase">Applications Due</span>
+        <span class="w-px h-3 bg-white/20"></span>
+        <span>09/09/26 | 11:59 PM |</span>
       </div>
 
       <a href="https://eqcbbwwzsk.zite.so" class="hero-cta btn" target="_blank" rel="noopener">Join</a>
@@ -255,38 +460,113 @@
   </script>
 
   <!-- ── News ──────────────────────────────────────── -->
-  <section id="news" class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto reveal">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+  <section id="news" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div>
           <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-2">News &amp; Events</p>
           <h2 class="font-mono text-4xl font-light tracking-tight text-black">Latest from QCB</h2>
           <div class="w-12 h-0.5 bg-black opacity-20 mt-3"></div>
         </div>
-        <a href="#events" class="font-mono text-sm text-black hover:text-accent transition-colors">View calendar →</a>
+        <div class="flex items-center gap-4">
+          <a href="https://quantumcomputingberkeley.substack.com" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">Subscribe to newsletter →</a>
+          <span class="text-gray-300">·</span>
+          <a href="#events" class="font-mono text-sm text-black hover:text-accent transition-colors">View calendar →</a>
+          <div id="news-nav-controls" class="hidden sm:flex items-center gap-2 ml-2">
+            <button id="news-prev" aria-label="Previous news" class="w-8 h-8 rounded border border-gray-300 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="news-next" aria-label="Next news" class="w-8 h-8 rounded border border-gray-300 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="relative">
-        <div id="news-track" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
-          <article class="news-slide bg-white border border-gray-200 p-6 md:p-8">
-            <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-3">News</p>
-            <h3 class="font-mono text-2xl font-light text-black mb-4">QCB goes to iQuHACK!</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
-              QCB members Ian, Kepha, and Jason competed as a team at
-              <a href="https://www.iquise.mit.edu/iQuHACK/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">iQuHACK</a>,
-              MIT's quantum hackathon, where they took on IonQ's Quantum Entanglement Distillation Game challenge.
-              Their work can be found
-              <a href="https://github.com/KephaSher/iQuHacks-2026-Quih" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">here</a>.
-            </p>
+        <div id="news-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 pt-1">
+          <article class="flex-shrink-0 snap-start bg-white border border-gray-200 overflow-hidden flex flex-col justify-between hover:border-gray-300 transition-colors">
+            <div>
+              <div class="h-44 w-full overflow-hidden bg-gray-100 border-b border-gray-100">
+                <img src="images/calapalooza_tabling.jpg"
+                  alt="QC@B tabling at Calapalooza"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="font-mono text-xs tracking-widest text-gray-400 uppercase">Newsletter</span>
+                  <time datetime="2026-08-30" class="font-mono text-xs text-gray-400">Aug 30, 2026</time>
+                </div>
+                <h3 class="font-mono text-xl font-light text-black mb-1">Welcome to QC@B!</h3>
+                <p class="font-mono text-xs text-gray-500 mb-3">By Ajla Trumic</p>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  Semester kick-off updates including hybrid infosessions on Sep 1 &amp; 8 in Physics 375, new presidential leadership with Kepha Sher and Ian Loam, funded research projects, and the upcoming IBM Fall Fest on Oct 10.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0">
+              <a href="https://quantumcomputingberkeley.substack.com/p/welcome-to-qcb" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">
+                Read on Substack →
+              </a>
+            </div>
           </article>
-        </div>
 
-        <div class="flex justify-center gap-2 mt-5" aria-label="News slides">
-          <span class="w-2 h-2 rounded-full bg-black" aria-label="Slide 1"></span>
+          <article class="flex-shrink-0 snap-start bg-white border border-gray-200 overflow-hidden flex flex-col justify-between hover:border-gray-300 transition-colors">
+            <div>
+              <div class="h-44 w-full overflow-hidden bg-gray-50 border-b border-gray-100 flex items-center justify-center p-6">
+                <img src="images/iquhack_logo.png"
+                  alt="iQuHACK logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="max-h-full max-w-full object-contain">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="font-mono text-xs tracking-widest text-gray-400 uppercase">News</span>
+                  <time datetime="2026-02-01" class="font-mono text-xs text-gray-400">Feb 2026</time>
+                </div>
+                <h3 class="font-mono text-xl font-light text-black mb-3">QCB goes to iQuHACK!</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  QCB members Ian, Kepha, and Jason competed as a team at
+                  <a href="https://www.iquise.mit.edu/iQuHACK/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:opacity-75">iQuHACK</a>,
+                  MIT's quantum hackathon, where they took on IonQ's Quantum Entanglement Distillation Game challenge.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0">
+              <a href="https://github.com/KephaSher/iQuHacks-2026-Quih" target="_blank" rel="noopener" class="font-mono text-sm text-black hover:text-accent transition-colors">
+                View work →
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    (function () {
+      var track = document.getElementById('news-track');
+      var prevBtn = document.getElementById('news-prev');
+      var nextBtn = document.getElementById('news-next');
+      if (!track || !prevBtn || !nextBtn) return;
+
+      function getScrollAmount() {
+        var card = track.querySelector('article');
+        return card ? card.offsetWidth + 24 : 400;
+      }
+
+      prevBtn.addEventListener('click', function () {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', function () {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+    })();
+  </script>
 
   <!-- ── About ─────────────────────────────────────── -->
   <section id="about" class="py-24 px-6 bg-white">
@@ -296,7 +576,7 @@
       <div class="space-y-4 text-gray-700 leading-relaxed text-[17px]">
         <p>Founded in 2016, QCB is the only undergraduate quantum computing club at Berkeley. We aim to support students on their journey towards the Quantum Computing frontier. We're an undergraduate-run club bridging the gap between students, the quantum industry, and academia. We focus on enriching the UC Berkeley community through subgroups, seminars, conferences, research projects, guest speakers, lab tours, company visits, and the occasional DeCal.</p>
         <p>Our goal is to help you learn what quantum is all about and get interested students involved with quantum labs on campus, while providing research opportunities and educational materials to foster an advanced, accessible quantum computing network.</p>
-        <p>Membership is open to Berkeley students of all grade levels, majors, and colleges. If you're interested in joining, please apply during our recruitment cycle and check the dates above for info sessions and application deadlines. Not a Cal student? You're still welcome — <a href="education.html" class="text-accent underline underline-offset-2 hover:opacity-75">explore our educational resources</a> and contribute tutorials or articles to our library. We're dedicated to supporting students from all backgrounds, especially those from underrepresented groups in STEM.</p>
+        <p>Membership is open to Berkeley students of all grade levels, majors, and colleges. If you're interested in joining, please apply during our recruitment cycle and check the dates above for info sessions and application deadlines. Not a Cal student? You're still welcome — <a href="education" class="text-accent underline underline-offset-2 hover:opacity-75">explore our educational resources</a> and contribute tutorials or articles to our library. We're dedicated to supporting students from all backgrounds, especially those from underrepresented groups in STEM.</p>
       </div>
       <div class="mt-8">
         <a href="https://eqcbbwwzsk.zite.so" class="btn-dark btn" target="_blank" rel="noopener">Join QCB</a>
@@ -311,19 +591,19 @@
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6 mx-auto"></div>
       <p class="text-gray-600 text-[17px] text-center max-w-2xl mx-auto mb-8">Add yourself to our gCal to stay on top of subgroup meetings, quantum information seminars, speaker events, competitions, and conferences.</p>
       <div class="text-center mb-8">
-        <a href="https://calendar.google.com/calendar/u/0?cid=Y19mZDFhMGUxYWRmNmJlNjk5NDJlMGFmMjFkOGVlYmFjOWZjOTY4NGVjNzMyYWEzYTUxNDYyOTE2ZGY4ZmExMTIxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+        <a href="https://calendar.google.com/calendar/u/0?cid=cXVhbnR1bWNvbXB1dGluZ2JlcmtlbGV5QGdtYWlsLmNvbQ"
           class="btn-dark btn" target="_blank" rel="noopener">Add This Calendar</a>
       </div>
       <div class="flex justify-center">
         <iframe
-          src="https://calendar.google.com/calendar/embed?src=quantumcomputingberkeley%40gmail.com&title=Quantum%20Computing%20at%20Berkeley&ctz=America%2FLos_Angeles"
+          src="https://calendar.google.com/calendar/embed?src=quantumcomputingberkeley%40gmail.com&ctz=America%2FLos_Angeles&title=Quantum%20Computing%20at%20Berkeley"
           width="100%" height="500" frameborder="0" scrolling="no"
           class="max-w-full border-0">
         </iframe>
       </div>
       <div id="past-events" class="mt-16">
         <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-4">Past Events</p>
-        <a href="events/deep-tech-conference-2023.html" class="group block bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors">
+        <a href="events/deep-tech-conference-2023" class="group block bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors">
           <div class="grid md:grid-cols-[0.9fr_1.1fr]">
             <img src="images/DeepTechGroup.PNG" alt="Deep Tech Conference 2023 group photo" class="w-full h-full min-h-64 object-cover">
             <div class="p-6 md:p-8">
@@ -379,10 +659,10 @@
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase text-center mb-6">Co-Presidents</p>
       <div class="flex flex-wrap justify-center gap-6 mb-14 max-w-sm mx-auto reveal-group">
 
-        <div class="team-card w-40 cursor-default">
+        <div id="kepha-sher" class="team-card w-40 cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Kepha.jpg" alt="Kepha Sher">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/kepha-sher.jpg" alt="Kepha Sher">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Kepha Sher</p>
               <p class="font-mono text-xs text-gray-600 mt-1">Co-President</p>
               <p class="font-mono text-xs text-gray-400">CS &amp; Math</p>
@@ -394,10 +674,10 @@
           </div>
         </div>
 
-        <div class="team-card w-40 cursor-default">
+        <div id="ian-loam" class="team-card w-40 cursor-default">
           <div class="team-photo">
-            <img src="images/2026fallleadership/Ian.jpeg" alt="Ian Loam">
-            <div class="team-overlay">
+            <img src="images/2026fallleadership/ian-loam.jpeg" alt="Ian Loam">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Ian Loam</p>
               <p class="font-mono text-xs text-gray-600 mt-1">Co-President</p>
               <p class="font-mono text-xs text-gray-400">CS &amp; Math</p>
@@ -415,10 +695,10 @@
       <p class="font-mono text-xs tracking-widest text-gray-400 uppercase text-center mb-6">Officers</p>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 reveal-group">
 
-        <div class="team-card cursor-default">
+        <div id="yajur-preetham" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Yajur.jpg" alt="Yajur Preetham">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/yajur-preetham.jpg" alt="Yajur Preetham">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Yajur Preetham</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -429,10 +709,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="keith-chiang" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Keith.jpg" alt="Keith Chiang">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/keith-chiang.jpg" alt="Keith Chiang">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Keith Chiang</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -443,10 +723,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="matthew-cai" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Matthew.jpg" alt="Matthew Cai">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/matthew-cai.jpg" alt="Matthew Cai">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Matthew Cai</p>
               <p class="font-mono text-xs text-gray-400 mt-1">CS</p>
             </div>
@@ -457,10 +737,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="esha-telang" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Esha.jpg" alt="Esha Telang">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/esha-telang.jpg" alt="Esha Telang">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Esha Telang</p>
               <p class="font-mono text-xs text-gray-400 mt-1">CS</p>
             </div>
@@ -471,10 +751,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="evan-wang" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Evan.jpg" alt="Evan Wang">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/evan-wang.jpg" alt="Evan Wang">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Evan Wang</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -485,10 +765,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="joyce-qiao" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Joyce.jpg" alt="Joyce Qiao">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/joyce-qiao.jpg" alt="Joyce Qiao">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Joyce Qiao</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -499,10 +779,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="melody-wu" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/Melody.jpg" alt="Melody Wu">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/melody-wu.jpg" alt="Melody Wu">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Melody Wu</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -513,10 +793,10 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="makayla-hu" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2025fallleadership/makayla.JPG" alt="Makayla Hu">
-            <div class="team-overlay">
+            <img src="images/2025fallleadership/makayla-hu.jpg" alt="Makayla Hu">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Makayla Hu</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
@@ -527,30 +807,86 @@
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="jason-dong" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2026fallleadership/Jason.jpg" alt="Jason Dong">
-            <div class="team-overlay">
+            <img src="images/2026fallleadership/jason-dong.jpg" alt="Jason Dong">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Jason Dong</p>
-              <p class="font-mono text-xs text-gray-400 mt-1">CS</p>
+              <p class="font-mono text-xs text-gray-400 mt-1">CS &amp; Math</p>
             </div>
           </div>
           <div class="pt-3 text-center font-mono">
             <p class="text-sm font-semibold text-black">Jason Dong</p>
-            <p class="text-xs text-gray-500 mt-0.5">CS</p>
+            <p class="text-xs text-gray-500 mt-0.5">CS &amp; Math</p>
           </div>
         </div>
 
-        <div class="team-card cursor-default">
+        <div id="joel-taroreh" class="team-card cursor-default">
           <div class="team-photo">
-            <img src="images/2026fallleadership/Joel.jpg" alt="Joel Taroreh">
-            <div class="team-overlay">
+            <img src="images/2026fallleadership/joel-taroreh.jpg" alt="Joel Taroreh">
+            <div class="team-overlay" aria-hidden="true">
               <p class="font-mono text-xs font-semibold text-black">Joel Taroreh</p>
               <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
             </div>
           </div>
           <div class="pt-3 text-center font-mono">
             <p class="text-sm font-semibold text-black">Joel Taroreh</p>
+            <p class="text-xs text-gray-500 mt-0.5">Physics</p>
+          </div>
+        </div>
+
+        <div id="ajla-trumic" class="team-card cursor-default">
+          <div class="team-photo">
+            <img src="images/2026fallleadership/ajla-trumic.jpg" alt="Ajla Trumic">
+            <div class="team-overlay" aria-hidden="true">
+              <p class="font-mono text-xs font-semibold text-black">Ajla Trumic</p>
+              <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
+            </div>
+          </div>
+          <div class="pt-3 text-center font-mono">
+            <p class="text-sm font-semibold text-black">Ajla Trumic</p>
+            <p class="text-xs text-gray-500 mt-0.5">Physics</p>
+          </div>
+        </div>
+
+        <div id="laney-saye" class="team-card cursor-default">
+          <div class="team-photo">
+            <img src="images/2026fallleadership/laney-saye.jpg" alt="Laney Saye">
+            <div class="team-overlay" aria-hidden="true">
+              <p class="font-mono text-xs font-semibold text-black">Laney Saye</p>
+              <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
+            </div>
+          </div>
+          <div class="pt-3 text-center font-mono">
+            <p class="text-sm font-semibold text-black">Laney Saye</p>
+            <p class="text-xs text-gray-500 mt-0.5">Physics</p>
+          </div>
+        </div>
+
+        <div id="daniel-christensen" class="team-card cursor-default">
+          <div class="team-photo">
+            <img src="images/2026fallleadership/daniel-christensen.jpg" alt="Daniel Christensen">
+            <div class="team-overlay" aria-hidden="true">
+              <p class="font-mono text-xs font-semibold text-black">Daniel Christensen</p>
+              <p class="font-mono text-xs text-gray-400 mt-1">Chemistry & DS</p>
+            </div>
+          </div>
+          <div class="pt-3 text-center font-mono">
+            <p class="text-sm font-semibold text-black">Daniel Christensen</p>
+            <p class="text-xs text-gray-500 mt-0.5">Chemistry & DS</p>
+          </div>
+        </div>
+
+        <div id="armin-loftman" class="team-card cursor-default">
+          <div class="team-photo">
+            <img src="images/2026fallleadership/armin-loftman.jpg" alt="Armin Loftman">
+            <div class="team-overlay" aria-hidden="true">
+              <p class="font-mono text-xs font-semibold text-black">Armin Loftman</p>
+              <p class="font-mono text-xs text-gray-400 mt-1">Physics</p>
+            </div>
+          </div>
+          <div class="pt-3 text-center font-mono">
+            <p class="text-sm font-semibold text-black">Armin Loftman</p>
             <p class="text-xs text-gray-500 mt-0.5">Physics</p>
           </div>
         </div>
@@ -566,27 +902,28 @@
       <div class="w-12 h-0.5 bg-white opacity-20 mt-3 mb-4"></div>
       <p class="text-gray-400 text-[17px] mb-8">QCB graduates continue their journey at a variety of the world's most influential PhD programs, labs, and tech companies.</p>
       <ul class="grid sm:grid-cols-2 gap-x-12">
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">James Chen — Meta, Jane Street</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">James Sud — Lawrence Berkeley National Labs, NASA Quantum AI Lab</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Jordan Sullivan — PsiQuantum, AWS Bracket</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Glenn Leblanc — NASA, Nauto</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Amol Pant — Keysight, Tesla</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Vladimir Kremenetski — NASA</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Dhruv Devulapalli — AWS, PhD at University of Maryland</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">James Chen — Jane Street, Anthropic</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">James Sud — Lawrence Berkeley National Lab, NASA Quantum AI Lab</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Jordan Sullivan — PsiQuantum, AWS Braket, IonQ</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Glenn Leblanc — AWS, Airtable</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Amol Pant — Tesla, Cofounder at Florin</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Vladimir Kremenetski — NASA, PhD at Cornell University</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Dhruv Devulapalli — PhD at University of Maryland, IonQ</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Daniel Lengyel — PhD at Imperial College London</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Debayan Bandyopadhyay — PhD at University of Chicago</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Ethan Yeh — Samsara</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Natalie Parham — MMath at IQC, PhD at Columbia University</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Sahil Patel — Jump Trading LLC</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Sahil Patel — Jump Trading LLC, OpenAI</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Victor Li — Nova Labs</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Emiliia Dyrenkova — MMath at Institute for Quantum Computing</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Binhan Hua — PhD at Harvard</li>
-        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Riley Peterlinz — Graduate Research at BAIR</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Binhan Hua — PhD at Harvard University</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Riley Peterlinz — BAIR, PhD at Stanford University</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Andris Huang — PhD at UC Berkeley</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Samyak Surti — PhD at UC Davis</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Elias Lehman — PhD at University of Oxford</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Owen Bardeen — PhD at UCSD</li>
         <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Nathan Song — PhD at CU Boulder</li>
+        <li class="font-mono text-sm text-gray-300 border-b border-gray-800 py-2.5">Jenny Chen — Max Planck Institute, PhD at CU Boulder</li>
       </ul>
     </div>
   </section>

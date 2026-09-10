@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Google verification
+google*.html
+
+# Environment / secrets
+.env
+.env.*
