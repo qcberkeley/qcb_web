@@ -46,8 +46,8 @@
     }, { threshold: 0, rootMargin: '0px 0px -35px 0px' });
 
     revealGroups.forEach(function (group) {
-      // Find all direct grid elements or cards to animate
-      var children = group.querySelectorAll(':scope > div, :scope > article, :scope > a, :scope > img, .team-card');
+      // Find all direct children to animate (avoids double-nesting on child cards)
+      var children = group.querySelectorAll(':scope > div, :scope > article, :scope > a, :scope > img');
       children.forEach(function (child) {
         if (!child.classList.contains('reveal')) {
           child.classList.add('reveal');
