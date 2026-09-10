@@ -556,6 +556,7 @@
             </div>
           </article>
         </div>
+        <div id="news-dots" class="flex justify-center items-center gap-1.5 mt-5" role="tablist" aria-label="News slide indicators"></div>
       </div>
     </div>
   </section>
@@ -565,20 +566,64 @@
       var track = document.getElementById('news-track');
       var prevBtn = document.getElementById('news-prev');
       var nextBtn = document.getElementById('news-next');
-      if (!track || !prevBtn || !nextBtn) return;
+      var dotsContainer = document.getElementById('news-dots');
+      if (!track) return;
+
+      var articles = Array.from(track.querySelectorAll('article'));
+      if (!articles.length) return;
 
       function getScrollAmount() {
         var card = track.querySelector('article');
         return card ? card.offsetWidth + 24 : 400;
       }
 
-      prevBtn.addEventListener('click', function () {
-        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-      });
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function () {
+          track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+      }
 
-      nextBtn.addEventListener('click', function () {
-        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-      });
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+      }
+
+      // Generate indicator dots
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        var dots = articles.map(function (article, index) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 focus:outline-none';
+          dot.setAttribute('aria-label', 'Go to card ' + (index + 1));
+          dot.addEventListener('click', function () {
+            article.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+          });
+          dotsContainer.appendChild(dot);
+          return dot;
+        });
+
+        function updateDots() {
+          var trackRect = track.getBoundingClientRect();
+          articles.forEach(function (article, index) {
+            var rect = article.getBoundingClientRect();
+            var visibleWidth = Math.min(rect.right, trackRect.right) - Math.max(rect.left, trackRect.left);
+            var isVisible = visibleWidth > rect.width * 0.4;
+            if (isVisible) {
+              dots[index].className = 'w-1.5 h-1.5 rounded-full bg-gray-700 transition-colors duration-200 focus:outline-none';
+              dots[index].setAttribute('aria-current', 'true');
+            } else {
+              dots[index].className = 'w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 focus:outline-none';
+              dots[index].removeAttribute('aria-current');
+            }
+          });
+        }
+
+        track.addEventListener('scroll', updateDots, { passive: true });
+        window.addEventListener('resize', updateDots, { passive: true });
+        updateDots();
+      }
     })();
   </script>
 
