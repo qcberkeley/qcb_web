@@ -126,6 +126,15 @@
     }
     .course-info strong { color: var(--text); }
 
+    .enrollment-screenshot {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+
     hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
     /* ── Week headers ────────────────────────────────── */
@@ -144,7 +153,7 @@
 
     .entry {
       display: grid;
-      grid-template-columns: 5.5rem auto;
+      grid-template-columns: 8.25rem auto;
       gap: .25rem 1.25rem;
       padding: .55rem 0;
       border-bottom: 1px solid var(--border);
@@ -317,95 +326,96 @@
 
   <p>This course surveys the development of quantum algorithms, from Shor's original breakthrough to modern approaches. Emphasis is placed on hands-on experience, including implementation using <strong>Qiskit (AER)</strong>. A final project serves as the capstone.</p>
 
+  <h2>Enrollment</h2>
+  <p><strong><a href="https://forms.gle/hssPVhWBxR6a7mEc8" target="_blank" rel="noopener">Enrollment form</a></strong></p>
+  <p>Please enroll in out DeCal! Deadline: 9/16</p>
+  <img class="enrollment-screenshot" src="calcentral.png" alt="CalCentral listing for the Fall 2026 Quantum Algorithms DeCal" />
+
   <hr id="schedule" />
 
   <span class="unit-label">Unit 1 — Introductory Material</span>
 
   <h2 id="week-1">Week 1</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 1</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Logistics, Qiskit Intro, Quantum Circuits</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=25" target="_blank" rel="noopener">§2.1–3</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 2</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Qiskit and Quantum Circuits</span><div class="entry-reading">Required: none</div></div></div>
+    <div class="entry"><div class="entry-date">Sep 9 &middot; Lec 1</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Logistics, Qiskit Intro, Quantum Circuits</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=25" target="_blank" rel="noopener">§2.1–3</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 14 &middot; Lec 2</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Qiskit and Quantum Circuits</span><div class="entry-reading">Required: none</div></div></div>
   </div>
 
   <h2 id="week-2">Week 2</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 3</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Deutsch–Jozsa Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=29" target="_blank" rel="noopener">§2.4</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 4</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (1)</span><div class="entry-reading">Required: Childs <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf#page=16" target="_blank" rel="noopener">§2.3</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 16 &middot; Lec 3</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Deutsch–Jozsa Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=29" target="_blank" rel="noopener">§2.4</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 21 &middot; Lec 4</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (1)</span><div class="entry-reading">Required: Childs <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf#page=16" target="_blank" rel="noopener">§2.3</a></div></div></div>
   </div>
 
   <h2 id="week-3">Week 3</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 5</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (2)</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=121" target="_blank" rel="noopener">ch. 13</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 6</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (3)</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=127" target="_blank" rel="noopener">ch. 14</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 23 &middot; Lec 5</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (2)</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=121" target="_blank" rel="noopener">ch. 13</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 28 &middot; Lec 6</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Complexity (3)</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=127" target="_blank" rel="noopener">ch. 14</a></div></div></div>
   </div>
 
   <span class="unit-label">Unit 2 — Algorithms</span>
 
   <h2 id="week-4">Week 4</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 7</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Fourier Transform and Quantum Phase Estimation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=290" target="_blank" rel="noopener">§16.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=296" target="_blank" rel="noopener">§16.3</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 8</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Grover’s Algorithm and Quantum Counting</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=181" target="_blank" rel="noopener">§11.1</a></div></div></div>
+    <div class="entry"><div class="entry-date">Sep 30 &middot; Lec 7</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Fourier Transform and Quantum Phase Estimation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=290" target="_blank" rel="noopener">§16.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=296" target="_blank" rel="noopener">§16.3</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 5 &middot; Lec 8</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Grover’s Algorithm and Quantum Counting</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=181" target="_blank" rel="noopener">§11.1</a></div></div></div>
   </div>
 
   <h2 id="week-5">Week 5</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 9</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Shor’s Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=49" target="_blank" rel="noopener">ch. 5</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 10</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Adiabatic Quantum Computation</span><div class="entry-reading">Required: Childs <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf#page=165" target="_blank" rel="noopener">ch. 31</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 7 &middot; Lec 9</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Shor’s Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=49" target="_blank" rel="noopener">ch. 5</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 12 &middot; Lec 10</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Adiabatic Quantum Computation</span><div class="entry-reading">Required: Childs <a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf#page=165" target="_blank" rel="noopener">ch. 31</a></div></div></div>
   </div>
 
   <h2 id="week-6">Week 6</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 11</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Variational Approaches (1)</span><div class="entry-reading">Required: none</div></div></div>
-    <div class="entry"><div class="entry-date">Lec 12</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Variational Approaches (2)</span><div class="entry-reading">Required: none</div></div></div>
+    <div class="entry"><div class="entry-date">Oct 14 &middot; Lec 11</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Variational Approaches (1)</span><div class="entry-reading">Required: none</div></div></div>
+    <div class="entry"><div class="entry-date">Oct 19 &middot; Lec 12</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Variational Approaches (2)</span><div class="entry-reading">Required: none</div></div></div>
   </div>
 
   <span class="unit-label">Unit 3 — Hamiltonian Simulations and Beyond</span>
 
   <h2 id="week-7">Week 7</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 13</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Block Encoding</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=141" target="_blank" rel="noopener">ch. 9</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 14</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Qubitization</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=163" target="_blank" rel="noopener">ch. 10</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 21 &middot; Lec 13</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Block Encoding</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=141" target="_blank" rel="noopener">ch. 9</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 26 &middot; Lec 14</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Qubitization</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=163" target="_blank" rel="noopener">ch. 10</a></div></div></div>
   </div>
 
   <h2 id="week-8">Week 8</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 15</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Signal Processing</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=201" target="_blank" rel="noopener">ch. 12</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 16</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Singular Value Transformation (1)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=221" target="_blank" rel="noopener">§13.2</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=225" target="_blank" rel="noopener">§13.3</a></div></div></div>
+    <div class="entry"><div class="entry-date">Oct 28 &middot; Lec 15</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Signal Processing</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=201" target="_blank" rel="noopener">ch. 12</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 2 &middot; Lec 16</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Singular Value Transformation (1)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=221" target="_blank" rel="noopener">§13.2</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=225" target="_blank" rel="noopener">§13.3</a></div></div></div>
   </div>
 
   <h2 id="week-9">Week 9</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 17</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Singular Value Transformation (2)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=217" target="_blank" rel="noopener">ch. 13</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 18</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Block Encoding–Based Hamiltonian Simulation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=237" target="_blank" rel="noopener">§14.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=241" target="_blank" rel="noopener">§14.2</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 4 &middot; Lec 17</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Singular Value Transformation (2)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=217" target="_blank" rel="noopener">ch. 13</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 9 &middot; Lec 18</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Block Encoding–Based Hamiltonian Simulation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=237" target="_blank" rel="noopener">§14.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=241" target="_blank" rel="noopener">§14.2</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 11</div><div class="entry-body"><span class="entry-type type-special">No Class</span><span class="entry-title">Veterans Day — Academic Holiday</span></div></div>
   </div>
 
   <h2 id="week-10">Week 10</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 19</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Operator Splitting–Based Hamiltonian Simulation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=260" target="_blank" rel="noopener">§15.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=263" target="_blank" rel="noopener">§15.2</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=268" target="_blank" rel="noopener">§15.3</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 20</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Walks (1)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=327" target="_blank" rel="noopener">ch. 17</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 16 &middot; Lec 19</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Operator Splitting–Based Hamiltonian Simulation</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=260" target="_blank" rel="noopener">§15.1</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=263" target="_blank" rel="noopener">§15.2</a>, <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=268" target="_blank" rel="noopener">§15.3</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 18 &middot; Lec 20</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Walks (1)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=327" target="_blank" rel="noopener">ch. 17</a></div></div></div>
   </div>
 
   <h2 id="week-11">Week 11</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 21</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Walks (2)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=327" target="_blank" rel="noopener">ch. 17</a></div></div></div>
-    <div class="entry"><div class="entry-date">Lec 22</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">HHL Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=95" target="_blank" rel="noopener">ch. 10</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 23 &middot; Lec 21</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">Quantum Walks (2)</span><div class="entry-reading">Required: Lin <a href="https://math.berkeley.edu/~linlin/qasc/live_notes_0429.pdf#page=327" target="_blank" rel="noopener">ch. 17</a></div></div></div>
+    <div class="entry"><div class="entry-date">Nov 25</div><div class="entry-body"><span class="entry-type type-special">No Class</span><span class="entry-title">Thanksgiving Break — Non-Instructional Day</span></div></div>
+    <div class="entry"><div class="entry-date">Nov 30 &middot; Lec 22</div><div class="entry-body"><span class="entry-type type-lecture">Lecture</span><span class="entry-title">HHL Algorithm</span><div class="entry-reading">Required: de Wolf <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf#page=95" target="_blank" rel="noopener">ch. 10</a></div></div></div>
   </div>
 
-  <span class="unit-label">Unit 4 — Special Topics (Open Quantum Systems? AI?)</span>
-
+  <span class="unit-label">Unit 4 — Final Project</span>
   <h2 id="week-12">Week 12</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 23</div><div class="entry-body"><span class="entry-type type-special">Special Topic</span><span class="entry-title">TBD</span></div></div>
-    <div class="entry"><div class="entry-date">Lec 24</div><div class="entry-body"><span class="entry-type type-special">Special Topic</span><span class="entry-title">TBD</span></div></div>
+    <div class="entry"><div class="entry-date">Dec 2 &middot; Lec 23</div><div class="entry-body"><span class="entry-type type-project">Workshop</span><span class="entry-title">Final Project Workshop</span></div></div>
   </div>
-
-  <h2 id="week-13">Week 13</h2>
+  <h2 id="rrr-week">RRR Week</h2>
   <div class="week-entries">
-    <div class="entry"><div class="entry-date">Lec 25</div><div class="entry-body"><span class="entry-type type-project">Workshop</span><span class="entry-title">Final Project Workshop</span></div></div>
-    <div class="entry"><div class="entry-date">Lec 26</div><div class="entry-body"><span class="entry-type type-project">Workshop</span><span class="entry-title">Final Project Workshop</span></div></div>
+    <div class="entry"><div class="entry-date">Dec 7–11</div><div class="entry-body"><span class="entry-type type-special">No Class</span><span class="entry-title">Reading, Review, and Recitation Week</span></div></div>
   </div>
-
-  <span class="unit-label">Unit 5 — Final Project</span>
   <h2 id="finals">Finals</h2>
   <div class="week-entries">
     <div class="entry"><div class="entry-date">TBD</div><div class="entry-body"><span class="entry-type type-project">Project</span><span class="entry-title">Final Project Presentations</span></div></div>

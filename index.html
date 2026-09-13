@@ -474,7 +474,7 @@
   </script>
 
   <!-- ── News ──────────────────────────────────────── -->
-  <section id="news" class="py-16 px-6 bg-gray-50">
+  <section id="news" class="hidden" aria-hidden="true">
     <div class="max-w-6xl mx-auto reveal">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div>
@@ -600,10 +600,47 @@
 
   <!-- ── Events ─────────────────────────────────────── -->
   <section id="events" class="py-24 px-6 bg-white">
-    <div class="max-w-4xl mx-auto reveal">
+    <div class="max-w-6xl mx-auto reveal">
       <h2 class="font-mono text-4xl font-light tracking-tight text-black text-center">Events</h2>
       <div class="w-12 h-0.5 bg-black opacity-20 mt-3 mb-6 mx-auto"></div>
       <p class="text-gray-600 text-[17px] text-center max-w-2xl mx-auto mb-8">Add yourself to our gCal to stay on top of subgroup meetings, quantum information seminars, speaker events, competitions, and conferences.</p>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <a href="events/qiskit-fall-fest-2026.html" class="group block bg-gray-50 border border-gray-200 hover:border-gray-400 transition-colors">
+          <div class="h-44 overflow-hidden bg-gray-100 border-b border-gray-200 flex items-center justify-center p-6">
+            <img src="images/qcb_design.png" alt="Qiskit Fall Fest 2026" loading="lazy" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-6">
+            <time datetime="2026-10-10" class="font-mono text-xs tracking-widest text-gray-400 uppercase">October 10, 2026</time>
+            <h3 class="font-mono text-xl font-light text-black mt-2 mb-3 group-hover:text-accent transition-colors">Qiskit Fall Fest 2026</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Build, learn, and network with QCB, IBM Quantum, and Berkeley Gateway Accelerator.</p>
+            <span class="font-mono text-sm text-black group-hover:text-accent transition-colors">View event →</span>
+          </div>
+        </a>
+
+        <a href="https://quantumcomputingberkeley.substack.com/p/welcome-to-qcb" target="_blank" rel="noopener" class="group block bg-gray-50 border border-gray-200 hover:border-gray-400 transition-colors">
+          <div class="h-44 overflow-hidden bg-gray-100 border-b border-gray-200">
+            <img src="images/calapalooza_tabling.jpg" alt="QC@B tabling at Calapalooza" loading="lazy" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <time datetime="2026-08-30" class="font-mono text-xs tracking-widest text-gray-400 uppercase">August 30, 2026</time>
+            <h3 class="font-mono text-xl font-light text-black mt-2 mb-3 group-hover:text-accent transition-colors">Welcome to QC@B!</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Semester kickoff, recruitment updates, research projects, and upcoming events.</p>
+            <span class="font-mono text-sm text-black group-hover:text-accent transition-colors">Read update →</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/KephaSher/iQuHacks-2026-Quih" target="_blank" rel="noopener" class="group block bg-gray-50 border border-gray-200 hover:border-gray-400 transition-colors">
+          <div class="h-44 overflow-hidden bg-gray-100 border-b border-gray-200 flex items-center justify-center p-6">
+            <img src="images/iquhack_logo.png" alt="iQuHACK logo" loading="lazy" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-6">
+            <time datetime="2026-02" class="font-mono text-xs tracking-widest text-gray-400 uppercase">February 2026</time>
+            <h3 class="font-mono text-xl font-light text-black mt-2 mb-3 group-hover:text-accent transition-colors">QCB Goes to iQuHACK</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">QCB members competed in MIT’s quantum hackathon and tackled IonQ’s challenge.</p>
+            <span class="font-mono text-sm text-black group-hover:text-accent transition-colors">View work →</span>
+          </div>
+        </a>
+      </div>
       <div class="text-center mb-8">
         <a href="https://calendar.google.com/calendar/u/0?cid=cXVhbnR1bWNvbXB1dGluZ2JlcmtlbGV5QGdtYWlsLmNvbQ"
           class="btn-dark btn" target="_blank" rel="noopener">Add This Calendar</a>
@@ -617,7 +654,7 @@
       </div>
       <div id="past-events" class="mt-16">
         <p class="font-mono text-xs tracking-widest text-gray-400 uppercase mb-4">Past Events</p>
-        <a href="events/deep-tech-conference-2023" class="group block bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors">
+        <a href="events/deep-tech-conference-2023.html" class="group block bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors">
           <div class="grid md:grid-cols-[0.9fr_1.1fr]">
             <img src="images/DeepTechGroup.PNG" alt="Deep Tech Conference 2023 group photo" class="w-full h-full min-h-64 object-cover">
             <div class="p-6 md:p-8">
