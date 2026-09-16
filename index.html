@@ -52,6 +52,63 @@
         width: calc(33.333% - 16px);
       }
     }
+    .news-arrow-btn {
+      position: absolute;
+      top: 11.25rem;
+      transform: translateY(-50%) scale(0.95);
+      z-index: 10;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.18);
+      color: rgba(0, 0, 0, 0.38);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+    .news-arrow-btn:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.45);
+      color: rgba(0, 0, 0, 0.85);
+      transform: translateY(-50%) scale(1.06);
+    }
+    .news-arrow-btn:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+    .news-arrow-btn.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(-50%) scale(1);
+    }
+    .news-arrow-btn.is-visible:hover {
+      transform: translateY(-50%) scale(1.06);
+    }
+    .news-arrow-btn.is-visible:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+    .news-arrow-btn:focus-visible {
+      outline: 2px solid #000000;
+      outline-offset: 2px;
+    }
+    #news-prev {
+      left: -0.85rem;
+    }
+    #news-next {
+      right: -0.85rem;
+    }
+    @media (min-width: 640px) {
+      #news-prev { left: -1.15rem; }
+      #news-next { right: -1.15rem; }
+    }
+    @media (min-width: 768px) {
+      #news-prev { left: -1.25rem; }
+      #news-next { right: -1.25rem; }
+    }
     .team-placeholder {
       width: 100%;
       height: 100%;
@@ -473,6 +530,7 @@
     })();
   </script>
 
+
   <!-- ── About ─────────────────────────────────────── -->
   <section id="about" class="py-24 px-6 bg-white">
     <div class="max-w-3xl mx-auto reveal">
@@ -497,6 +555,12 @@
       <p class="text-gray-600 text-[17px] text-center max-w-2xl mx-auto mb-8">Add yourself to our gCal to stay on top of subgroup meetings, quantum information seminars, speaker events, competitions, and conferences.</p>
       <div class="relative mb-12">
         <div class="relative">
+          <button id="news-prev" type="button" aria-label="Previous card" class="news-arrow-btn" tabindex="-1" aria-hidden="true">
+            <svg class="w-6 h-6 -ml-0.5" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 3.5L7 12l8.5 8.5" />
+            </svg>
+          </button>
+
           <div id="news-track" class="reveal-group flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 pt-1">
             <a href="#upcoming-events" class="flex-shrink-0 snap-start group flex flex-col justify-between bg-gray-50 border border-gray-200 hover:border-gray-400">
               <div>
@@ -546,7 +610,14 @@
               </div>
             </a>
           </div>
+
+          <button id="news-next" type="button" aria-label="Next card" class="news-arrow-btn" tabindex="-1" aria-hidden="true">
+            <svg class="w-6 h-6 -mr-0.5" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 3.5L17 12l-8.5 8.5" />
+            </svg>
+          </button>
         </div>
+        <div id="news-dots" class="flex justify-center items-center gap-1.5 mt-5" role="tablist" aria-label="News slide indicators"></div>
       </div>
       <div class="text-center mb-8">
         <a href="https://calendar.google.com/calendar/u/0?cid=cXVhbnR1bWNvbXB1dGluZ2JlcmtlbGV5QGdtYWlsLmNvbQ"
@@ -595,6 +666,123 @@
       </div>
     </div>
   </section>
+
+  <script>
+    (function () {
+      var track = document.getElementById('news-track');
+      var dotsContainer = document.getElementById('news-dots');
+      var prevBtn = document.getElementById('news-prev');
+      var nextBtn = document.getElementById('news-next');
+      if (!track) return;
+
+      var items = Array.from(track.children);
+      if (!items.length) return;
+
+      var dots = [];
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        dots = items.map(function (item, index) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 focus:outline-none';
+          dot.setAttribute('aria-label', 'Go to card ' + (index + 1));
+          dot.addEventListener('click', function () {
+            item.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+          });
+          dotsContainer.appendChild(dot);
+          return dot;
+        });
+      }
+
+      function updateControls() {
+        var trackRect = track.getBoundingClientRect();
+        
+        if (dots.length) {
+          items.forEach(function (item, index) {
+            var rect = item.getBoundingClientRect();
+            var visibleWidth = Math.min(rect.right, trackRect.right) - Math.max(rect.left, trackRect.left);
+            var isVisible = visibleWidth > rect.width * 0.4;
+            if (isVisible) {
+              dots[index].className = 'w-1.5 h-1.5 rounded-full bg-gray-700 transition-colors duration-200 focus:outline-none';
+              dots[index].setAttribute('aria-current', 'true');
+            } else {
+              dots[index].className = 'w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 focus:outline-none';
+              dots[index].removeAttribute('aria-current');
+            }
+          });
+        }
+
+        var maxScrollLeft = track.scrollWidth - track.clientWidth;
+        var canScrollLeft = track.scrollLeft > 5;
+        var canScrollRight = track.scrollLeft < maxScrollLeft - 5;
+
+        if (prevBtn) {
+          prevBtn.classList.toggle('is-visible', canScrollLeft);
+          prevBtn.tabIndex = canScrollLeft ? 0 : -1;
+          if (canScrollLeft) {
+            prevBtn.removeAttribute('aria-hidden');
+          } else {
+            prevBtn.setAttribute('aria-hidden', 'true');
+          }
+        }
+
+        if (nextBtn) {
+          nextBtn.classList.toggle('is-visible', canScrollRight);
+          nextBtn.tabIndex = canScrollRight ? 0 : -1;
+          if (canScrollRight) {
+            nextBtn.removeAttribute('aria-hidden');
+          } else {
+            nextBtn.setAttribute('aria-hidden', 'true');
+          }
+        }
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function () {
+          var trackRect = track.getBoundingClientRect();
+          var prevItem = null;
+          for (var i = items.length - 1; i >= 0; i--) {
+            var rect = items[i].getBoundingClientRect();
+            if (rect.left - trackRect.left < -15) {
+              prevItem = items[i];
+              break;
+            }
+          }
+          if (prevItem) {
+            var delta = prevItem.getBoundingClientRect().left - trackRect.left;
+            track.scrollBy({ left: delta, behavior: 'smooth' });
+          } else {
+            track.scrollTo({ left: 0, behavior: 'smooth' });
+          }
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          var trackRect = track.getBoundingClientRect();
+          var nextItem = null;
+          for (var i = 0; i < items.length; i++) {
+            var rect = items[i].getBoundingClientRect();
+            if (rect.left - trackRect.left > 15) {
+              nextItem = items[i];
+              break;
+            }
+          }
+          if (nextItem) {
+            var delta = nextItem.getBoundingClientRect().left - trackRect.left;
+            track.scrollBy({ left: delta, behavior: 'smooth' });
+          } else {
+            track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
+          }
+        });
+      }
+
+      track.addEventListener('scroll', updateControls, { passive: true });
+      window.addEventListener('resize', updateControls, { passive: true });
+      updateControls();
+      window.addEventListener('load', updateControls);
+    })();
+  </script>
 
   <!-- ── Sponsors ───────────────────────────────────── -->
   <section id="sponsors" class="py-20 px-6 bg-gray-50">
