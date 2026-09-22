@@ -179,6 +179,32 @@
     .hero-gradient {
       background-color: #2c323a;
     }
+    /* Speaker Photo Circle Dual-Direction Encircling Animation */
+    .speaker-ring-svg {
+      pointer-events: none;
+      transition: filter 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0.85;
+    }
+    .speaker-ring-path {
+      stroke-dasharray: 118;
+      stroke-dashoffset: 118;
+      transition: stroke-dashoffset 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .speaker-card:hover .speaker-ring-path,
+    .speaker-card:focus-visible .speaker-ring-path {
+      stroke-dashoffset: 0;
+    }
+    .speaker-card:hover .speaker-ring-svg,
+    .speaker-card:focus-visible .speaker-ring-svg {
+      opacity: 1;
+      filter: drop-shadow(0 0 5px rgba(15, 98, 254, 0.55));
+    }
+    .speaker-avatar-img {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .speaker-card:hover .speaker-avatar-img {
+      transform: scale(1.04);
+    }
   </style>
 </head>
 <body class="antialiased">
@@ -313,6 +339,12 @@
             <a href="#program" class="group pb-3 border-b-2 border-transparent -mb-[1px] hover:border-ibm-gray-60 text-left transition-all">
               <span class="block font-mono text-xs text-ibm-gray-40 group-hover:text-ibm-gray-20 mb-0.5 transition-colors">03</span>
               <span class="font-sans text-sm sm:text-base text-ibm-gray-30 group-hover:text-white transition-colors">Event Schedule</span>
+            </a>
+
+            <!-- 04 Featured Speakers -->
+            <a href="#speakers" class="group pb-3 border-b-2 border-transparent -mb-[1px] hover:border-ibm-gray-60 text-left transition-all">
+              <span class="block font-mono text-xs text-ibm-gray-40 group-hover:text-ibm-gray-20 mb-0.5 transition-colors">04</span>
+              <span class="font-sans text-sm sm:text-base text-ibm-gray-30 group-hover:text-white transition-colors">Speakers</span>
             </a>
           </div>
         </div>
@@ -669,6 +701,117 @@
       </div>
     </div>
   </section>
+
+  <!-- Featured Speakers Section (Carbon White Theme) -->
+  <section id="speakers" class="pt-20 pb-10 px-6 bg-white border-b border-ibm-gray-20">
+    <div class="max-w-5xl mx-auto">
+      <!-- Centered Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Featured Speakers</h2>
+        <div class="w-12 h-1 bg-ibm-blue mx-auto mt-3"></div>
+      </div>
+
+      <div class="reveal">
+        <!-- Speaker Profiles Row (No gray card boxes) -->
+        <div id="speakers-row" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-6">
+          <!-- Brad Mitchell -->
+          <div class="speaker-card group flex gap-4 items-center cursor-pointer select-none" data-speaker="brad" tabindex="0" role="button" aria-label="Dr. Brad Mitchell">
+            <div class="relative w-16 h-16 sm:w-18 sm:h-18 flex-shrink-0 flex items-center justify-center">
+              <!-- Dual-Direction Animated Encircling Ring (Starts at 3pi/4 / top-left) -->
+              <svg class="speaker-ring-svg absolute -inset-1 w-[calc(100%+8px)] h-[calc(100%+8px)] z-10" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="37" stroke="#e0e0e0" stroke-width="1.5" stroke-opacity="0.6" />
+                <path class="speaker-ring-path" d="M 13.84 13.84 A 37 37 0 0 1 66.16 66.16" stroke="#0f62fe" stroke-width="2.5" stroke-linecap="round" />
+                <path class="speaker-ring-path" d="M 13.84 13.84 A 37 37 0 0 0 66.16 66.16" stroke="#0f62fe" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+
+              <!-- Photo Circle -->
+              <div class="w-full h-full rounded-full border border-ibm-gray-20 overflow-hidden bg-ibm-gray-10 shadow-sm">
+                <img src="../images/speakers/brad_mitchell.png" alt="Dr. Brad Mitchell" class="speaker-avatar-img w-full h-full object-cover object-top">
+              </div>
+            </div>
+            <div>
+              <h3 class="font-mono text-lg sm:text-xl font-medium text-ibm-gray-100 group-hover:text-ibm-blue transition-colors">Dr. Brad Mitchell</h3>
+              <p class="font-mono text-xs text-ibm-blue font-semibold mt-0.5">Staff Research Scientist, IBM Quantum</p>
+            </div>
+          </div>
+
+          <!-- Soyoung Shin -->
+          <div class="speaker-card group flex gap-4 items-center cursor-pointer select-none" data-speaker="soyoung" tabindex="0" role="button" aria-label="Dr. Soyoung Shin (Sophy)">
+            <div class="relative w-16 h-16 sm:w-18 sm:h-18 flex-shrink-0 flex items-center justify-center">
+              <!-- Dual-Direction Animated Encircling Ring (Starts at 3pi/4 / top-left) -->
+              <svg class="speaker-ring-svg absolute -inset-1 w-[calc(100%+8px)] h-[calc(100%+8px)] z-10" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="37" stroke="#e0e0e0" stroke-width="1.5" stroke-opacity="0.6" />
+                <path class="speaker-ring-path" d="M 13.84 13.84 A 37 37 0 0 1 66.16 66.16" stroke="#0f62fe" stroke-width="2.5" stroke-linecap="round" />
+                <path class="speaker-ring-path" d="M 13.84 13.84 A 37 37 0 0 0 66.16 66.16" stroke="#0f62fe" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+
+              <!-- Photo Circle -->
+              <div class="w-full h-full rounded-full border border-ibm-gray-20 overflow-hidden bg-ibm-gray-10 shadow-sm">
+                <img src="../images/speakers/soyoung_shin.png" alt="Dr. Soyoung Shin (Sophy)" class="speaker-avatar-img w-full h-full object-cover object-center">
+              </div>
+            </div>
+            <div>
+              <h3 class="font-mono text-lg sm:text-xl font-medium text-ibm-gray-100 group-hover:text-ibm-blue transition-colors">Dr. Soyoung Shin (Sophy)</h3>
+              <p class="font-mono text-xs text-ibm-blue font-semibold mt-0.5">Quantum Developer Advocate, IBM Quantum</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shared Horizontal Description (Seamless, fixed height, 0 layout shift) -->
+        <div class="max-w-4xl mx-auto h-16 sm:h-12 relative flex items-center justify-center pointer-events-none mt-1">
+          <!-- Brad Mitchell Bio -->
+          <p id="bio-brad" class="speaker-bio absolute inset-0 flex items-center justify-center text-ibm-gray-70 text-xs sm:text-sm leading-relaxed font-sans text-center opacity-0 transition-opacity duration-300">
+            Dr. Brad Mitchell is a Staff Research Scientist at IBM Quantum, where he focuses on demonstrating and extending the capabilities of the IBM's Quantum Computers, using methods like error mitigation. Brad completed his PhD at UC Berkeley in Prof. Irfan Siddiqi's group, where he implemented novel entangling interactions between superconducting qubits.
+          </p>
+
+          <!-- Soyoung Shin Bio -->
+          <p id="bio-soyoung" class="speaker-bio absolute inset-0 flex items-center justify-center text-ibm-gray-70 text-xs sm:text-sm leading-relaxed font-sans text-center opacity-0 transition-opacity duration-300">
+            Dr. Soyoung Shin (Sophy) is a Quantum Developer Advocate at IBM Quantum who develops educational content and hands-on learning experiences for students and researchers. In addition to her work in quantum computing, she serves as an APS Career Mentoring Fellow, helping students and early-career professionals navigate their career paths in science and technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var cards = document.querySelectorAll('.speaker-card');
+      var row = document.getElementById('speakers-row');
+      var bioBrad = document.getElementById('bio-brad');
+      var bioSoyoung = document.getElementById('bio-soyoung');
+
+      function showBio(target) {
+        if (target === 'brad') {
+          bioSoyoung.classList.add('opacity-0');
+          bioBrad.classList.remove('opacity-0');
+        } else if (target === 'soyoung') {
+          bioBrad.classList.add('opacity-0');
+          bioSoyoung.classList.remove('opacity-0');
+        } else {
+          bioBrad.classList.add('opacity-0');
+          bioSoyoung.classList.add('opacity-0');
+        }
+      }
+
+      cards.forEach(function (card) {
+        card.addEventListener('mouseenter', function () {
+          showBio(card.getAttribute('data-speaker'));
+        });
+        card.addEventListener('click', function () {
+          showBio(card.getAttribute('data-speaker'));
+        });
+        card.addEventListener('focus', function () {
+          showBio(card.getAttribute('data-speaker'));
+        });
+      });
+
+      if (row) {
+        row.addEventListener('mouseleave', function () {
+          showBio('none');
+        });
+      }
+    })();
+  </script>
 
   <!-- Registration Section (Carbon Dark Theme G100) -->
   <section id="register" class="py-20 px-6 bg-ibm-gray-100 text-white border-t border-ibm-gray-80">
