@@ -54,94 +54,6 @@
     body {
       font-family: 'IBM Plex Sans', 'Inter', system-ui, -apple-system, sans-serif;
     }
-    /* IBM Carbon Design System Button Styles */
-    .cds--btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      background-color: #0f62fe;
-      color: #ffffff;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.875rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      padding: 0.875rem 1.25rem;
-      border: 1px solid #0f62fe;
-      border-radius: 0;
-      transition: background-color 0.15s ease, border-color 0.15s ease;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .cds--btn-primary:hover {
-      background-color: #0353e9;
-      border-color: #0353e9;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .cds--btn-primary:active {
-      background-color: #002d9c;
-      border-color: #002d9c;
-    }
-    /* IBM Carbon Style Action Button */
-    .cds--btn-ibm {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.25rem;
-      background-color: #0f62fe;
-      color: #ffffff;
-      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 0.9375rem;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-      padding: 0.8125rem 1.25rem;
-      border: 1px solid #0f62fe;
-      border-radius: 0;
-      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .cds--btn-ibm:hover {
-      background-color: #0353e9;
-      border-color: #0353e9;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .cds--btn-ibm:active {
-      background-color: #002d9c;
-      border-color: #002d9c;
-    }
-    .cds--btn-ibm svg {
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .cds--btn-ibm:hover svg {
-      transform: translate(2px, -2px);
-    }
-    .cds--btn-ghost-dark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      background-color: transparent;
-      color: #ffffff;
-      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 0.9375rem;
-      font-weight: 400;
-      letter-spacing: 0.01em;
-      padding: 0.8125rem 1.25rem;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 0;
-      transition: all 0.15s ease;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .cds--btn-ghost-dark:hover {
-      background-color: #ffffff;
-      color: #161616;
-      border-color: #ffffff;
-      text-decoration: none;
-    }
     /* IBM Carbon Tile Pattern */
     .cds--tile {
       background-color: #ffffff;
@@ -327,11 +239,11 @@
           </p>
           <!-- Carbon Numbered Navigation Tabs (Hero Actions) -->
           <div class="flex items-end gap-4 sm:gap-8 mt-10 border-b border-ibm-gray-80/60 pb-0 overflow-x-auto no-scrollbar">
-            <!-- 01 Register (Primary Emphasized Tab) -->
-            <a href="#register" class="group pb-3 border-b-2 border-ibm-blue -mb-[1px] text-left transition-all shrink-0">
+            <!-- 01 Results (Primary Emphasized Tab) -->
+            <a href="#results" class="group pb-3 border-b-2 border-ibm-blue -mb-[1px] text-left transition-all shrink-0">
               <span class="block font-mono text-xs text-[#78a9ff] font-semibold mb-0.5">01</span>
               <span class="font-sans text-sm sm:text-base font-semibold text-white group-hover:text-[#78a9ff] inline-flex items-center gap-1.5 transition-colors">
-                <span>Register</span>
+                <span>Results</span>
                 <span class="font-mono text-xs text-[#78a9ff] group-hover:translate-x-0.5 transition-transform">→</span>
               </span>
             </a>
@@ -624,6 +536,55 @@
     </div>
   </section>
 
+  <!-- Results & Highlights Section (Carbon Clean White) -->
+  <section id="results" class="scroll-mt-16 py-20 px-6 bg-white border-b border-ibm-gray-20">
+    <div class="max-w-5xl mx-auto reveal">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
+        <p class="font-mono text-xs tracking-[0.2em] text-ibm-blue uppercase font-semibold">Hackathon Results</p>
+      </div>
+      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-ibm-gray-100">Winners &amp; Highlights</h2>
+      <div class="w-12 h-1 bg-ibm-blue mt-3 mb-8"></div>
+
+      <!-- Winners Announcement (Compact, No Card) -->
+      <div class="mb-8 flex flex-wrap items-center gap-x-3 gap-y-2">
+        <span class="cds--tag-blue">1st Place Team</span>
+        <span class="font-mono text-xs uppercase tracking-wider text-ibm-blue font-semibold">Winners:</span>
+        <span class="font-mono text-sm text-ibm-gray-90">
+          Michael Paley, Thomas Gotch, Katharine Choi, Zachary Bashkin, Garrett Temple
+        </span>
+      </div>
+
+      <!-- Event Gallery (Prominent Grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div class="group overflow-hidden">
+          <div class="overflow-hidden border border-ibm-gray-20 bg-ibm-gray-10">
+            <img src="../images/fallfest2026/panel_talk.jpg" alt="Panel Discussion" class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-[1.02] transition-transform duration-300">
+          </div>
+          <p class="font-mono text-xs text-ibm-gray-70 mt-2.5">Panel Discussion with IBM &amp; Berkeley Lab</p>
+        </div>
+        <div class="group overflow-hidden">
+          <div class="overflow-hidden border border-ibm-gray-20 bg-ibm-gray-10">
+            <img src="../images/fallfest2026/soyoung_qa.jpg" alt="Dr. Soyoung Shin (IBM)" class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-[1.02] transition-transform duration-300">
+          </div>
+          <p class="font-mono text-xs text-ibm-gray-70 mt-2.5">Dr. Soyoung Shin (IBM Quantum)</p>
+        </div>
+        <div class="group overflow-hidden">
+          <div class="overflow-hidden border border-ibm-gray-20 bg-ibm-gray-10">
+            <img src="../images/fallfest2026/presentation.jpg" alt="Project Presentations" class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-[1.02] transition-transform duration-300">
+          </div>
+          <p class="font-mono text-xs text-ibm-gray-70 mt-2.5">Project Presentations</p>
+        </div>
+        <div class="group overflow-hidden">
+          <div class="overflow-hidden border border-ibm-gray-20 bg-ibm-gray-10">
+            <img src="../images/fallfest2026/hackathon.jpg" alt="Hackathon Teams" class="w-full h-64 sm:h-72 md:h-80 object-cover object-center group-hover:scale-[1.02] transition-transform duration-300">
+          </div>
+          <p class="font-mono text-xs text-ibm-gray-70 mt-2.5">Winning Team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Program & Schedule Overview (Carbon Structured List) -->
   <section id="program" class="py-20 px-6 bg-ibm-gray-10 border-b border-ibm-gray-20">
     <div class="max-w-5xl mx-auto reveal">
@@ -648,12 +609,6 @@
         </div>
       </div>
       <div class="w-12 h-1 bg-ibm-blue mt-3 mb-8"></div>
-
-      <!-- ========================================================================= -->
-      <!-- DEVELOPER NOTE:                                                           -->
-      <!-- Replace the placeholder schedule blocks below when exact dates,           -->
-      <!-- room locations, and minute-by-minute timings are confirmed.               -->
-      <!-- ========================================================================= -->
 
       <div class="border border-ibm-gray-20 bg-white divide-y divide-ibm-gray-20 shadow-sm">
         <div class="p-6 grid md:grid-cols-[14rem_1fr] gap-4 items-center border-l-4 border-l-transparent hover:bg-ibm-gray-10/50 transition-colors">
@@ -820,53 +775,6 @@
     })();
   </script>
 
-  <!-- Registration Section (Carbon Dark Theme G100) -->
-  <section id="register" class="py-20 px-6 bg-ibm-gray-100 text-white border-t border-ibm-gray-80">
-    <div class="max-w-4xl mx-auto text-center reveal">
-      <!-- IBM Quantum Microwave Control Pulse Waveform Graphic -->
-      <div class="flex justify-center mb-6">
-        <svg class="w-72 sm:w-96 h-12" viewBox="0 0 380 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="ibmPulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#0f62fe" stop-opacity="0.1" />
-              <stop offset="25%" stop-color="#0f62fe" stop-opacity="0.9" />
-              <stop offset="65%" stop-color="#8a3ffc" stop-opacity="0.9" />
-              <stop offset="100%" stop-color="#0f62fe" stop-opacity="0.1" />
-            </linearGradient>
-          </defs>
-          <!-- Baseline -->
-          <line x1="10" y1="24" x2="370" y2="24" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="3 3" />
-          <!-- DRAG Pulse Waveform Envelope -->
-          <path d="M10,24 Q50,24 70,24 T110,8 Q130,-4 150,24 T190,24 T230,6 Q250,-8 270,24 T310,24 Q340,24 370,24" stroke="url(#ibmPulseGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" />
-          <!-- Modulation markers -->
-          <circle cx="130" cy="3" r="3.5" fill="#0f62fe" />
-          <circle cx="250" cy="1" r="3.5" fill="#8a3ffc" />
-          <line x1="130" y1="3" x2="130" y2="24" stroke="#0f62fe" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
-          <line x1="250" y1="1" x2="250" y2="24" stroke="#8a3ffc" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
-        </svg>
-      </div>
-
-      <div class="inline-flex items-center gap-2 mb-2">
-        <span class="w-1.5 h-1.5 bg-ibm-blue inline-block"></span>
-        <p class="font-mono text-xs tracking-[0.25em] text-ibm-blue uppercase font-semibold">Registration</p>
-      </div>
-      <h2 class="font-mono text-3xl md:text-4xl font-light tracking-tight text-white mb-4">Ready for IBM Qiskit Fall Fest?</h2>
-      <p class="text-ibm-gray-30 text-[17px] max-w-2xl mx-auto mb-8 leading-relaxed font-sans">
-        Registration opens Monday, September 17th!
-      </p>
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a href="https://luma.com/berkeley-9j7u?utm_source=qcb" class="cds--btn-ibm">
-          <span>Register</span>
-          <svg class="w-4 h-4 text-white" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 12L12 4M6 4h6v6"/>
-          </svg>
-        </a>
-        <a href="../#events" class="cds--btn-ghost-dark">
-          <span>View Club Calendar</span>
-        </a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="bg-black border-t border-gray-800 text-gray-500 font-mono text-sm">
